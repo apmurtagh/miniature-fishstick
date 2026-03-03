@@ -1,0 +1,69 @@
+#!/usr/bin/env python3
+"""
+Pre-commit hook: block Jupyter notebooks that contain outputs from being
+committed, *unless* they live under notebooks/reports/.
+
+Usage (invoked automatically by pre-commit, or manually):
+    python hooks/pre-commit [file1.ipynb file2.ipynb ...]
+
+Exit codes:
+    0  – all clear
+    1  – one or more notebooks outside notebooks/reports/ have outputs
+"""
+
+import json
+import sys
+from pathlib import Path
+
+
+def has_outputs(nb_path: Path) -> bool:
+    """Return True if any cell in the notebook has non-empty outputs."""
+    try:
+        data = json.loads(nb_path.read_text(encoding="utf-8"))
+    except Exception:
+        return False  # can't parse → not our problem here
+
+    for cell in data.get("cells", []):
+        outputs = cell.get("outputs", [])
+        if outputs:
+            return True
+        # execution_count being set also indicates the notebook was run
+        if cell.get("execution_count") is not None:
+            return True
+    return False
+
+
+def main() -> int:
+    # Files are passed as positional arguments by pre-commit
+    files = [Path(f) for f in sys.argv[1:]]
+
+    failed: list[Path] = []
+    for nb_path in files:
+        # Exempt only notebooks directly under a notebooks/reports/ directory.
+        # Walk the parts looking for the consecutive pair ('notebooks', 'reports').
+        parts = nb_path.parts
+        is_in_reports = any(
+            parts[i] == "notebooks" and len(parts) > i + 1 and parts[i + 1] == "reports"
+            for i in range(len(parts))
+        )
+        if is_in_reports:
+            continue
+        if has_outputs(nb_path):
+            failed.append(nb_path)
+
+    if failed:
+        print(
+            "\n[pre-commit] ERROR: The following notebooks have outputs and are "
+            "NOT in notebooks/reports/.\n"
+            "Run `nbstripout <notebook>` to clear outputs before committing.\n",
+            file=sys.stderr,
+        )
+        for p in failed:
+            print(f"  {p}", file=sys.stderr)
+        return 1
+
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

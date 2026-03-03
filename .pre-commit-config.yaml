@@ -1,0 +1,55 @@
+# Pre-commit hooks for the fraud-thesis project.
+#
+# Install:
+#   pip install pre-commit
+#   pre-commit install          # installs git hook
+#   pre-commit install --hook-type pre-commit  # (same, explicit)
+#
+# Run manually:
+#   pre-commit run --all-files
+#
+# Policy
+# ------
+# * Notebooks in notebooks/           → outputs must be stripped before commit.
+# * Notebooks in notebooks/reports/   → outputs are intentionally preserved;
+#                                        they are exempt from stripping.
+# The local hook below (hooks/pre-commit) enforces the policy for the
+# notebooks/ tree.
+
+repos:
+  # -----------------------------------------------------------------
+  # Standard code hygiene
+  # -----------------------------------------------------------------
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-json
+      - id: check-merge-conflict
+      - id: detect-private-key
+
+  # -----------------------------------------------------------------
+  # Strip notebook outputs (all notebooks/ EXCEPT notebooks/reports/)
+  # -----------------------------------------------------------------
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.7.1
+    hooks:
+      - id: nbstripout
+        # Strip outputs from all notebooks outside notebooks/reports/
+        files: ^notebooks/(?!reports/).*\.ipynb$
+
+  # -----------------------------------------------------------------
+  # Local hook: block notebooks-with-outputs outside notebooks/reports/
+  # -----------------------------------------------------------------
+  - repo: local
+    hooks:
+      - id: block-notebook-outputs
+        name: Block notebook outputs outside notebooks/reports/
+        language: script
+        entry: hooks/pre-commit
+        types: [jupyter]
+        # Only check notebooks that are NOT in notebooks/reports/
+        files: ^notebooks/(?!reports/).*\.ipynb$
+        pass_filenames: true

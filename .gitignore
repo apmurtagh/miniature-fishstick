@@ -1,129 +1,72 @@
-cat > .gitignore << 'EOF'
-
 # -----------------------
-
 # Data & large artifacts
-
 # -----------------------
-
 data/**
-
 artifacts/**
 
- 
-
 # Keep folder placeholders
-
 !data/.gitkeep
-
 !artifacts/.gitkeep
 
- 
+# -----------------------
+# Run artifacts (live outside repo in RUNS_DIR)
+# -----------------------
+# runs/ directory if ever accidentally placed inside repo
+runs/
 
 # -----------------------
-
 # Jupyter / notebooks
-
 # -----------------------
-
 .ipynb_checkpoints/
-
 **/.ipynb_checkpoints/
-
 *.nbconvert.ipynb
 
- 
-
 # -----------------------
-
 # Python bytecode / caches
-
 # -----------------------
-
 __pycache__/
-
 **/__pycache__/
-
 *.py[cod]
-
 *.pyo
-
 *.pyd
-
 *.so
 
- 
-
 # -----------------------
-
 # Virtual envs / conda / env files
-
 # -----------------------
-
 .env
-
 .env.*
-
 .venv/
-
 venv/
-
 ENV/
-
 env/
-
 environment.local.yml
-
 *.conda
 
- 
+# -----------------------
+# Build / packaging
+# -----------------------
+dist/
+build/
+*.egg-info/
+.eggs/
 
 # -----------------------
-
 # OS / editor noise
-
 # -----------------------
-
 .DS_Store
-
 Thumbs.db
-
 *.swp
-
 *.swo
-
 *.tmp
-
 .vscode/
-
 .idea/
 
- 
-
 # -----------------------
-
-# Logs & outputs you use these)# Logs & outputs
-
+# Logs & outputs
 # -----------------------
-
-# mlruns/
-
-# wandb/
-
-# lightning_logs/
-
-# tensorboard/
-
-EOF
-
-# -----------------------
-
 *.log
-
 logs/
-
+# Only ignore HTML in the top-level reports/ folder (generated intermediaries).
+# HTML files inside notebooks/reports/ are intentionally kept.
 reports/**/*.html
-
- 
-
-# -----------------------
