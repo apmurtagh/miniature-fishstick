@@ -11,8 +11,9 @@ artifacts/**
 # -----------------------
 # Run artifacts (live outside repo in RUNS_DIR)
 # -----------------------
-# runs/ directory if ever accidentally placed inside repo
-runs/
+# Ignore a top-level runs/ directory if ever accidentally placed inside repo.
+# Use /runs/ (anchored) so src/runs/ is NOT affected.
+/runs/
 
 # -----------------------
 # Jupyter / notebooks
