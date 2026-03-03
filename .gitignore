@@ -66,5 +66,3 @@ logs/
 *.egg-info/
 dist/
 build/
-
-printf '\n# Packaging\n*.egg-info/\n' >> .gitignore
