@@ -1,0 +1,17 @@
+repos:
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.7.1
+    hooks:
+      - id: nbstripout
+        name: Strip outputs from notebooks (except notebooks/reports)
+        files: ^notebooks/.*\.ipynb$
+        exclude: ^notebooks/reports/
+
+  - repo: local
+    hooks:
+      - id: forbid-notebook-outputs
+        name: Block committing notebooks with outputs outside notebooks/reports
+        entry: python scripts/hooks/forbid_notebook_outputs.py
+        language: python
+        files: ^notebooks/.*\.ipynb$
+        exclude: ^notebooks/reports/
