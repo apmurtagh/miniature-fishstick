@@ -43,3 +43,34 @@ PYTHONPATH=src python -m fraud_thesis.cli finalize-run \
 ```bash
 python -m fraud_thesis show-runs-dir
 ```
+
+## Baselines (IEEE-CIS)
+
+### LightGBM numeric baseline (subsample, memory-safe)
+
+This repo includes a numeric-only LightGBM baseline intended to run on modest hardware by subsampling rows and limiting features.
+
+**What it writes (gitignored under `artifacts/`):**
+- `artifacts/baselines/lgbm_numeric_v1_subsample/metrics.json`
+- `artifacts/baselines/lgbm_numeric_v1_subsample/test_predictions.csv`
+- `artifacts/baselines/lgbm_numeric_v1_subsample/thin_thick_metrics.json`
+- `artifacts/baselines/lgbm_numeric_v1_subsample/report.csv` (append-only)
+
+**How to run:**
+```bash
+python scripts/train_lgbm_numeric_v1.py
+python scripts/eval_thin_thick_v1.py
+python scripts/report_baseline_metrics_v1.py
+```
+
+### Thin vs thick cohort definition
+
+The thin/thick evaluator uses proxy (3):
+
+- **thick** if `id_01` is present **OR** `DeviceType` is present
+- **thin** otherwise
+
+See `notes/2026-03-05_lgbm_baseline.md` for a short write-up and interpretation guidance.
+
+
+
