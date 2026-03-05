@@ -6,9 +6,18 @@ artifacts/**
 !data/.gitkeep
 !artifacts/.gitkeep
 
+# Ignore office/libreoffice lock files etc.
+.~lock.*
+
+# (Optional) direnv (if you use it later)
+.envrc
+.direnv/
+
 # Avoid accidental in-repo runs (real runs live in external RUNS_DIR)
 runs/
 mlruns/
+
+
 
 # -----------------------
 # Jupyter / notebooks
