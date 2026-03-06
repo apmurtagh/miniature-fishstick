@@ -171,7 +171,7 @@ def main() -> None:
         ),
     }
 
-    out_csv = run_dir / "report_v2.csv"
+    out_csv = run_dir / "report_v3.csv"
     is_new = (not out_csv.exists()) or (out_csv.stat().st_size == 0)
 
     with out_csv.open("a", newline="", encoding="utf-8") as f:
