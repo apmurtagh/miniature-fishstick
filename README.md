@@ -76,10 +76,9 @@ See `notes/2026-03-05_lgbm_baseline.md` for a short write-up and interpretation 
 
 Baseline metrics are appended to:
 
-- `artifacts/baselines/lgbm_numeric_v1_subsample/report_v3.csv` (current; includes driver overlap metrics)
+- `artifacts/baselines/lgbm_numeric_v1_subsample/report_v3.csv` (current; includes driver overlap + sign-faithfulness + leakage metrics)
 
 Note: `report.csv` and `report_v2.csv` are deprecated (older schema) and may contain mixed columns from earlier runs.
-
 
 
 
