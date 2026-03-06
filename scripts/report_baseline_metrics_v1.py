@@ -90,6 +90,11 @@ def main() -> None:
     sign_path_default = run_dir / "driver_sign_metrics.json"
     sign = _load_json_if_exists(sign_path_top5) or _load_json_if_exists(sign_path_default)
 
+    # Prefer the explicit top5 leakage file if you generated it; else fall back.
+    leak_path_top5 = run_dir / "driver_leakage_metrics_top5.json"
+    leak_path_default = run_dir / "driver_leakage_metrics.json"
+    leak = _load_json_if_exists(leak_path_top5) or _load_json_if_exists(leak_path_default)
+
     sha = _git_sha()
     dirty = _git_is_dirty()
 
@@ -143,6 +148,27 @@ def main() -> None:
         "driver_sign_metrics_path": str(
             sign_path_top5 if sign_path_top5.exists() else (sign_path_default if sign_path_default.exists() else "")
         ),
+
+        # Driver leakage metrics (optional; blank if file missing)
+        "driver_leak_k": str(leak.get("k", "")),
+        "driver_leak_any_rate_overall": str(_get(leak, "overall", "leak_any_rate", "rate")),
+        "driver_leak_count_mean_overall": str(_get(leak, "overall", "leak_count", "mean")),
+        "driver_leak_count_p50_overall": str(_get(leak, "overall", "leak_count", "p50")),
+        "driver_leak_count_p95_overall": str(_get(leak, "overall", "leak_count", "p95")),
+        "driver_leak_count_max_overall": str(_get(leak, "overall", "leak_count", "max")),
+        "driver_leak_any_rate_thin": str(_get(leak, "thin", "leak_any_rate", "rate")),
+        "driver_leak_count_mean_thin": str(_get(leak, "thin", "leak_count", "mean")),
+        "driver_leak_count_p50_thin": str(_get(leak, "thin", "leak_count", "p50")),
+        "driver_leak_count_p95_thin": str(_get(leak, "thin", "leak_count", "p95")),
+        "driver_leak_count_max_thin": str(_get(leak, "thin", "leak_count", "max")),
+        "driver_leak_any_rate_thick": str(_get(leak, "thick", "leak_any_rate", "rate")),
+        "driver_leak_count_mean_thick": str(_get(leak, "thick", "leak_count", "mean")),
+        "driver_leak_count_p50_thick": str(_get(leak, "thick", "leak_count", "p50")),
+        "driver_leak_count_p95_thick": str(_get(leak, "thick", "leak_count", "p95")),
+        "driver_leak_count_max_thick": str(_get(leak, "thick", "leak_count", "max")),
+        "driver_leak_metrics_path": str(
+            leak_path_top5 if leak_path_top5.exists() else (leak_path_default if leak_path_default.exists() else "")
+        ),
     }
 
     out_csv = run_dir / "report_v2.csv"
@@ -181,6 +207,16 @@ def main() -> None:
             row["driver_sign_any_error_rate_overall"],
             "k=",
             row["driver_sign_k"],
+        )
+
+    if row["driver_leak_k"]:
+        print(
+            "Driver leakage (any rate overall):",
+            row["driver_leak_any_rate_overall"],
+            "mean leaked count overall:",
+            row["driver_leak_count_mean_overall"],
+            "k=",
+            row["driver_leak_k"],
         )
 
 
