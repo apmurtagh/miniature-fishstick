@@ -1,197 +1,225 @@
 from __future__ import annotations
 
-import argparse
+import csv
 import json
-import re
+import subprocess
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, Iterable, List, Set
-
-import numpy as np
-
-from eo.evidence_object import EvidenceObject
+from typing import Any
 
 
-DEFAULT_RUN_DIR = Path("artifacts") / "baselines" / "lgbm_numeric_v1_subsample"
-DEFAULT_EOS_PATH = DEFAULT_RUN_DIR / "eos_test_with_drivers.jsonl"
-DEFAULT_NARR_PATH = DEFAULT_RUN_DIR / "template_narratives_ops_triage_with_drivers_top5.jsonl"
-DEFAULT_FEATURE_NAMES_PATH = DEFAULT_RUN_DIR / "feature_names.json"
-DEFAULT_OUT_PATH = DEFAULT_RUN_DIR / "driver_leakage_metrics_top5.json"
+def utc_now_iso() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
-def iter_jsonl(path: Path) -> Iterable[dict]:
-    with path.open("r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            yield json.loads(line)
-
-
-def load_eos(path: Path) -> Dict[str, EvidenceObject]:
-    out: Dict[str, EvidenceObject] = {}
-    for obj in iter_jsonl(path):
-        eo = EvidenceObject.model_validate(obj)
-        out[eo.event_id] = eo
-    return out
-
-
-def load_feature_names(path: Path) -> List[str]:
-    """
-    feature_names.json is expected to be a JSON list of strings.
-    """
+def _load_json(path: Path) -> dict[str, Any]:
     if not path.exists():
-        raise FileNotFoundError(
-            f"Missing feature names file: {path}\n"
-            "Expected artifacts/baselines/<run>/feature_names.json to exist.\n"
+        raise FileNotFoundError(f"Missing file: {path}")
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _load_json_if_exists(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _git_sha() -> str:
+    """
+    Best-effort git SHA for reproducibility.
+    Returns empty string if git is unavailable or we're not in a git worktree.
+    """
+    try:
+        out = subprocess.check_output(
+            ["git", "rev-parse", "HEAD"],
+            stderr=subprocess.DEVNULL,
+            text=True,
+        ).strip()
+        return out
+    except Exception:
+        return ""
+
+
+def _git_is_dirty() -> str:
+    """
+    Returns 'true' if there are uncommitted changes, else 'false'.
+    Empty string if git is unavailable.
+    """
+    try:
+        subprocess.check_call(
+            ["git", "diff", "--quiet"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
         )
-    obj = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(obj, list) or not all(isinstance(x, str) for x in obj):
-        raise RuntimeError(f"Expected {path} to be a JSON list[str], got: {type(obj)}")
-    return list(obj)
+        subprocess.check_call(
+            ["git", "diff", "--quiet", "--staged"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+        return "false"
+    except subprocess.CalledProcessError:
+        return "true"
+    except Exception:
+        return ""
 
 
-def _tokenize_words(text: str) -> Set[str]:
-    """
-    Conservative tokenization used for leakage detection.
-
-    We treat model feature names (like 'V14', 'card1', 'id_01') as "words",
-    and look for exact word matches in the narrative. This avoids substring false positives.
-    """
-    toks = re.findall(r"[A-Za-z0-9_]+", text.lower())
-    return set(toks)
-
-
-def compute_metrics(
-    eos_by_id: Dict[str, EvidenceObject],
-    narratives_path: Path,
-    *,
-    k: int,
-    feature_names: List[str],
-    allowed_extra: Set[str] | None = None,
-) -> dict:
-    """
-    Leakage definition (global-vocabulary):
-      - Let V be the global model feature vocabulary (feature_names.json).
-      - Let A be the allowed set for a specific EO = EO.top_drivers[:k] (plus optional allowlist).
-      - Let M be the set of features from V that are mentioned in the narrative text.
-      - Leakage set L = M \\ A
-      - leak_any = 1 if L non-empty else 0
-      - leak_count = |L|
-
-    This is the metric you’ll want for LLM narratives: it catches mention of *any* model feature
-    outside the EO-provided top-k drivers.
-    """
-    allowed_extra = allowed_extra or set()
-
-    vocab = list(feature_names)
-    vocab_set = set(vocab)
-
-    leak_any: List[int] = []
-    leak_count: List[int] = []
-
-    leak_any_thin: List[int] = []
-    leak_count_thin: List[int] = []
-
-    leak_any_thick: List[int] = []
-    leak_count_thick: List[int] = []
-
-    n_missing_eo = 0
-
-    for obj in iter_jsonl(narratives_path):
-        event_id = str(obj["event_id"])
-        text = str(obj["text"])
-
-        eo = eos_by_id.get(event_id)
-        if eo is None:
-            n_missing_eo += 1
-            continue
-
-        topk = eo.top_drivers[: int(k)]
-        allowed = {d.name for d in topk} | set(allowed_extra)
-
-        toks = _tokenize_words(text)
-
-        # Mentioned model features (global vocabulary)
-        mentioned = {name for name in vocab_set if name.lower() in toks}
-
-        # Leakage = mentioned model features that are not in allowed top-k
-        leaked = {m for m in mentioned if m not in allowed}
-
-        leak_any_i = 1 if leaked else 0
-        leak_cnt_i = len(leaked)
-
-        leak_any.append(leak_any_i)
-        leak_count.append(leak_cnt_i)
-
-        if eo.thin_file_flag:
-            leak_any_thin.append(leak_any_i)
-            leak_count_thin.append(leak_cnt_i)
-        else:
-            leak_any_thick.append(leak_any_i)
-            leak_count_thick.append(leak_cnt_i)
-
-    def summarize_rate(xs: List[int]) -> dict:
-        if not xs:
-            return {"n": 0, "rate": None}
-        arr = np.asarray(xs, dtype=float)
-        return {"n": int(arr.size), "rate": float(arr.mean())}
-
-    def summarize_counts(xs: List[int]) -> dict:
-        if not xs:
-            return {"n": 0, "mean": None, "p50": None, "p95": None, "max": None}
-        arr = np.asarray(xs, dtype=float)
-        return {
-            "n": int(arr.size),
-            "mean": float(arr.mean()),
-            "p50": float(np.quantile(arr, 0.50)),
-            "p95": float(np.quantile(arr, 0.95)),
-            "max": float(arr.max()),
-        }
-
-    return {
-        "schema_version": "driver_leakage_metrics_v1_global_vocab",
-        "k": int(k),
-        "n_missing_eo": int(n_missing_eo),
-        "feature_names_path": str(DEFAULT_FEATURE_NAMES_PATH),
-        "n_vocab_features": int(len(vocab)),
-        "definition": "Leakage = narrative mentions any model feature from feature_names.json that is not in EO.top_drivers[:k] (plus allowlist).",
-        "overall": {
-            "leak_any_rate": summarize_rate(leak_any),
-            "leak_count": summarize_counts(leak_count),
-        },
-        "thin": {
-            "leak_any_rate": summarize_rate(leak_any_thin),
-            "leak_count": summarize_counts(leak_count_thin),
-        },
-        "thick": {
-            "leak_any_rate": summarize_rate(leak_any_thick),
-            "leak_count": summarize_counts(leak_count_thick),
-        },
-    }
+def _get(d: dict[str, Any], *path: str, default: Any = "") -> Any:
+    cur: Any = d
+    for p in path:
+        if not isinstance(cur, dict) or p not in cur:
+            return default
+        cur = cur[p]
+    return cur
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--eos-jsonl", default=str(DEFAULT_EOS_PATH))
-    ap.add_argument("--narratives-jsonl", default=str(DEFAULT_NARR_PATH))
-    ap.add_argument("--feature-names-json", default=str(DEFAULT_FEATURE_NAMES_PATH))
-    ap.add_argument("--k", type=int, default=5)
-    ap.add_argument("--out-json", default=str(DEFAULT_OUT_PATH))
-    args = ap.parse_args()
+    run_dir = Path("artifacts") / "baselines" / "lgbm_numeric_v1_subsample"
+    metrics_path = run_dir / "metrics.json"
+    thin_thick_path = run_dir / "thin_thick_metrics.json"
 
-    eos_by_id = load_eos(Path(args.eos_jsonl))
-    feature_names = load_feature_names(Path(args.feature_names_json))
+    metrics = _load_json(metrics_path)
+    cohort = _load_json(thin_thick_path)
 
-    metrics = compute_metrics(
-        eos_by_id,
-        Path(args.narratives_jsonl),
-        k=int(args.k),
-        feature_names=feature_names,
-    )
+    # Prefer the explicit top5 file if you generated it; else fall back.
+    drv_path_top5 = run_dir / "driver_overlap_metrics_top5.json"
+    drv_path_default = run_dir / "driver_overlap_metrics.json"
+    driver = _load_json_if_exists(drv_path_top5) or _load_json_if_exists(drv_path_default)
 
-    Path(args.out_json).write_text(json.dumps(metrics, indent=2) + "\n", encoding="utf-8")
-    print("Wrote:", args.out_json)
-    print(json.dumps(metrics, indent=2))
+    # Prefer the explicit top5 sign file if you generated it; else fall back.
+    sign_path_top5 = run_dir / "driver_sign_metrics_top5.json"
+    sign_path_default = run_dir / "driver_sign_metrics.json"
+    sign = _load_json_if_exists(sign_path_top5) or _load_json_if_exists(sign_path_default)
+
+    # Prefer the explicit top5 leakage file if you generated it; else fall back.
+    leak_path_top5 = run_dir / "driver_leakage_metrics_top5.json"
+    leak_path_default = run_dir / "driver_leakage_metrics.json"
+    leak = _load_json_if_exists(leak_path_top5) or _load_json_if_exists(leak_path_default)
+
+    sha = _git_sha()
+    dirty = _git_is_dirty()
+
+    # Prepare a single-row CSV that’s easy to paste into thesis tables later
+    row = {
+        "created_utc": utc_now_iso(),
+        "git_sha": sha,
+        "git_dirty": dirty,
+        "run_dir": str(run_dir),
+        "model": str(metrics.get("model", "")),
+        "split_id": str(metrics.get("split_id", "")),
+        "best_iteration": str(metrics.get("best_iteration", "")),
+        "n_features": str(metrics.get("n_features", "")),
+        "n_train": str((metrics.get("n_rows", {}) or {}).get("train", "")),
+        "n_val": str((metrics.get("n_rows", {}) or {}).get("val", "")),
+        "n_test": str((metrics.get("n_rows", {}) or {}).get("test", "")),
+        "test_roc_auc_overall": str(((cohort.get("metrics", {}) or {}).get("overall", {}) or {}).get("roc_auc", "")),
+        "test_pr_auc_overall": str(((cohort.get("metrics", {}) or {}).get("overall", {}) or {}).get("pr_auc", "")),
+        "test_roc_auc_thin": str(((cohort.get("metrics", {}) or {}).get("thin", {}) or {}).get("roc_auc", "")),
+        "test_pr_auc_thin": str(((cohort.get("metrics", {}) or {}).get("thin", {}) or {}).get("pr_auc", "")),
+        "test_roc_auc_thick": str(((cohort.get("metrics", {}) or {}).get("thick", {}) or {}).get("roc_auc", "")),
+        "test_pr_auc_thick": str(((cohort.get("metrics", {}) or {}).get("thick", {}) or {}).get("pr_auc", "")),
+        "n_thin": str((cohort.get("counts", {}) or {}).get("thin", "")),
+        "n_thick": str((cohort.get("counts", {}) or {}).get("thick", "")),
+        "cohort_definition": str(cohort.get("cohort_definition", "")),
+
+        # Driver overlap metrics (optional; blank if file missing)
+        "driver_overlap_k": str(driver.get("k", "")),
+        "driver_overlap_mean_overall": str(_get(driver, "overall", "overlap_at_k", "mean")),
+        "driver_overlap_p50_overall": str(_get(driver, "overall", "overlap_at_k", "p50")),
+        "driver_overlap_mean_thin": str(_get(driver, "thin", "overlap_at_k", "mean")),
+        "driver_overlap_p50_thin": str(_get(driver, "thin", "overlap_at_k", "p50")),
+        "driver_overlap_mean_thick": str(_get(driver, "thick", "overlap_at_k", "mean")),
+        "driver_overlap_p50_thick": str(_get(driver, "thick", "overlap_at_k", "p50")),
+        "driver_mention_any_rate_overall": str(_get(driver, "overall", "mention_any_topk_rate", "rate")),
+        "driver_mention_any_rate_thin": str(_get(driver, "thin", "mention_any_topk_rate", "rate")),
+        "driver_mention_any_rate_thick": str(_get(driver, "thick", "mention_any_topk_rate", "rate")),
+        "driver_metrics_path": str(drv_path_top5 if drv_path_top5.exists() else (drv_path_default if drv_path_default.exists() else "")),
+
+        # Driver sign-faithfulness metrics (optional; blank if file missing)
+        "driver_sign_k": str(sign.get("k", "")),
+        "driver_sign_acc_mean_overall": str(_get(sign, "overall", "per_row_sign_accuracy", "mean")),
+        "driver_sign_acc_p50_overall": str(_get(sign, "overall", "per_row_sign_accuracy", "p50")),
+        "driver_sign_any_error_rate_overall": str(_get(sign, "overall", "any_sign_error_rate", "rate")),
+        "driver_sign_acc_mean_thin": str(_get(sign, "thin", "per_row_sign_accuracy", "mean")),
+        "driver_sign_acc_p50_thin": str(_get(sign, "thin", "per_row_sign_accuracy", "p50")),
+        "driver_sign_any_error_rate_thin": str(_get(sign, "thin", "any_sign_error_rate", "rate")),
+        "driver_sign_acc_mean_thick": str(_get(sign, "thick", "per_row_sign_accuracy", "mean")),
+        "driver_sign_acc_p50_thick": str(_get(sign, "thick", "per_row_sign_accuracy", "p50")),
+        "driver_sign_any_error_rate_thick": str(_get(sign, "thick", "any_sign_error_rate", "rate")),
+        "driver_sign_metrics_path": str(
+            sign_path_top5 if sign_path_top5.exists() else (sign_path_default if sign_path_default.exists() else "")
+        ),
+
+        # Driver leakage metrics (optional; blank if file missing)
+        "driver_leak_k": str(leak.get("k", "")),
+        "driver_leak_any_rate_overall": str(_get(leak, "overall", "leak_any_rate", "rate")),
+        "driver_leak_count_mean_overall": str(_get(leak, "overall", "leak_count", "mean")),
+        "driver_leak_count_p50_overall": str(_get(leak, "overall", "leak_count", "p50")),
+        "driver_leak_count_p95_overall": str(_get(leak, "overall", "leak_count", "p95")),
+        "driver_leak_count_max_overall": str(_get(leak, "overall", "leak_count", "max")),
+        "driver_leak_any_rate_thin": str(_get(leak, "thin", "leak_any_rate", "rate")),
+        "driver_leak_count_mean_thin": str(_get(leak, "thin", "leak_count", "mean")),
+        "driver_leak_count_p50_thin": str(_get(leak, "thin", "leak_count", "p50")),
+        "driver_leak_count_p95_thin": str(_get(leak, "thin", "leak_count", "p95")),
+        "driver_leak_count_max_thin": str(_get(leak, "thin", "leak_count", "max")),
+        "driver_leak_any_rate_thick": str(_get(leak, "thick", "leak_any_rate", "rate")),
+        "driver_leak_count_mean_thick": str(_get(leak, "thick", "leak_count", "mean")),
+        "driver_leak_count_p50_thick": str(_get(leak, "thick", "leak_count", "p50")),
+        "driver_leak_count_p95_thick": str(_get(leak, "thick", "leak_count", "p95")),
+        "driver_leak_count_max_thick": str(_get(leak, "thick", "leak_count", "max")),
+        "driver_leak_n_vocab_features": str(leak.get("n_vocab_features", "")),
+        "driver_leak_feature_names_path": str(leak.get("feature_names_path", "")),
+        "driver_leak_metrics_path": str(
+            leak_path_top5 if leak_path_top5.exists() else (leak_path_default if leak_path_default.exists() else "")
+        ),
+    }
+
+    out_csv = run_dir / "report_v2.csv"
+    is_new = (not out_csv.exists()) or (out_csv.stat().st_size == 0)
+
+    with out_csv.open("a", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=list(row.keys()))
+        if is_new:
+            w.writeheader()
+        w.writerow(row)
+
+    # Also print a compact console summary
+    print("Wrote:", out_csv)
+    print("Git SHA:", sha or "(unknown)", "Dirty:", dirty or "(unknown)")
+    print("Model:", row["model"], "Split:", row["split_id"], "Best iter:", row["best_iteration"])
+    print("Test overall AUC/PR-AUC:", row["test_roc_auc_overall"], row["test_pr_auc_overall"])
+    print("Test thin   AUC/PR-AUC:", row["test_roc_auc_thin"], row["test_pr_auc_thin"])
+    print("Test thick  AUC/PR-AUC:", row["test_roc_auc_thick"], row["test_pr_auc_thick"])
+    print("Counts thin/thick:", row["n_thin"], row["n_thick"])
+
+    if row["driver_overlap_k"]:
+        print(
+            "Driver overlap@k (mean/p50 overall):",
+            row["driver_overlap_mean_overall"],
+            row["driver_overlap_p50_overall"],
+            "k=",
+            row["driver_overlap_k"],
+        )
+
+    if row["driver_sign_k"]:
+        print(
+            "Driver sign-faithfulness (mean/p50 overall):",
+            row["driver_sign_acc_mean_overall"],
+            row["driver_sign_acc_p50_overall"],
+            "any_error_rate=",
+            row["driver_sign_any_error_rate_overall"],
+            "k=",
+            row["driver_sign_k"],
+        )
+
+    if row["driver_leak_k"]:
+        print(
+            "Driver leakage (any rate overall):",
+            row["driver_leak_any_rate_overall"],
+            "mean leaked count overall:",
+            row["driver_leak_count_mean_overall"],
+            "k=",
+            row["driver_leak_k"],
+        )
 
 
 if __name__ == "__main__":

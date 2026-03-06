@@ -75,3 +75,10 @@ logs/
 *.egg-info/
 dist/
 build/
+
+# -----------------------
+# Old file versions
+# -----------------------
+*
+
+artifacts/baselines/**/report_v*.csv
