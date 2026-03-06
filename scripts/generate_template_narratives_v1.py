@@ -22,28 +22,38 @@ def iter_jsonl(path: Path) -> Iterable[dict]:
             yield json.loads(line)
 
 
-def render_ops_triage(eo: EvidenceObject) -> str:
+def render_ops_triage(eo: EvidenceObject, *, top_k: int) -> str:
     """
     Deterministic, EO-grounded template narrative for ops triage persona.
 
     Closed-world constraints:
     - only reference EO fields
     - do not invent external facts
+
+    Policy:
+    - If top_drivers are present, ALWAYS mention the EO top-K drivers (in EO order).
+    - Group by sign (+/-) for readability, but do not drop drivers.
     """
     parts: list[str] = []
     parts.append(f"Risk band: {eo.risk_band.value} (score {eo.score:.3f}).")
 
     if eo.top_drivers:
-        inc = [d for d in eo.top_drivers if d.direction == "+"]
-        dec = [d for d in eo.top_drivers if d.direction == "-"]
+        k = int(top_k)
+        top = eo.top_drivers if k <= 0 else eo.top_drivers[:k]
+
+        inc = [d.name for d in top if d.direction == "+"]
+        dec = [d.name for d in top if d.direction == "-"]
+
         if inc:
-            parts.append("Drivers increasing risk: " + ", ".join(d.name for d in inc[:3]) + ".")
+            parts.append("Top risk-increasing drivers: " + ", ".join(inc) + ".")
         if dec:
-            parts.append("Mitigating signals: " + ", ".join(d.name for d in dec[:2]) + ".")
+            parts.append("Top risk-decreasing drivers: " + ", ".join(dec) + ".")
+
+        if not inc and not dec and top:
+            parts.append("Top drivers: " + ", ".join(d.name for d in top) + ".")
     else:
         parts.append("Top drivers: not available (EO top_drivers is empty).")
 
-    # Level-3 disclosure gate (proposal): uncertainty / thin-file / drift messaging
     disclosures: list[str] = []
     if eo.thin_file_flag or eo.evidence_strength == EvidenceStrength.LOW:
         disclosures.append("Evidence is limited (thin-file / low evidence strength).")
@@ -52,9 +62,7 @@ def render_ops_triage(eo: EvidenceObject) -> str:
     if disclosures:
         parts.append(" ".join(disclosures))
 
-    # Must match EO recommended_action_class
     parts.append(f"Recommended action: {eo.recommended_action_class.value}.")
-
     return " ".join(parts)
 
 
@@ -63,6 +71,12 @@ def main() -> None:
     ap.add_argument("--eos-jsonl", default=str(DEFAULT_EOS_PATH))
     ap.add_argument("--out-jsonl", default=str(DEFAULT_OUT_PATH))
     ap.add_argument("--persona", default="ops_triage", choices=["ops_triage"])
+    ap.add_argument(
+        "--top-k",
+        type=int,
+        default=5,
+        help="How many EO top_drivers to mention (0 = mention all available).",
+    )
     args = ap.parse_args()
 
     eos_path = Path(args.eos_jsonl)
@@ -75,7 +89,7 @@ def main() -> None:
             eo = EvidenceObject.model_validate(obj)
 
             if args.persona == "ops_triage":
-                text = render_ops_triage(eo)
+                text = render_ops_triage(eo, top_k=int(args.top_k))
             else:
                 raise ValueError(f"Unsupported persona: {args.persona}")
 
