@@ -14,6 +14,7 @@ from eo.evidence_object import EvidenceObject
 DEFAULT_RUN_DIR = Path("artifacts") / "baselines" / "lgbm_numeric_v1_subsample"
 DEFAULT_EOS_PATH = DEFAULT_RUN_DIR / "eos_test_with_drivers.jsonl"
 DEFAULT_NARR_PATH = DEFAULT_RUN_DIR / "template_narratives_ops_triage_with_drivers_top5.jsonl"
+DEFAULT_FEATURE_NAMES_PATH = DEFAULT_RUN_DIR / "feature_names.json"
 DEFAULT_OUT_PATH = DEFAULT_RUN_DIR / "driver_leakage_metrics_top5.json"
 
 
@@ -34,15 +35,28 @@ def load_eos(path: Path) -> Dict[str, EvidenceObject]:
     return out
 
 
+def load_feature_names(path: Path) -> List[str]:
+    """
+    feature_names.json is expected to be a JSON list of strings.
+    """
+    if not path.exists():
+        raise FileNotFoundError(
+            f"Missing feature names file: {path}\n"
+            "Expected artifacts/baselines/<run>/feature_names.json to exist.\n"
+        )
+    obj = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(obj, list) or not all(isinstance(x, str) for x in obj):
+        raise RuntimeError(f"Expected {path} to be a JSON list[str], got: {type(obj)}")
+    return list(obj)
+
+
 def _tokenize_words(text: str) -> Set[str]:
     """
     Conservative tokenization used for leakage detection.
 
-    We treat candidate feature names (which are usually like 'V14', 'card1', 'id_01') as "words",
+    We treat model feature names (like 'V14', 'card1', 'id_01') as "words",
     and look for exact word matches in the narrative. This avoids substring false positives.
     """
-    # Keep letters/digits/underscore, treat everything else as separator.
-    # This matches the same boundary assumption as the other eval scripts.
     toks = re.findall(r"[A-Za-z0-9_]+", text.lower())
     return set(toks)
 
@@ -52,21 +66,25 @@ def compute_metrics(
     narratives_path: Path,
     *,
     k: int,
+    feature_names: List[str],
     allowed_extra: Set[str] | None = None,
 ) -> dict:
     """
-    Leakage definition:
-      narrative_mentions_outside_topk = (# feature names mentioned that are in EO.top_drivers but not in top-k) +
-                                       (# feature names mentioned that are not in EO.top_drivers at all)
-    In practice, since we don't have a global feature list here, we approximate by:
-      - take EO.top_drivers names as the "feature vocabulary"
-      - consider it leakage if the narrative mentions any EO feature name not in EO.top_drivers[:k]
-    This captures "mentioned lower-ranked drivers" leakage, which is a common failure mode for LLM narratives.
+    Leakage definition (global-vocabulary):
+      - Let V be the global model feature vocabulary (feature_names.json).
+      - Let A be the allowed set for a specific EO = EO.top_drivers[:k] (plus optional allowlist).
+      - Let M be the set of features from V that are mentioned in the narrative text.
+      - Leakage set L = M \\ A
+      - leak_any = 1 if L non-empty else 0
+      - leak_count = |L|
 
-    NOTE: If you later want "mentions any model feature not in top-k", you can extend this to load
-    feature_names.json from the run_dir and treat that as the vocabulary.
+    This is the metric you’ll want for LLM narratives: it catches mention of *any* model feature
+    outside the EO-provided top-k drivers.
     """
     allowed_extra = allowed_extra or set()
+
+    vocab = list(feature_names)
+    vocab_set = set(vocab)
 
     leak_any: List[int] = []
     leak_count: List[int] = []
@@ -88,19 +106,16 @@ def compute_metrics(
             n_missing_eo += 1
             continue
 
-        top = eo.top_drivers
-        topk = top[: int(k)]
-
-        top_names = {d.name for d in top}
-        topk_names = {d.name for d in topk}
+        topk = eo.top_drivers[: int(k)]
+        allowed = {d.name for d in topk} | set(allowed_extra)
 
         toks = _tokenize_words(text)
 
-        # Mentioned EO feature names (restricted vocabulary)
-        mentioned = {name for name in top_names if name.lower() in toks}
+        # Mentioned model features (global vocabulary)
+        mentioned = {name for name in vocab_set if name.lower() in toks}
 
-        # Leakage = mentioned names that are not in top-k and not explicitly allowed
-        leaked = {m for m in mentioned if (m not in topk_names) and (m not in allowed_extra)}
+        # Leakage = mentioned model features that are not in allowed top-k
+        leaked = {m for m in mentioned if m not in allowed}
 
         leak_any_i = 1 if leaked else 0
         leak_cnt_i = len(leaked)
@@ -134,10 +149,12 @@ def compute_metrics(
         }
 
     return {
-        "schema_version": "driver_leakage_metrics_v0",
+        "schema_version": "driver_leakage_metrics_v1_global_vocab",
         "k": int(k),
         "n_missing_eo": int(n_missing_eo),
-        "definition": "Leakage = narrative mentions any EO driver name outside EO.top_drivers[:k] (restricted to EO.top_drivers vocabulary).",
+        "feature_names_path": str(DEFAULT_FEATURE_NAMES_PATH),
+        "n_vocab_features": int(len(vocab)),
+        "definition": "Leakage = narrative mentions any model feature from feature_names.json that is not in EO.top_drivers[:k] (plus allowlist).",
         "overall": {
             "leak_any_rate": summarize_rate(leak_any),
             "leak_count": summarize_counts(leak_count),
@@ -157,12 +174,20 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--eos-jsonl", default=str(DEFAULT_EOS_PATH))
     ap.add_argument("--narratives-jsonl", default=str(DEFAULT_NARR_PATH))
+    ap.add_argument("--feature-names-json", default=str(DEFAULT_FEATURE_NAMES_PATH))
     ap.add_argument("--k", type=int, default=5)
     ap.add_argument("--out-json", default=str(DEFAULT_OUT_PATH))
     args = ap.parse_args()
 
     eos_by_id = load_eos(Path(args.eos_jsonl))
-    metrics = compute_metrics(eos_by_id, Path(args.narratives_jsonl), k=int(args.k))
+    feature_names = load_feature_names(Path(args.feature_names_json))
+
+    metrics = compute_metrics(
+        eos_by_id,
+        Path(args.narratives_jsonl),
+        k=int(args.k),
+        feature_names=feature_names,
+    )
 
     Path(args.out_json).write_text(json.dumps(metrics, indent=2) + "\n", encoding="utf-8")
     print("Wrote:", args.out_json)
