@@ -72,5 +72,15 @@ The thin/thick evaluator uses proxy (3):
 
 See `notes/2026-03-05_lgbm_baseline.md` for a short write-up and interpretation guidance.
 
+### Baseline reporting
+
+Baseline metrics are appended to:
+
+- `artifacts/baselines/lgbm_numeric_v1_subsample/report_v2.csv` (current; includes driver overlap metrics)
+
+Note: `report.csv` is deprecated (older schema) and may contain mixed columns from earlier runs.
+
+
+
 
 
