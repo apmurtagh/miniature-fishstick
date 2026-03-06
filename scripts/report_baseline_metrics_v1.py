@@ -85,6 +85,11 @@ def main() -> None:
     drv_path_default = run_dir / "driver_overlap_metrics.json"
     driver = _load_json_if_exists(drv_path_top5) or _load_json_if_exists(drv_path_default)
 
+    # Prefer the explicit top5 sign file if you generated it; else fall back.
+    sign_path_top5 = run_dir / "driver_sign_metrics_top5.json"
+    sign_path_default = run_dir / "driver_sign_metrics.json"
+    sign = _load_json_if_exists(sign_path_top5) or _load_json_if_exists(sign_path_default)
+
     sha = _git_sha()
     dirty = _git_is_dirty()
 
@@ -111,7 +116,7 @@ def main() -> None:
         "n_thick": str((cohort.get("counts", {}) or {}).get("thick", "")),
         "cohort_definition": str(cohort.get("cohort_definition", "")),
 
-        # NEW: driver overlap metrics (optional; blank if file missing)
+        # Driver overlap metrics (optional; blank if file missing)
         "driver_overlap_k": str(driver.get("k", "")),
         "driver_overlap_mean_overall": str(_get(driver, "overall", "overlap_at_k", "mean")),
         "driver_overlap_p50_overall": str(_get(driver, "overall", "overlap_at_k", "p50")),
@@ -123,10 +128,24 @@ def main() -> None:
         "driver_mention_any_rate_thin": str(_get(driver, "thin", "mention_any_topk_rate", "rate")),
         "driver_mention_any_rate_thick": str(_get(driver, "thick", "mention_any_topk_rate", "rate")),
         "driver_metrics_path": str(drv_path_top5 if drv_path_top5.exists() else (drv_path_default if drv_path_default.exists() else "")),
+
+        # Driver sign-faithfulness metrics (optional; blank if file missing)
+        "driver_sign_k": str(sign.get("k", "")),
+        "driver_sign_acc_mean_overall": str(_get(sign, "overall", "per_row_sign_accuracy", "mean")),
+        "driver_sign_acc_p50_overall": str(_get(sign, "overall", "per_row_sign_accuracy", "p50")),
+        "driver_sign_any_error_rate_overall": str(_get(sign, "overall", "any_sign_error_rate", "rate")),
+        "driver_sign_acc_mean_thin": str(_get(sign, "thin", "per_row_sign_accuracy", "mean")),
+        "driver_sign_acc_p50_thin": str(_get(sign, "thin", "per_row_sign_accuracy", "p50")),
+        "driver_sign_any_error_rate_thin": str(_get(sign, "thin", "any_sign_error_rate", "rate")),
+        "driver_sign_acc_mean_thick": str(_get(sign, "thick", "per_row_sign_accuracy", "mean")),
+        "driver_sign_acc_p50_thick": str(_get(sign, "thick", "per_row_sign_accuracy", "p50")),
+        "driver_sign_any_error_rate_thick": str(_get(sign, "thick", "any_sign_error_rate", "rate")),
+        "driver_sign_metrics_path": str(
+            sign_path_top5 if sign_path_top5.exists() else (sign_path_default if sign_path_default.exists() else "")
+        ),
     }
 
     out_csv = run_dir / "report_v2.csv"
-#    is_new = not out_csv.exists()
     is_new = (not out_csv.exists()) or (out_csv.stat().st_size == 0)
 
     with out_csv.open("a", newline="", encoding="utf-8") as f:
@@ -143,6 +162,7 @@ def main() -> None:
     print("Test thin   AUC/PR-AUC:", row["test_roc_auc_thin"], row["test_pr_auc_thin"])
     print("Test thick  AUC/PR-AUC:", row["test_roc_auc_thick"], row["test_pr_auc_thick"])
     print("Counts thin/thick:", row["n_thin"], row["n_thick"])
+
     if row["driver_overlap_k"]:
         print(
             "Driver overlap@k (mean/p50 overall):",
@@ -150,6 +170,17 @@ def main() -> None:
             row["driver_overlap_p50_overall"],
             "k=",
             row["driver_overlap_k"],
+        )
+
+    if row["driver_sign_k"]:
+        print(
+            "Driver sign-faithfulness (mean/p50 overall):",
+            row["driver_sign_acc_mean_overall"],
+            row["driver_sign_acc_p50_overall"],
+            "any_error_rate=",
+            row["driver_sign_any_error_rate_overall"],
+            "k=",
+            row["driver_sign_k"],
         )
 
 
