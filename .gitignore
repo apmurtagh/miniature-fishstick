@@ -79,6 +79,5 @@ build/
 # -----------------------
 # Old file versions
 # -----------------------
-*
-
+# Baseline reports (generated)
 artifacts/baselines/**/report_v*.csv
