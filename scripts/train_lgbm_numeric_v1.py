@@ -149,6 +149,17 @@ def main() -> None:
 
     (out_dir / "metrics.json").write_text(json.dumps(metrics, indent=2) + "\n", encoding="utf-8")
 
+    # NEW: persist model + feature order for reproducible SHAP
+    model_path = out_dir / "model.txt"
+    booster.save_model(str(model_path), num_iteration=booster.best_iteration)
+
+    (out_dir / "feature_names.json").write_text(json.dumps(feat_cols, indent=2) + "\n", encoding="utf-8")
+
+    # NEW: small, deterministic SHAP background sample (imputed, correct column order)
+    bg_n = min(1024, int(X_train.shape[0]))
+    X_bg = X_train.sample(n=bg_n, random_state=42).copy()
+    X_bg.to_parquet(out_dir / "shap_background.parquet", index=False)
+
     # Write predictions for downstream cohort analysis
     out_preds = out_dir / "test_predictions.csv"
     pd.DataFrame(
@@ -161,6 +172,9 @@ def main() -> None:
 
     print(json.dumps(metrics, indent=2))
     print("Wrote:", out_dir / "metrics.json")
+    print("Wrote:", model_path)
+    print("Wrote:", out_dir / "feature_names.json")
+    print("Wrote:", out_dir / "shap_background.parquet")
     print("Wrote:", out_preds)
 
 
