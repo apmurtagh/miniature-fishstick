@@ -1,0 +1,4009 @@
+{
+  "num": 200,
+  "leak_any_count": 0,
+  "leak_any_rate": 0.0,
+  "total_leak_count": 0,
+  "mean_leak_count": 0.0,
+  "results": [
+    {
+      "event_id": "3488961",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "D1",
+        "D10",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "D1",
+        "D10",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3488968",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "C9",
+        "D1",
+        "card5"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "C9",
+        "D1",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3488985",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "card2"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489002",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D2",
+        "TransactionAmt",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D2",
+        "TransactionAmt",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489003",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "D10",
+        "TransactionDT",
+        "card5"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "D10",
+        "TransactionDT",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489005",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "D1",
+        "D15",
+        "D2",
+        "D3",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "D1",
+        "D15",
+        "D2",
+        "D3",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489011",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C12",
+        "C8",
+        "D3",
+        "D6",
+        "card3"
+      ],
+      "mentioned": [
+        "C12",
+        "C8",
+        "D3",
+        "D6",
+        "card3"
+      ]
+    },
+    {
+      "event_id": "3489016",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C11",
+        "C5",
+        "D2",
+        "D5",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C11",
+        "C5",
+        "D2",
+        "D5",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489027",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "TransactionDT",
+        "card1",
+        "card2"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "TransactionDT",
+        "card1",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489028",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D15",
+        "D3",
+        "TransactionDT",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D15",
+        "D3",
+        "TransactionDT",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489032",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "addr1"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "addr1"
+      ]
+    },
+    {
+      "event_id": "3489035",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card5",
+        "dist1"
+      ],
+      "mentioned": [
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card5",
+        "dist1"
+      ]
+    },
+    {
+      "event_id": "3489037",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D3"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D3"
+      ]
+    },
+    {
+      "event_id": "3489046",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D2",
+        "D3",
+        "TransactionDT",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D2",
+        "D3",
+        "TransactionDT",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489048",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C13",
+        "C14",
+        "C4",
+        "C8"
+      ],
+      "mentioned": [
+        "C1",
+        "C13",
+        "C14",
+        "C4",
+        "C8"
+      ]
+    },
+    {
+      "event_id": "3489049",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D15",
+        "D4",
+        "TransactionAmt",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D15",
+        "D4",
+        "TransactionAmt",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489052",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C14",
+        "C5",
+        "TransactionDT",
+        "card5"
+      ],
+      "mentioned": [
+        "C13",
+        "C14",
+        "C5",
+        "TransactionDT",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489059",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C2",
+        "C5",
+        "D5"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C2",
+        "C5",
+        "D5"
+      ]
+    },
+    {
+      "event_id": "3489061",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "D15",
+        "TransactionAmt",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "D15",
+        "TransactionAmt",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489063",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D2"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D2"
+      ]
+    },
+    {
+      "event_id": "3489086",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489092",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D2",
+        "TransactionDT",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D2",
+        "TransactionDT",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489095",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "addr1",
+        "card1",
+        "card2",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "addr1",
+        "card1",
+        "card2",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489099",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C13",
+        "C14",
+        "C5",
+        "C9"
+      ],
+      "mentioned": [
+        "C1",
+        "C13",
+        "C14",
+        "C5",
+        "C9"
+      ]
+    },
+    {
+      "event_id": "3489103",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D15",
+        "D2",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D15",
+        "D2",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489105",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C6",
+        "D1",
+        "D15",
+        "D2"
+      ],
+      "mentioned": [
+        "C5",
+        "C6",
+        "D1",
+        "D15",
+        "D2"
+      ]
+    },
+    {
+      "event_id": "3489109",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D2",
+        "D3",
+        "addr1"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D2",
+        "D3",
+        "addr1"
+      ]
+    },
+    {
+      "event_id": "3489111",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card2"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489115",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C9",
+        "D15",
+        "D2",
+        "card1"
+      ],
+      "mentioned": [
+        "C5",
+        "C9",
+        "D15",
+        "D2",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489116",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C9",
+        "D2",
+        "TransactionAmt",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C5",
+        "C9",
+        "D2",
+        "TransactionAmt",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489127",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "D15",
+        "TransactionDT",
+        "addr1",
+        "card1",
+        "card5"
+      ],
+      "mentioned": [
+        "D15",
+        "TransactionDT",
+        "addr1",
+        "card1",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489132",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "D5",
+        "TransactionAmt",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "D5",
+        "TransactionAmt",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489133",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C2",
+        "C5",
+        "D15",
+        "D2",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C2",
+        "C5",
+        "D15",
+        "D2",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489136",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C6",
+        "D3",
+        "addr1",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "C6",
+        "D3",
+        "addr1",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489138",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489146",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C13",
+        "C14",
+        "C5",
+        "C9"
+      ],
+      "mentioned": [
+        "C1",
+        "C13",
+        "C14",
+        "C5",
+        "C9"
+      ]
+    },
+    {
+      "event_id": "3489147",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D3",
+        "TransactionAmt",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D3",
+        "TransactionAmt",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489148",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D5",
+        "TransactionAmt",
+        "card1",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D5",
+        "TransactionAmt",
+        "card1",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489149",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D15",
+        "D2",
+        "D4",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C5",
+        "D15",
+        "D2",
+        "D4",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489152",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D3",
+        "TransactionAmt",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D3",
+        "TransactionAmt",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489154",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "card2"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489159",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C6",
+        "C9",
+        "D3",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "C6",
+        "C9",
+        "D3",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489180",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "D1",
+        "addr1",
+        "card5"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "D1",
+        "addr1",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489188",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "D1",
+        "D4",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "D1",
+        "D4",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489193",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "D5",
+        "TransactionAmt",
+        "card5"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "D5",
+        "TransactionAmt",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489197",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C8",
+        "D6",
+        "D8",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "C8",
+        "D6",
+        "D8",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489202",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D2",
+        "D3",
+        "D5",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "D2",
+        "D3",
+        "D5",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489204",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "D3",
+        "D8",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "D3",
+        "D8",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489206",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C11",
+        "C13",
+        "C5",
+        "TransactionDT",
+        "card5"
+      ],
+      "mentioned": [
+        "C11",
+        "C13",
+        "C5",
+        "TransactionDT",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489211",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "D5",
+        "D8",
+        "card2"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "D5",
+        "D8",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489212",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C2",
+        "C5",
+        "C9",
+        "D10",
+        "card5"
+      ],
+      "mentioned": [
+        "C2",
+        "C5",
+        "C9",
+        "D10",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489214",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "D2",
+        "D3",
+        "card5"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "D2",
+        "D3",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489220",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D15",
+        "D2",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D15",
+        "D2",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489224",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "TransactionDT",
+        "addr1",
+        "card5"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "TransactionDT",
+        "addr1",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489230",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D15",
+        "D2",
+        "TransactionDT",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D15",
+        "D2",
+        "TransactionDT",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489237",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card2",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card2",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489239",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D3"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D3"
+      ]
+    },
+    {
+      "event_id": "3489243",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "D4",
+        "TransactionAmt",
+        "TransactionDT",
+        "card2",
+        "card5"
+      ],
+      "mentioned": [
+        "D4",
+        "TransactionAmt",
+        "TransactionDT",
+        "card2",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489251",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D15",
+        "D3",
+        "TransactionDT",
+        "card1"
+      ],
+      "mentioned": [
+        "C5",
+        "D15",
+        "D3",
+        "TransactionDT",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489253",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "C6",
+        "TransactionDT",
+        "card5"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "C6",
+        "TransactionDT",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489260",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D15",
+        "D2",
+        "card1"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D15",
+        "D2",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489261",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D15",
+        "D2",
+        "addr1"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D15",
+        "D2",
+        "addr1"
+      ]
+    },
+    {
+      "event_id": "3489270",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "C6",
+        "C9",
+        "card5"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "C6",
+        "C9",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489272",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card2"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489274",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D2"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D2"
+      ]
+    },
+    {
+      "event_id": "3489281",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C5",
+        "D1",
+        "D2",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C1",
+        "C5",
+        "D1",
+        "D2",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489284",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "D1",
+        "TransactionAmt",
+        "card2"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "D1",
+        "TransactionAmt",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489291",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D3",
+        "TransactionDT",
+        "card1",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "D3",
+        "TransactionDT",
+        "card1",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489294",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "C9",
+        "D15",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "C9",
+        "D15",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489299",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C13",
+        "C14",
+        "C5",
+        "D15"
+      ],
+      "mentioned": [
+        "C1",
+        "C13",
+        "C14",
+        "C5",
+        "D15"
+      ]
+    },
+    {
+      "event_id": "3489301",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "D15",
+        "TransactionAmt",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "D15",
+        "TransactionAmt",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489306",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D2",
+        "card2",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D2",
+        "card2",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489308",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D3"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D3"
+      ]
+    },
+    {
+      "event_id": "3489309",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D15",
+        "TransactionDT",
+        "card1",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D15",
+        "TransactionDT",
+        "card1",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489314",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D15",
+        "D2",
+        "TransactionAmt",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C5",
+        "D15",
+        "D2",
+        "TransactionAmt",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489315",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C9",
+        "D1",
+        "D15",
+        "D2"
+      ],
+      "mentioned": [
+        "C5",
+        "C9",
+        "D1",
+        "D15",
+        "D2"
+      ]
+    },
+    {
+      "event_id": "3489321",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "D3"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "D3"
+      ]
+    },
+    {
+      "event_id": "3489326",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D6",
+        "D8",
+        "TransactionDT",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "D6",
+        "D8",
+        "TransactionDT",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489329",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "card1",
+        "card5",
+        "dist1"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "card1",
+        "card5",
+        "dist1"
+      ]
+    },
+    {
+      "event_id": "3489333",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D15",
+        "D2",
+        "D3"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D15",
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "event_id": "3489336",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D2",
+        "TransactionAmt",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D2",
+        "TransactionAmt",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489339",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C9",
+        "D15",
+        "D3",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "C9",
+        "D15",
+        "D3",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489341",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D2",
+        "D3",
+        "TransactionDT",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "D2",
+        "D3",
+        "TransactionDT",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489343",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C9",
+        "D8",
+        "TransactionDT",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "C9",
+        "D8",
+        "TransactionDT",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489344",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "D15",
+        "TransactionAmt",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "D15",
+        "TransactionAmt",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489354",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D2",
+        "D3",
+        "TransactionAmt",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D2",
+        "D3",
+        "TransactionAmt",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489364",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D11",
+        "TransactionAmt",
+        "TransactionDT",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D11",
+        "TransactionAmt",
+        "TransactionDT",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489366",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D2",
+        "D3",
+        "TransactionAmt",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D2",
+        "D3",
+        "TransactionAmt",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489369",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C2",
+        "C5",
+        "C9",
+        "D15"
+      ],
+      "mentioned": [
+        "C1",
+        "C2",
+        "C5",
+        "C9",
+        "D15"
+      ]
+    },
+    {
+      "event_id": "3489371",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D2",
+        "TransactionDT",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D2",
+        "TransactionDT",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489375",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D10",
+        "TransactionDT",
+        "addr1",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "D10",
+        "TransactionDT",
+        "addr1",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489376",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "C9",
+        "D2",
+        "D3"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "C9",
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "event_id": "3489379",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C6",
+        "D3",
+        "D4",
+        "D5"
+      ],
+      "mentioned": [
+        "C14",
+        "C6",
+        "D3",
+        "D4",
+        "D5"
+      ]
+    },
+    {
+      "event_id": "3489384",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C6",
+        "D3",
+        "TransactionAmt",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "C6",
+        "D3",
+        "TransactionAmt",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489394",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C13",
+        "C14",
+        "C5",
+        "C9"
+      ],
+      "mentioned": [
+        "C1",
+        "C13",
+        "C14",
+        "C5",
+        "C9"
+      ]
+    },
+    {
+      "event_id": "3489397",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C6",
+        "D3",
+        "D4",
+        "D5"
+      ],
+      "mentioned": [
+        "C14",
+        "C6",
+        "D3",
+        "D4",
+        "D5"
+      ]
+    },
+    {
+      "event_id": "3489398",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C2",
+        "C5",
+        "D1",
+        "D15",
+        "D3"
+      ],
+      "mentioned": [
+        "C2",
+        "C5",
+        "D1",
+        "D15",
+        "D3"
+      ]
+    },
+    {
+      "event_id": "3489400",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C9",
+        "D2",
+        "addr1",
+        "card1"
+      ],
+      "mentioned": [
+        "C5",
+        "C9",
+        "D2",
+        "addr1",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489401",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D15",
+        "D2",
+        "D3",
+        "card1"
+      ],
+      "mentioned": [
+        "C5",
+        "D15",
+        "D2",
+        "D3",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489409",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D15",
+        "D3",
+        "addr1",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D15",
+        "D3",
+        "addr1",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489411",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D15",
+        "D2",
+        "card1"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D15",
+        "D2",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489415",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C2",
+        "C9",
+        "D15",
+        "D3",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C2",
+        "C9",
+        "D15",
+        "D3",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489420",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D2",
+        "D3",
+        "TransactionAmt",
+        "card1"
+      ],
+      "mentioned": [
+        "C5",
+        "D2",
+        "D3",
+        "TransactionAmt",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489424",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D3"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D3"
+      ]
+    },
+    {
+      "event_id": "3489428",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "event_id": "3489442",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C8",
+        "TransactionDT",
+        "card1",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "C8",
+        "TransactionDT",
+        "card1",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489448",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C13",
+        "C5",
+        "D10",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C1",
+        "C13",
+        "C5",
+        "D10",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489450",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C6",
+        "D15",
+        "D2",
+        "addr1"
+      ],
+      "mentioned": [
+        "C5",
+        "C6",
+        "D15",
+        "D2",
+        "addr1"
+      ]
+    },
+    {
+      "event_id": "3489455",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D8",
+        "TransactionAmt",
+        "TransactionDT",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "D8",
+        "TransactionAmt",
+        "TransactionDT",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489457",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D2",
+        "TransactionAmt",
+        "addr1",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D2",
+        "TransactionAmt",
+        "addr1",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489458",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C2",
+        "C5",
+        "C8",
+        "D2",
+        "card2"
+      ],
+      "mentioned": [
+        "C2",
+        "C5",
+        "C8",
+        "D2",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489462",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D10",
+        "D15",
+        "TransactionAmt",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C5",
+        "D10",
+        "D15",
+        "TransactionAmt",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489464",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card5"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489469",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C2",
+        "C5",
+        "C6",
+        "card5"
+      ],
+      "mentioned": [
+        "C14",
+        "C2",
+        "C5",
+        "C6",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489470",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "TransactionDT",
+        "card1",
+        "card2"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "TransactionDT",
+        "card1",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489471",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C2",
+        "C5",
+        "D15",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C14",
+        "C2",
+        "C5",
+        "D15",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489472",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C5",
+        "C6",
+        "TransactionDT",
+        "card2"
+      ],
+      "mentioned": [
+        "C1",
+        "C5",
+        "C6",
+        "TransactionDT",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489476",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D2",
+        "D3",
+        "TransactionAmt",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D2",
+        "D3",
+        "TransactionAmt",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489479",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C9",
+        "D1",
+        "D15",
+        "D4"
+      ],
+      "mentioned": [
+        "C5",
+        "C9",
+        "D1",
+        "D15",
+        "D4"
+      ]
+    },
+    {
+      "event_id": "3489486",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D2"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D2"
+      ]
+    },
+    {
+      "event_id": "3489487",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D11",
+        "D4",
+        "addr1",
+        "card1"
+      ],
+      "mentioned": [
+        "C5",
+        "D11",
+        "D4",
+        "addr1",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489489",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C2",
+        "C5",
+        "D15",
+        "D2",
+        "D3"
+      ],
+      "mentioned": [
+        "C2",
+        "C5",
+        "D15",
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "event_id": "3489493",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D8",
+        "TransactionDT",
+        "addr1",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "D8",
+        "TransactionDT",
+        "addr1",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489496",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D2",
+        "TransactionAmt",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D2",
+        "TransactionAmt",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489503",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C2",
+        "C5",
+        "TransactionAmt",
+        "card5"
+      ],
+      "mentioned": [
+        "C14",
+        "C2",
+        "C5",
+        "TransactionAmt",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489510",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C6",
+        "D3",
+        "D4",
+        "D5"
+      ],
+      "mentioned": [
+        "C14",
+        "C6",
+        "D3",
+        "D4",
+        "D5"
+      ]
+    },
+    {
+      "event_id": "3489517",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "TransactionDT",
+        "card2",
+        "card3"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "TransactionDT",
+        "card2",
+        "card3"
+      ]
+    },
+    {
+      "event_id": "3489521",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C9",
+        "D15",
+        "D6",
+        "TransactionAmt",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C9",
+        "D15",
+        "D6",
+        "TransactionAmt",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489524",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C9",
+        "D4",
+        "TransactionDT",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "C9",
+        "D4",
+        "TransactionDT",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489541",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489546",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C9",
+        "TransactionDT",
+        "card1",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "C9",
+        "TransactionDT",
+        "card1",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489556",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card2"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489557",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C9",
+        "D1",
+        "D2",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C5",
+        "C9",
+        "D1",
+        "D2",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489560",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "C9"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "C9"
+      ]
+    },
+    {
+      "event_id": "3489562",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "C9",
+        "D3",
+        "card5"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "C9",
+        "D3",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489565",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C9",
+        "D2",
+        "D3",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "C9",
+        "D2",
+        "D3",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489567",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C13",
+        "C5",
+        "D8",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C1",
+        "C13",
+        "C5",
+        "D8",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489569",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "C9"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "C9"
+      ]
+    },
+    {
+      "event_id": "3489576",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D3",
+        "TransactionAmt",
+        "addr1",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D3",
+        "TransactionAmt",
+        "addr1",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489578",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "D15",
+        "D4",
+        "D5",
+        "TransactionDT",
+        "card1"
+      ],
+      "mentioned": [
+        "D15",
+        "D4",
+        "D5",
+        "TransactionDT",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489581",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "D1",
+        "D10",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "D1",
+        "D10",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489589",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D2",
+        "D3",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D2",
+        "D3",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489593",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D11",
+        "D5",
+        "addr1",
+        "card1"
+      ],
+      "mentioned": [
+        "C5",
+        "D11",
+        "D5",
+        "addr1",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489595",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D15",
+        "D2",
+        "D3",
+        "addr1"
+      ],
+      "mentioned": [
+        "C5",
+        "D15",
+        "D2",
+        "D3",
+        "addr1"
+      ]
+    },
+    {
+      "event_id": "3489598",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C6",
+        "D3",
+        "D4",
+        "D5"
+      ],
+      "mentioned": [
+        "C14",
+        "C6",
+        "D3",
+        "D4",
+        "D5"
+      ]
+    },
+    {
+      "event_id": "3489599",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "TransactionAmt",
+        "addr1",
+        "card1"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "TransactionAmt",
+        "addr1",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489602",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D2",
+        "TransactionAmt",
+        "TransactionDT",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D2",
+        "TransactionAmt",
+        "TransactionDT",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489604",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "D1",
+        "D15",
+        "D2",
+        "TransactionAmt",
+        "addr1"
+      ],
+      "mentioned": [
+        "D1",
+        "D15",
+        "D2",
+        "TransactionAmt",
+        "addr1"
+      ]
+    },
+    {
+      "event_id": "3489610",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D2"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D2"
+      ]
+    },
+    {
+      "event_id": "3489611",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D3"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D3"
+      ]
+    },
+    {
+      "event_id": "3489613",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D15",
+        "D2",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D15",
+        "D2",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489614",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C2",
+        "C5",
+        "C6"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C2",
+        "C5",
+        "C6"
+      ]
+    },
+    {
+      "event_id": "3489618",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card1",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card1",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489619",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "C9"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "C9"
+      ]
+    },
+    {
+      "event_id": "3489622",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C2",
+        "C5",
+        "C6"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C2",
+        "C5",
+        "C6"
+      ]
+    },
+    {
+      "event_id": "3489625",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "D15",
+        "D3",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "D15",
+        "D3",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489627",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card5"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489628",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "event_id": "3489641",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D2",
+        "TransactionAmt",
+        "card1"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D2",
+        "TransactionAmt",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489642",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D2",
+        "D3",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D2",
+        "D3",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489646",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "D1",
+        "D15",
+        "D2"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "D1",
+        "D15",
+        "D2"
+      ]
+    },
+    {
+      "event_id": "3489654",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D2"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D2"
+      ]
+    },
+    {
+      "event_id": "3489668",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "D15",
+        "D2",
+        "card1"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "D15",
+        "D2",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489669",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "card1"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489672",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D2"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D2"
+      ]
+    },
+    {
+      "event_id": "3489674",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card2"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489679",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C6",
+        "D15",
+        "D2",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "C6",
+        "D15",
+        "D2",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489690",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "D2",
+        "D3",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "D2",
+        "D3",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489693",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "C9"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "C9"
+      ]
+    },
+    {
+      "event_id": "3489696",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "D15",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "D15",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489705",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C14",
+        "C5",
+        "D4",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C13",
+        "C14",
+        "C5",
+        "D4",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489710",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "C9"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C6",
+        "C9"
+      ]
+    },
+    {
+      "event_id": "3489711",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "D15",
+        "D3"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "D15",
+        "D3"
+      ]
+    },
+    {
+      "event_id": "3489731",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D11",
+        "TransactionAmt",
+        "TransactionDT",
+        "card1"
+      ],
+      "mentioned": [
+        "C5",
+        "D11",
+        "TransactionAmt",
+        "TransactionDT",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489733",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D15",
+        "D3",
+        "TransactionAmt",
+        "card1"
+      ],
+      "mentioned": [
+        "C5",
+        "D15",
+        "D3",
+        "TransactionAmt",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489734",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D2",
+        "TransactionAmt",
+        "card1"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D2",
+        "TransactionAmt",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489735",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "D15",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "D15",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489737",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C6",
+        "D1",
+        "D4",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C5",
+        "C6",
+        "D1",
+        "D4",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489740",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "D15",
+        "TransactionAmt",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "D15",
+        "TransactionAmt",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489743",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D2",
+        "D3",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D2",
+        "D3",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489747",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "D5",
+        "TransactionAmt",
+        "addr1"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "D5",
+        "TransactionAmt",
+        "addr1"
+      ]
+    },
+    {
+      "event_id": "3489749",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D3",
+        "TransactionAmt",
+        "card1",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D3",
+        "TransactionAmt",
+        "card1",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489752",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C6",
+        "D1",
+        "D2",
+        "D3"
+      ],
+      "mentioned": [
+        "C5",
+        "C6",
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    {
+      "event_id": "3489754",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D15",
+        "D2",
+        "D3",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C5",
+        "D15",
+        "D2",
+        "D3",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489763",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "TransactionDT",
+        "card1",
+        "card2"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "TransactionDT",
+        "card1",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489764",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card5"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "TransactionAmt",
+        "TransactionDT",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489768",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C14",
+        "C5",
+        "D1",
+        "D2",
+        "card5"
+      ],
+      "mentioned": [
+        "C14",
+        "C5",
+        "D1",
+        "D2",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489775",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D3",
+        "TransactionAmt",
+        "card1",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D3",
+        "TransactionAmt",
+        "card1",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489779",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D2"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "D2"
+      ]
+    },
+    {
+      "event_id": "3489786",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C9",
+        "D2",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C9",
+        "D2",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489789",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "TransactionDT",
+        "card1",
+        "card2",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "TransactionDT",
+        "card1",
+        "card2",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489790",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C4",
+        "D6",
+        "D8",
+        "TransactionDT",
+        "card1"
+      ],
+      "mentioned": [
+        "C4",
+        "D6",
+        "D8",
+        "TransactionDT",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489791",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D1",
+        "D2",
+        "addr1",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "D1",
+        "D2",
+        "addr1",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489796",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "D15",
+        "D4",
+        "TransactionAmt",
+        "card2"
+      ],
+      "mentioned": [
+        "C5",
+        "D15",
+        "D4",
+        "TransactionAmt",
+        "card2"
+      ]
+    },
+    {
+      "event_id": "3489798",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C13",
+        "C5",
+        "D5",
+        "TransactionAmt",
+        "TransactionDT"
+      ],
+      "mentioned": [
+        "C13",
+        "C5",
+        "D5",
+        "TransactionAmt",
+        "TransactionDT"
+      ]
+    },
+    {
+      "event_id": "3489814",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C5",
+        "C9",
+        "addr1",
+        "card2",
+        "card5"
+      ],
+      "mentioned": [
+        "C5",
+        "C9",
+        "addr1",
+        "card2",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489815",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "card5"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "C9",
+        "card5"
+      ]
+    },
+    {
+      "event_id": "3489824",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C13",
+        "C14",
+        "C5",
+        "TransactionAmt"
+      ],
+      "mentioned": [
+        "C1",
+        "C13",
+        "C14",
+        "C5",
+        "TransactionAmt"
+      ]
+    },
+    {
+      "event_id": "3489825",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C6",
+        "C9",
+        "D2",
+        "TransactionAmt",
+        "card1"
+      ],
+      "mentioned": [
+        "C6",
+        "C9",
+        "D2",
+        "TransactionAmt",
+        "card1"
+      ]
+    },
+    {
+      "event_id": "3489827",
+      "leak_any": 0,
+      "leak_count": 0,
+      "leak_set": [],
+      "allowed": [
+        "C1",
+        "C14",
+        "C5",
+        "D2",
+        "card2"
+      ],
+      "mentioned": [
+        "C1",
+        "C14",
+        "C5",
+        "D2",
+        "card2"
+      ]
+    }
+  ]
+}
