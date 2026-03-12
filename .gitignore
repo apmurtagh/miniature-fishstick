@@ -5,6 +5,8 @@ data/**
 artifacts/**
 !data/.gitkeep
 !artifacts/.gitkeep
+!artifacts/baselines/lgbm_numeric_v1_subsample/*.json
+!artifacts/baselines/lgbm_numeric_v1_subsample/*.md
 
 # Ignore office/libreoffice lock files etc.
 .~lock.*
