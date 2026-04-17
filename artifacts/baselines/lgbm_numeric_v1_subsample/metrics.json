@@ -1,0 +1,62 @@
+{
+  "created_utc": "2026-03-06T10:21:06+00:00",
+  "model": "lgbm_numeric_v1_subsample",
+  "split_id": "v1_temporal_q70_q85",
+  "best_iteration": 539,
+  "n_rows": {
+    "train": 50000,
+    "val": 20000,
+    "test": 20000
+  },
+  "n_features": 40,
+  "features": [
+    "TransactionDT",
+    "TransactionAmt",
+    "card1",
+    "card2",
+    "card3",
+    "card5",
+    "addr1",
+    "addr2",
+    "dist1",
+    "dist2",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6",
+    "D7",
+    "D8",
+    "D9",
+    "D10",
+    "D11",
+    "D12",
+    "D13",
+    "D14",
+    "D15",
+    "V1"
+  ],
+  "val": {
+    "roc_auc": 0.8721791705025801,
+    "pr_auc": 0.4478064436746398
+  },
+  "test": {
+    "roc_auc": 0.8686701871046073,
+    "pr_auc": 0.4594360326535779
+  }
+}

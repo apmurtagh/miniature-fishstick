@@ -1,0 +1,24 @@
+{
+  "created_utc": "2026-03-12T17:25:39+00:00",
+  "preds_path": "artifacts/baselines/lgbm_numeric_v1_subsample/test_predictions.csv",
+  "cohort_definition": "thick if (id_01 notna) OR (DeviceType notna); else thin",
+  "counts": {
+    "total": 20000,
+    "thin": 15818,
+    "thick": 4182
+  },
+  "metrics": {
+    "overall": {
+      "roc_auc": 0.8686701871046073,
+      "pr_auc": 0.4594360326535779
+    },
+    "thin": {
+      "roc_auc": 0.7912200244694632,
+      "pr_auc": 0.09278964620800362
+    },
+    "thick": {
+      "roc_auc": 0.913911479873267,
+      "pr_auc": 0.6946959917567871
+    }
+  }
+}
