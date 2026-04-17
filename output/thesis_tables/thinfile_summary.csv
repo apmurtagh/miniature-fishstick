@@ -1,0 +1,2 @@
+group,n_rows,share_of_eval_set,mean_overlap_at_5,mean_direction_accuracy,mean_action_consistency,mean_has_evidence_disclosure_metric,disclosure_text_proxy_rate,step_up_proxy_rate,mean_score,mean_data_coverage_score,low_evidence_rate,warn_drift_rate
+thin_file,200,1.0,1.0,1.0,1.0,1.0,1.0,0.0,0.014225114729847136,0.3399999999999999,1.0,0.0

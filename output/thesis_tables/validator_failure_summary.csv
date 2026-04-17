@@ -1,0 +1,2 @@
+failure_label,n_rows,rate,note
+unavailable,0,,No explicit failure_reason or validator_status found in run_metadata/metrics.

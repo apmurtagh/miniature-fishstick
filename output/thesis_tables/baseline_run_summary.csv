@@ -1,0 +1,2 @@
+model,split_id,best_iteration,n_train,n_val,n_test,n_features
+lgbm_numeric_v1_subsample,v1_temporal_q70_q85,539,50000,20000,20000,40

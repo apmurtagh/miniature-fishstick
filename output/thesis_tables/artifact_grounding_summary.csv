@@ -1,0 +1,4 @@
+slice,n,overlap_at_5_mean,mention_any_top5_rate,any_sign_error_rate,leak_any_rate
+overall,200,1.0,1.0,0.0,0.0
+thin,182,1.0,1.0,0.0,
+thick,18,1.0,1.0,0.0,

@@ -1,0 +1,2 @@
+comparison,status,thin_file_n,non_thin_file_n,note
+thin_file_minus_non_thin_file,one_group_only,200,0,Delta unavailable because only one thin_file_group is present in eo_llm_df.

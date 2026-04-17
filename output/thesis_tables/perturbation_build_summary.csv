@@ -1,0 +1,2 @@
+n_source_rows,n_perturbed_rows,perturbations_per_row,perturbation_types,source_thin_file_rate
+100,300,3,"action_flip, thin_file_toggle, top1_sign_flip",0.83

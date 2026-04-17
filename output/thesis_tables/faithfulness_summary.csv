@@ -1,0 +1,2 @@
+n_rows,mean_overlap_at_5,mean_direction_accuracy,mean_action_consistency,mean_has_evidence_disclosure,thin_file_rate_in_eval,note
+200,1.0,1.0,1.0,1.0,1.0,Computed from merged EO/LLM evaluation frame.

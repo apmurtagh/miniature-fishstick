@@ -1,0 +1,6 @@
+metric,value
+n_eo_llm,200.0
+mean_overlap_at_5,1.0
+mean_direction_accuracy,1.0
+action_consistency_rate,1.0
+thin_file_rate,1.0

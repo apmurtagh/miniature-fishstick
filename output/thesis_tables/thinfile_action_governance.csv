@@ -1,0 +1,4 @@
+metric,value,interpretation
+action_consistency_rate,1.0,Narrative action matches EO recommended action.
+evidence_disclosure_rate,1.0,Thin-file evidence disclosure is present when required in sampled outputs.
+thin_file_action_valid_rate,0.0,"Under the stricter thin-file action-validity rule encoded in the artifact metrics, sampled outputs do not satisfy the thin-file action policy."

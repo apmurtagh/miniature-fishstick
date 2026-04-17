@@ -1,0 +1,4 @@
+perturbation_type,n_rows,action_change_rate,has_perturbed_llm,status
+action_flip,100,1.0,False,eo_only_partial
+thin_file_toggle,100,1.0,False,eo_only_partial
+top1_sign_flip,100,1.0,False,eo_only_partial
