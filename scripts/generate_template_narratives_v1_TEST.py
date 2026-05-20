@@ -6,8 +6,7 @@ from pathlib import Path
 from typing import Iterable
 
 from eo.evidence_object import EvidenceObject
-from src.narratives.template_engine import generate_template_narrative
-
+from narratives.template_engine import generate_template_narrative
 
 DEFAULT_RUN_DIR = Path("artifacts") / "baselines" / "lgbm_numeric_v1_subsample"
 DEFAULT_EOS_PATH = DEFAULT_RUN_DIR / "eos_test.jsonl"
