@@ -1,0 +1,49 @@
+{
+  "status": "run",
+  "source_model": "artifacts/baselines/lgbm_numeric_v1_subsample/model.txt",
+  "source_feature_matrix": "artifacts/baselines/lgbm_numeric_v1_subsample/X_test.parquet",
+  "rows_sampled": 1000,
+  "mask_rates": [
+    0.0,
+    0.3,
+    0.6
+  ],
+  "summary_rows": [
+    {
+      "mask_rate": 0.0,
+      "rows": 1000,
+      "mean_base_score": 0.04049087607994536,
+      "mean_masked_score": 0.04049087607994536,
+      "mean_abs_score_delta": 0.0,
+      "action_change_rate": 0.0,
+      "step_up_or_review_rate": 0.022,
+      "high_risk_rate": 0.008
+    },
+    {
+      "mask_rate": 0.3,
+      "rows": 1000,
+      "mean_base_score": 0.04049087607994536,
+      "mean_masked_score": 0.026666923644846924,
+      "mean_abs_score_delta": 0.026857083777090025,
+      "action_change_rate": 0.02,
+      "step_up_or_review_rate": 0.007,
+      "high_risk_rate": 0.0
+    },
+    {
+      "mask_rate": 0.6,
+      "rows": 1000,
+      "mean_base_score": 0.04049087607994536,
+      "mean_masked_score": 0.03315752146915359,
+      "mean_abs_score_delta": 0.027998203621168248,
+      "action_change_rate": 0.021,
+      "step_up_or_review_rate": 0.011,
+      "high_risk_rate": 0.0
+    }
+  ],
+  "caveat": "This is an inference-only feature-masking re-score using a persisted model-ready feature matrix. It is a controlled robustness stress test, not a production enrichment-outage simulation.",
+  "outputs": {
+    "csv": "artifacts/baselines/lgbm_numeric_v1_subsample/feature_masking_rescore/feature_masking_rescore_1000.csv",
+    "md": "artifacts/baselines/lgbm_numeric_v1_subsample/feature_masking_rescore/feature_masking_rescore_summary.md",
+    "json": "artifacts/baselines/lgbm_numeric_v1_subsample/feature_masking_rescore/feature_masking_rescore_summary.json"
+  }
+}

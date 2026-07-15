@@ -1,0 +1,27 @@
+{
+  "status": "created",
+  "source": "artifacts/data_cache/joined_train.parquet",
+  "seed": 42,
+  "n_rows": {
+    "train": 50000,
+    "val": 20000,
+    "test": 20000
+  },
+  "n_features": 40,
+  "outputs": {
+    "X_test": "artifacts/baselines/lgbm_numeric_v1_subsample/X_test.parquet",
+    "y_test": "artifacts/baselines/lgbm_numeric_v1_subsample/y_test_model_ready.csv",
+    "feature_medians": "artifacts/baselines/lgbm_numeric_v1_subsample/feature_medians_train_only.csv"
+  },
+  "prediction_id_match": {
+    "same_length": true,
+    "exact_order_match": true,
+    "matched_positions": 20000
+  },
+  "prediction_reproduction": {
+    "max_abs_diff": 1.1102230246251565e-16,
+    "mean_abs_diff": 4.750448691641547e-17,
+    "close_at_1e_10": true,
+    "close_at_1e_6": true
+  }
+}
