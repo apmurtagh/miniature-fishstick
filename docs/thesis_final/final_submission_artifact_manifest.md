@@ -40,3 +40,14 @@ The original 5,753-row LLM run is retained as historical/intermediate evidence. 
 ## Git policy
 
 Large `.jsonl`, `.parquet`, raw data, model files and full generated outputs should generally remain untracked unless deliberately archived through a release package or external storage. Source scripts, notebooks, runbooks and lightweight summaries should be committed.
+
+## Optional Cross-Domain and Graph Portability Extension
+
+| Artefact | Purpose |
+|---|---|
+| `docs/thesis_final/cross_domain_graph_portability_extension.md` | Protocol-level cyber, crypto and entity-graph/GNN portability extension |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/cross_domain_graph_portability/cross_domain_graph_portability_summary.md` | Lightweight summary of the cross-domain portability extension |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/cross_domain_graph_portability/cross_domain_graph_portability_examples.jsonl` | Tiny illustrative EO examples for cyber, crypto and graph contexts |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/cross_domain_graph_portability/cross_domain_graph_portability_status.json` | Status metadata for the optional extension |
+
+This optional extension addresses cyber portability, crypto portability and the entity-graph/GNN enhancement at protocol level only. It does not claim trained cross-domain model performance.
