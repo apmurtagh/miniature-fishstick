@@ -1,0 +1,15 @@
+{
+  "status": "protocol_extension_created",
+  "items_addressed": [
+    "cyber portability slice",
+    "crypto portability slice",
+    "optional entity-graph/GNN enhancement"
+  ],
+  "claim_level": "protocol portability only",
+  "model_performance_claim": false,
+  "outputs": {
+    "summary_md": "artifacts/baselines/lgbm_numeric_v1_subsample/cross_domain_graph_portability/cross_domain_graph_portability_summary.md",
+    "examples_jsonl": "artifacts/baselines/lgbm_numeric_v1_subsample/cross_domain_graph_portability/cross_domain_graph_portability_examples.jsonl",
+    "docs_md": "docs/thesis_final/cross_domain_graph_portability_extension.md"
+  }
+}
