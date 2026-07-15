@@ -83,3 +83,26 @@ build/
 # -----------------------
 # Baseline reports (generated)
 artifacts/baselines/**/report_v*.csv
+
+# --- Final thesis hygiene: generated/heavy artefacts ---
+data/
+*.parquet
+*.pkl
+*.joblib
+
+# Large generated EO / narrative / audit outputs
+artifacts/**/*.jsonl
+
+# Large generated models and logs
+artifacts/**/model.txt
+artifacts/**/tmp_*
+artifacts/**/*.log
+artifacts/**/nohup*.log
+
+# Allow selected lightweight final summaries/manifests
+!artifacts/**/*summary*.md
+!artifacts/**/*summary*.json
+!artifacts/**/*metrics*.csv
+!artifacts/**/*manifest*.json
+!artifacts/**/thin_file_re_score_attempt_closure.md
+!artifacts/**/eo_protocol_portability_appendix.md
