@@ -62,3 +62,14 @@ This optional extension addresses cyber portability, crypto portability and the 
 | `artifacts/baselines/lgbm_numeric_v1_subsample/semantic_validator_proxy/semantic_validator_proxy_summary.json` | Semantic validator proxy result metadata |
 
 These artefacts strengthen non-human governance evidence without claiming human semantic validation, production monitoring or trained cross-domain model performance.
+
+## Final Closure and Claim-Calibration Artefacts
+
+| Artefact | Purpose |
+|---|---|
+| `docs/thesis_final/rq_hypothesis_disposition.md` | Explicitly closes RQs and hypotheses as supported, partially supported, operationalised or not directly tested |
+| `docs/thesis_final/validator_acceptance_policy.md` | Clarifies clean acceptance, flagged acceptance, hard failure, fallback and audit-complete use |
+| `docs/thesis_final/direction_proxy_interpretation.md` | Explains the 0.3282 direction-proxy result as a conservative review flag |
+| `docs/thesis_final/feature_masking_sample_rationale.md` | Explains why the completed feature-masking re-score used a 1,000-row sample |
+
+These artefacts close the remaining proposal-to-thesis interpretation gaps without adding unsupported claims.
