@@ -51,3 +51,14 @@ Large `.jsonl`, `.parquet`, raw data, model files and full generated outputs sho
 | `artifacts/baselines/lgbm_numeric_v1_subsample/cross_domain_graph_portability/cross_domain_graph_portability_status.json` | Status metadata for the optional extension |
 
 This optional extension addresses cyber portability, crypto portability and the entity-graph/GNN enhancement at protocol level only. It does not claim trained cross-domain model performance.
+
+## Final Low-Effort Governance Uplifts
+
+| Artefact | Purpose |
+|---|---|
+| `docs/thesis_final/final_governance_controls_runbook.md` | Drift threshold policy, production outage simulation design and graph/GNN checklist |
+| `scripts/semantic_validator_proxy.py` | Lightweight rule-based semantic validator proxy |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/semantic_validator_proxy/semantic_validator_proxy_summary.md` | Semantic validator proxy result summary |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/semantic_validator_proxy/semantic_validator_proxy_summary.json` | Semantic validator proxy result metadata |
+
+These artefacts strengthen non-human governance evidence without claiming human semantic validation, production monitoring or trained cross-domain model performance.

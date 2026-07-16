@@ -1,0 +1,11 @@
+{
+  "rows_evaluated": 20000,
+  "risk_present_rate": 1.0,
+  "action_present_rate": 1.0,
+  "any_driver_mentioned_rate": 1.0,
+  "disclosure_required_rows": 15818,
+  "disclosure_present_when_required_rate": 1.0,
+  "direction_proxy_applicable_rows": 20000,
+  "direction_proxy_ok_rate_when_applicable": 0.32825,
+  "caveat": "This is a lightweight rule-based proxy. It strengthens automated semantic checks but does not replace human semantic review or formal natural language inference."
+}
