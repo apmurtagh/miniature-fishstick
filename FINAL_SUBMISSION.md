@@ -9,8 +9,8 @@ This repository supports the final MSc thesis submission for:
 | Item | Value |
 |---|---|
 | Final branch | `proposal-gap-uplift-20260713_100844` |
-| Final tag | `thesis-final-v23-proxy-cohort-diagnostics-20260717` |
-| Prior evidence tag | `thesis-final-v23-proxy-cohort-diagnostics-20260717` |
+| Final tag | `thesis-final-v24-h2-ablation-pilot-20260717` |
+| Prior evidence tag | `thesis-final-v24-h2-ablation-pilot-20260717` |
 | Pull request | `#13 Final thesis reproducibility and governance artefacts` |
 | Notebook | `notebooks/governance_ready_fraud_decisioning_end_to_end_reproduction.ipynb` |
 | Artefact manifest | `docs/thesis_final/final_submission_artifact_manifest.md` |
@@ -44,6 +44,7 @@ The central empirical finding is the distinction between:
 | Drift | Offline TransactionDT drift diagnostics |
 | Optional portability | Cyber, crypto and graph/GNN extension at protocol level only |
 | Proxy cohort diagnostics | Operational proxy cohort score/outcome diagnostics added; not a fairness audit or fairness-performance claim |
+| H2 unconstrained ablation pilot | Bounded 100-row same-EO comparison: constrained driver coverage 0.690 vs unconstrained 0.432; unconstrained zero-driver rows 27 and review-language flag rate 0.640; automated, not human semantic validation |
 
 ## Claim Boundaries
 
@@ -70,7 +71,7 @@ PYTHONPATH=src pytest -q tests/test_final_thesis_hygiene.py
 Expected result:
 
 ```text
-11 passed
+12 passed
 ```
 
 ## Productisation Path

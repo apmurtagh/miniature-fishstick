@@ -1,0 +1,2052 @@
+{
+  "status": "run_complete",
+  "model": "gpt-4o-mini",
+  "rows_completed": 100,
+  "rows_target": 100,
+  "risk_present_rate": 1.0,
+  "action_present_rate": 1.0,
+  "any_driver_mentioned_rate": 0.73,
+  "mean_driver_coverage": 0.43200000000000005,
+  "zero_driver_rows": 27,
+  "disclosure_required_rows": 92,
+  "disclosure_present_when_required_rate": 1.0,
+  "review_language_flag_rate": 0.64,
+  "metrics": [
+    {
+      "event_id": "3488961",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "C5",
+        "C13"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 425,
+      "elapsed_seconds": 1.5741047859191895
+    },
+    {
+      "event_id": "3488968",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "C5",
+        "card5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "concern",
+        "concerns"
+      ],
+      "text_chars": 478,
+      "elapsed_seconds": 3.731386423110962
+    },
+    {
+      "event_id": "3488985",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "C14",
+        "C1",
+        "C9",
+        "card2"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 445,
+      "elapsed_seconds": 1.3660292625427246
+    },
+    {
+      "event_id": "3489002",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 1,
+      "mentioned_drivers": [
+        "D1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.2,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$",
+        "legitimacy"
+      ],
+      "text_chars": 456,
+      "elapsed_seconds": 1.5885405540466309
+    },
+    {
+      "event_id": "3489003",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 425,
+      "elapsed_seconds": 2.0170204639434814
+    },
+    {
+      "event_id": "3489005",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 425,
+      "elapsed_seconds": 1.4726176261901855
+    },
+    {
+      "event_id": "3489011",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "C8",
+        "D6"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": false,
+      "disclosure_present": null,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "concern",
+        "concerns",
+        "further investigation"
+      ],
+      "text_chars": 433,
+      "elapsed_seconds": 1.6514253616333008
+    },
+    {
+      "event_id": "3489016",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 395,
+      "elapsed_seconds": 1.5432472229003906
+    },
+    {
+      "event_id": "3489027",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "C5",
+        "card2",
+        "card1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 403,
+      "elapsed_seconds": 1.8710339069366455
+    },
+    {
+      "event_id": "3489028",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "card5",
+        "TransactionDT"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 430,
+      "elapsed_seconds": 1.3075237274169922
+    },
+    {
+      "event_id": "3489032",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$",
+        "legitimacy"
+      ],
+      "text_chars": 444,
+      "elapsed_seconds": 1.8054840564727783
+    },
+    {
+      "event_id": "3489035",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "C5",
+        "card5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 435,
+      "elapsed_seconds": 2.0097975730895996
+    },
+    {
+      "event_id": "3489037",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "C14",
+        "C1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 405,
+      "elapsed_seconds": 1.3441147804260254
+    },
+    {
+      "event_id": "3489046",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "further scrutiny"
+      ],
+      "text_chars": 484,
+      "elapsed_seconds": 1.701981544494629
+    },
+    {
+      "event_id": "3489048",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "C1",
+        "C14",
+        "C13",
+        "C4"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": false,
+      "disclosure_present": null,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 417,
+      "elapsed_seconds": 1.3058686256408691
+    },
+    {
+      "event_id": "3489049",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "D15",
+        "card5",
+        "TransactionAmt"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 432,
+      "elapsed_seconds": 1.3411149978637695
+    },
+    {
+      "event_id": "3489052",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "C14",
+        "TransactionDT",
+        "C13"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": false,
+      "disclosure_present": null,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 486,
+      "elapsed_seconds": 1.7614161968231201
+    },
+    {
+      "event_id": "3489059",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 5,
+      "mentioned_drivers": [
+        "C5",
+        "C2",
+        "C14",
+        "D5",
+        "C1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 1.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 473,
+      "elapsed_seconds": 1.2751152515411377
+    },
+    {
+      "event_id": "3489061",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 1,
+      "mentioned_drivers": [
+        "C5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.2,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 426,
+      "elapsed_seconds": 1.7231690883636475
+    },
+    {
+      "event_id": "3489063",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 5,
+      "mentioned_drivers": [
+        "C1",
+        "C14",
+        "D2",
+        "C9",
+        "C5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 1.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 408,
+      "elapsed_seconds": 1.5369858741760254
+    },
+    {
+      "event_id": "3489086",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 461,
+      "elapsed_seconds": 1.6877427101135254
+    },
+    {
+      "event_id": "3489092",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "D2",
+        "D1",
+        "C5",
+        "card5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 491,
+      "elapsed_seconds": 1.507812261581421
+    },
+    {
+      "event_id": "3489095",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "card2",
+        "card5",
+        "card1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy",
+        "concern",
+        "concerns"
+      ],
+      "text_chars": 501,
+      "elapsed_seconds": 1.6876518726348877
+    },
+    {
+      "event_id": "3489099",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 5,
+      "mentioned_drivers": [
+        "C14",
+        "C1",
+        "C9",
+        "C5",
+        "C13"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 1.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 466,
+      "elapsed_seconds": 1.4384512901306152
+    },
+    {
+      "event_id": "3489103",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 470,
+      "elapsed_seconds": 1.5834100246429443
+    },
+    {
+      "event_id": "3489105",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "C5",
+        "D2",
+        "C6",
+        "D1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "anomalies"
+      ],
+      "text_chars": 495,
+      "elapsed_seconds": 1.7695250511169434
+    },
+    {
+      "event_id": "3489109",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 451,
+      "elapsed_seconds": 1.4015672206878662
+    },
+    {
+      "event_id": "3489111",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "C5",
+        "card2",
+        "TransactionAmt",
+        "C13"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 460,
+      "elapsed_seconds": 1.3361821174621582
+    },
+    {
+      "event_id": "3489115",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "C5",
+        "D15"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 404,
+      "elapsed_seconds": 1.3179330825805664
+    },
+    {
+      "event_id": "3489116",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 439,
+      "elapsed_seconds": 1.3586483001708984
+    },
+    {
+      "event_id": "3489127",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 403,
+      "elapsed_seconds": 1.1893556118011475
+    },
+    {
+      "event_id": "3489132",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 1,
+      "mentioned_drivers": [
+        "C13"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.2,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 466,
+      "elapsed_seconds": 1.9515657424926758
+    },
+    {
+      "event_id": "3489133",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "D15",
+        "TransactionAmt"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 439,
+      "elapsed_seconds": 1.3620166778564453
+    },
+    {
+      "event_id": "3489136",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 5,
+      "mentioned_drivers": [
+        "D3",
+        "C5",
+        "addr1",
+        "C6",
+        "card2"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 1.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 492,
+      "elapsed_seconds": 1.8322689533233643
+    },
+    {
+      "event_id": "3489138",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "C9",
+        "C1",
+        "C5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 455,
+      "elapsed_seconds": 1.5697650909423828
+    },
+    {
+      "event_id": "3489146",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "C1",
+        "C9",
+        "C13"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 426,
+      "elapsed_seconds": 1.7033717632293701
+    },
+    {
+      "event_id": "3489147",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 464,
+      "elapsed_seconds": 1.3367981910705566
+    },
+    {
+      "event_id": "3489148",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 407,
+      "elapsed_seconds": 3.3983521461486816
+    },
+    {
+      "event_id": "3489149",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 446,
+      "elapsed_seconds": 1.586068868637085
+    },
+    {
+      "event_id": "3489152",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "card5",
+        "C5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$",
+        "legitimacy"
+      ],
+      "text_chars": 473,
+      "elapsed_seconds": 1.425954818725586
+    },
+    {
+      "event_id": "3489154",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "C1",
+        "C6",
+        "C14"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 427,
+      "elapsed_seconds": 1.281355381011963
+    },
+    {
+      "event_id": "3489159",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "card5",
+        "C6"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 426,
+      "elapsed_seconds": 1.383194923400879
+    },
+    {
+      "event_id": "3489180",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "D1",
+        "card5",
+        "addr1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 435,
+      "elapsed_seconds": 1.7119090557098389
+    },
+    {
+      "event_id": "3489188",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 437,
+      "elapsed_seconds": 1.363081932067871
+    },
+    {
+      "event_id": "3489193",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "card5",
+        "C5",
+        "D5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$",
+        "legitimacy"
+      ],
+      "text_chars": 448,
+      "elapsed_seconds": 1.760740041732788
+    },
+    {
+      "event_id": "3489197",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "D8",
+        "card5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": false,
+      "disclosure_present": null,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimate"
+      ],
+      "text_chars": 362,
+      "elapsed_seconds": 1.3272182941436768
+    },
+    {
+      "event_id": "3489202",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "C5",
+        "D2",
+        "card2"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 481,
+      "elapsed_seconds": 1.6655950546264648
+    },
+    {
+      "event_id": "3489204",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "C14",
+        "C5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": false,
+      "disclosure_present": null,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "concern",
+        "concerns"
+      ],
+      "text_chars": 434,
+      "elapsed_seconds": 1.7589969635009766
+    },
+    {
+      "event_id": "3489206",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "card5",
+        "TransactionDT"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy",
+        "concern"
+      ],
+      "text_chars": 481,
+      "elapsed_seconds": 1.4005577564239502
+    },
+    {
+      "event_id": "3489211",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "D8",
+        "card2"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": false,
+      "disclosure_present": null,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 417,
+      "elapsed_seconds": 1.3445255756378174
+    },
+    {
+      "event_id": "3489212",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "C9",
+        "card5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy",
+        "further scrutiny"
+      ],
+      "text_chars": 438,
+      "elapsed_seconds": 1.2824673652648926
+    },
+    {
+      "event_id": "3489214",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "D2",
+        "D3",
+        "card5",
+        "C5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 452,
+      "elapsed_seconds": 1.4133033752441406
+    },
+    {
+      "event_id": "3489220",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$",
+        "legitimacy"
+      ],
+      "text_chars": 429,
+      "elapsed_seconds": 1.4237840175628662
+    },
+    {
+      "event_id": "3489224",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 433,
+      "elapsed_seconds": 1.4763209819793701
+    },
+    {
+      "event_id": "3489230",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "D2",
+        "card5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 415,
+      "elapsed_seconds": 1.3494634628295898
+    },
+    {
+      "event_id": "3489237",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$",
+        "legitimacy"
+      ],
+      "text_chars": 467,
+      "elapsed_seconds": 1.6870520114898682
+    },
+    {
+      "event_id": "3489239",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "C1",
+        "C14",
+        "C9",
+        "C5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 421,
+      "elapsed_seconds": 1.4844400882720947
+    },
+    {
+      "event_id": "3489243",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$",
+        "legitimacy"
+      ],
+      "text_chars": 470,
+      "elapsed_seconds": 1.5021097660064697
+    },
+    {
+      "event_id": "3489251",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "D15",
+        "card1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 456,
+      "elapsed_seconds": 1.8190069198608398
+    },
+    {
+      "event_id": "3489253",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "C14",
+        "card5",
+        "C6"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 457,
+      "elapsed_seconds": 1.5445711612701416
+    },
+    {
+      "event_id": "3489260",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "D2",
+        "D1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 424,
+      "elapsed_seconds": 1.6732780933380127
+    },
+    {
+      "event_id": "3489261",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "D1",
+        "D2"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 522,
+      "elapsed_seconds": 2.1002395153045654
+    },
+    {
+      "event_id": "3489270",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "C14",
+        "C5",
+        "C9",
+        "C6"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 499,
+      "elapsed_seconds": 1.6452817916870117
+    },
+    {
+      "event_id": "3489272",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 418,
+      "elapsed_seconds": 1.9144961833953857
+    },
+    {
+      "event_id": "3489274",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "C14",
+        "C1",
+        "D2"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 412,
+      "elapsed_seconds": 1.2733104228973389
+    },
+    {
+      "event_id": "3489281",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "TransactionAmt",
+        "C1",
+        "D1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 426,
+      "elapsed_seconds": 1.3202953338623047
+    },
+    {
+      "event_id": "3489284",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 447,
+      "elapsed_seconds": 1.320131778717041
+    },
+    {
+      "event_id": "3489291",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "card1",
+        "card2",
+        "D3"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 438,
+      "elapsed_seconds": 1.641324520111084
+    },
+    {
+      "event_id": "3489294",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "C14",
+        "D15",
+        "C9",
+        "C5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 509,
+      "elapsed_seconds": 1.5936863422393799
+    },
+    {
+      "event_id": "3489299",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "C14",
+        "C5",
+        "C1",
+        "D15"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 454,
+      "elapsed_seconds": 1.327110767364502
+    },
+    {
+      "event_id": "3489301",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "C5",
+        "TransactionDT",
+        "TransactionAmt",
+        "D15"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 466,
+      "elapsed_seconds": 1.4405322074890137
+    },
+    {
+      "event_id": "3489306",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 5,
+      "mentioned_drivers": [
+        "C5",
+        "card2",
+        "D2",
+        "card5",
+        "D1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 1.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 461,
+      "elapsed_seconds": 1.8737564086914062
+    },
+    {
+      "event_id": "3489308",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 5,
+      "mentioned_drivers": [
+        "C14",
+        "C9",
+        "C1",
+        "D3",
+        "C5"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 1.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 460,
+      "elapsed_seconds": 1.931046962738037
+    },
+    {
+      "event_id": "3489309",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "card5",
+        "C5",
+        "card1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "anomalies"
+      ],
+      "text_chars": 468,
+      "elapsed_seconds": 1.5328419208526611
+    },
+    {
+      "event_id": "3489314",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 529,
+      "elapsed_seconds": 2.3479158878326416
+    },
+    {
+      "event_id": "3489315",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "D2",
+        "C5",
+        "D1",
+        "C9"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 499,
+      "elapsed_seconds": 1.810166358947754
+    },
+    {
+      "event_id": "3489321",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "C1",
+        "D3"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 430,
+      "elapsed_seconds": 1.4201719760894775
+    },
+    {
+      "event_id": "3489326",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "D8",
+        "card2",
+        "D6"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": false,
+      "disclosure_present": null,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "concern",
+        "concerns"
+      ],
+      "text_chars": 398,
+      "elapsed_seconds": 1.4741671085357666
+    },
+    {
+      "event_id": "3489329",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "C5",
+        "C14",
+        "card1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 465,
+      "elapsed_seconds": 1.457202672958374
+    },
+    {
+      "event_id": "3489333",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "D2",
+        "D1",
+        "C5",
+        "D3"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 466,
+      "elapsed_seconds": 1.551546335220337
+    },
+    {
+      "event_id": "3489336",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$",
+        "legitimacy"
+      ],
+      "text_chars": 430,
+      "elapsed_seconds": 1.4483239650726318
+    },
+    {
+      "event_id": "3489339",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "C9",
+        "D15",
+        "card2"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 445,
+      "elapsed_seconds": 1.43980073928833
+    },
+    {
+      "event_id": "3489341",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "D2",
+        "C5",
+        "D3",
+        "card2"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 482,
+      "elapsed_seconds": 1.3440029621124268
+    },
+    {
+      "event_id": "3489343",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": false,
+      "disclosure_present": null,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 371,
+      "elapsed_seconds": 2.102464199066162
+    },
+    {
+      "event_id": "3489344",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$",
+        "legitimacy"
+      ],
+      "text_chars": 460,
+      "elapsed_seconds": 1.239013910293579
+    },
+    {
+      "event_id": "3489354",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "card5",
+        "TransactionAmt"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 422,
+      "elapsed_seconds": 1.2911293506622314
+    },
+    {
+      "event_id": "3489364",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 403,
+      "elapsed_seconds": 1.2846980094909668
+    },
+    {
+      "event_id": "3489366",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 443,
+      "elapsed_seconds": 1.974332571029663
+    },
+    {
+      "event_id": "3489369",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "C1",
+        "C9",
+        "D15"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 501,
+      "elapsed_seconds": 1.7519361972808838
+    },
+    {
+      "event_id": "3489371",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "C5",
+        "D2",
+        "card5",
+        "TransactionDT"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 440,
+      "elapsed_seconds": 1.6398425102233887
+    },
+    {
+      "event_id": "3489375",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "C5",
+        "addr1",
+        "card2"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 461,
+      "elapsed_seconds": 1.5009377002716064
+    },
+    {
+      "event_id": "3489376",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "C5",
+        "C14",
+        "D2"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 368,
+      "elapsed_seconds": 1.0487442016601562
+    },
+    {
+      "event_id": "3489379",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "C14",
+        "D4"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 396,
+      "elapsed_seconds": 1.7001168727874756
+    },
+    {
+      "event_id": "3489384",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 0,
+      "mentioned_drivers": [],
+      "any_driver_mentioned": false,
+      "driver_coverage": 0.0,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "$"
+      ],
+      "text_chars": 433,
+      "elapsed_seconds": 1.4972889423370361
+    },
+    {
+      "event_id": "3489394",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "C14",
+        "C1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 488,
+      "elapsed_seconds": 1.5918605327606201
+    },
+    {
+      "event_id": "3489397",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "C14",
+        "D4"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": true,
+      "review_language_terms": [
+        "legitimacy"
+      ],
+      "text_chars": 407,
+      "elapsed_seconds": 1.1613540649414062
+    },
+    {
+      "event_id": "3489398",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "D3",
+        "D1",
+        "D15"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 468,
+      "elapsed_seconds": 1.6590335369110107
+    },
+    {
+      "event_id": "3489400",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 4,
+      "mentioned_drivers": [
+        "C9",
+        "D2",
+        "addr1",
+        "card1"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.8,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 481,
+      "elapsed_seconds": 1.5341477394104004
+    },
+    {
+      "event_id": "3489401",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 2,
+      "mentioned_drivers": [
+        "card1",
+        "D2"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.4,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 459,
+      "elapsed_seconds": 1.4160406589508057
+    },
+    {
+      "event_id": "3489409",
+      "risk_present": true,
+      "action_present": true,
+      "driver_count": 5,
+      "mentioned_driver_count": 3,
+      "mentioned_drivers": [
+        "C5",
+        "D15",
+        "D3"
+      ],
+      "any_driver_mentioned": true,
+      "driver_coverage": 0.6,
+      "disclosure_required": true,
+      "disclosure_present": true,
+      "review_language_flag": false,
+      "review_language_terms": [],
+      "text_chars": 454,
+      "elapsed_seconds": 1.4110536575317383
+    }
+  ],
+  "caveat": "One-hundred-row unconstrained ablation. Interpretation remains automated and proxy-based, not human semantic validation."
+}

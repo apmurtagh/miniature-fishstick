@@ -138,3 +138,16 @@ This summary converts the 800-output regeneration experiment into quantitative e
 | `artifacts/baselines/lgbm_numeric_v1_subsample/proxy_cohort_diagnostics/proxy_cohort_diagnostics_by_group.csv` | Group-level proxy cohort diagnostic table |
 
 This diagnostic addresses the proposal's proxy-disparity theme while explicitly avoiding protected-class fairness claims.
+
+## H2 Unconstrained Ablation Pilot
+
+| Artefact | Purpose |
+|---|---|
+| `docs/thesis_final/h2_unconstrained_ablation_pilot.md` | Thesis-facing bounded H2 ablation summary |
+| `scripts/compare_h2_unconstrained_vs_constrained_100.py` | Same-row constrained vs unconstrained 100-row comparison script |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/h2_unconstrained_ablation/h2_unconstrained_summary_100.md` | Unconstrained 100-row ablation summary |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/h2_unconstrained_ablation/h2_unconstrained_summary_100.json` | Machine-readable unconstrained 100-row ablation metrics |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/h2_unconstrained_ablation/h2_unconstrained_vs_constrained_summary_100.md` | Same-row constrained vs unconstrained comparison summary |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/h2_unconstrained_ablation/h2_unconstrained_vs_constrained_summary_100.json` | Machine-readable same-row H2 comparison |
+
+This bounded 100-row automated ablation addresses the proposal's H2 / Condition C theme while remaining explicitly proxy-based and not human semantic validation.

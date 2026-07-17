@@ -19,7 +19,7 @@ def test_readme_final_submission_pointer_is_current():
     readme = read_text(ROOT / "README.md")
 
     assert "proposal-gap-uplift-20260713_100844" in readme
-    assert "thesis-final-v23-proxy-cohort-diagnostics-20260717" in readme
+    assert "thesis-final-v24-h2-ablation-pilot-20260717" in readme
     assert "notebooks/governance_ready_fraud_decisioning_end_to_end_reproduction.ipynb" in readme
     assert "docs/thesis_final/final_submission_artifact_manifest.md" in readme
     assert "20,000-row constrained LLM robustness run" in readme
@@ -155,10 +155,10 @@ def test_governance_controls_runbook_is_present_and_non_production_claim():
 def test_final_submission_entrypoint_and_verification_manifest_exist():
     final_submission = read_text(ROOT / "FINAL_SUBMISSION.md")
     assert "Final MSc Thesis Submission Package" in final_submission
-    assert "thesis-final-v23-proxy-cohort-diagnostics-20260717" in final_submission
+    assert "thesis-final-v24-h2-ablation-pilot-20260717" in final_submission
     assert "Operations-summary acceptance" in final_submission
     assert "Audit-complete evidence rendering" in final_submission
-    assert "11 passed" in final_submission
+    assert "12 passed" in final_submission
 
     verification_md = read_text(DOCS / "excluded_artifact_verification_manifest.md")
     assert "Excluded Artefact Verification Manifest" in verification_md
@@ -244,4 +244,48 @@ def test_proxy_cohort_diagnostics_exist_and_are_bounded():
     assert "not a fairness audit" in text
     assert "not fairness-performance evidence" in text
     assert "protected-class labels" in text
+
+
+def test_h2_unconstrained_ablation_pilot_exists_and_is_bounded():
+    h2_json = ART / "h2_unconstrained_ablation" / "h2_unconstrained_vs_constrained_summary_100.json"
+    h2_md = ART / "h2_unconstrained_ablation" / "h2_unconstrained_vs_constrained_summary_100.md"
+    unconstrained_json = ART / "h2_unconstrained_ablation" / "h2_unconstrained_summary_100.json"
+    unconstrained_md = ART / "h2_unconstrained_ablation" / "h2_unconstrained_summary_100.md"
+    doc_md = DOCS / "h2_unconstrained_ablation_pilot.md"
+
+    assert h2_json.exists()
+    assert h2_md.exists()
+    assert unconstrained_json.exists()
+    assert unconstrained_md.exists()
+    assert doc_md.exists()
+
+    result = read_json(h2_json)
+    assert result["status"] == "pilot_comparison"
+    assert result["rows_requested"] == 100
+    assert result["rows_with_constrained_match"] == 100
+
+    constrained = result["condition_summaries"]["constrained"]
+    unconstrained = result["condition_summaries"]["unconstrained"]
+
+    assert constrained["rows"] == 100
+    assert unconstrained["rows"] == 100
+    assert constrained["risk_present_rate"] == 1.0
+    assert unconstrained["risk_present_rate"] == 1.0
+    assert constrained["action_present_rate"] == 1.0
+    assert unconstrained["action_present_rate"] == 1.0
+    assert constrained["disclosure_present_when_required_rate"] == 1.0
+    assert unconstrained["disclosure_present_when_required_rate"] == 1.0
+
+    assert abs(constrained["mean_driver_coverage"] - 0.69) < 1e-9
+    assert abs(unconstrained["mean_driver_coverage"] - 0.43200000000000005) < 1e-9
+    assert constrained["mean_driver_coverage"] > unconstrained["mean_driver_coverage"]
+
+    assert constrained["zero_driver_rows"] == 0
+    assert unconstrained["zero_driver_rows"] == 27
+    assert constrained["review_language_flag_rate"] == 0.01
+    assert unconstrained["review_language_flag_rate"] == 0.64
+
+    text = read_text(doc_md)
+    assert "bounded 100-row same-EO automated ablation" in text
+    assert "not human semantic validation" in text
 
