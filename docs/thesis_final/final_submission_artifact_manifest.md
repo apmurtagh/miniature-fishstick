@@ -126,3 +126,15 @@ This figure and CI summary make the central operations-summary versus audit-comp
 | `artifacts/baselines/lgbm_numeric_v1_subsample/regeneration_stability/rq2_stability_quantitative_summary.json` | Machine-readable RQ2 stability result |
 
 This summary converts the 800-output regeneration experiment into quantitative evidence for RQ2, including the randomised-driver evidence-following gap.
+
+## Proxy Cohort Diagnostics
+
+| Artefact | Purpose |
+|---|---|
+| `scripts/proxy_cohort_diagnostics.py` | Generates operational proxy cohort diagnostics over available IEEE-CIS fields |
+| `docs/thesis_final/proxy_cohort_diagnostics.md` | Thesis-facing proxy cohort diagnostics summary |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/proxy_cohort_diagnostics/proxy_cohort_diagnostics_summary.md` | Artefact-side proxy cohort diagnostics summary |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/proxy_cohort_diagnostics/proxy_cohort_diagnostics_summary.json` | Machine-readable proxy cohort diagnostics summary |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/proxy_cohort_diagnostics/proxy_cohort_diagnostics_by_group.csv` | Group-level proxy cohort diagnostic table |
+
+This diagnostic addresses the proposal's proxy-disparity theme while explicitly avoiding protected-class fairness claims.

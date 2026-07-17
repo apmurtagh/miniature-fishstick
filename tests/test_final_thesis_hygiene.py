@@ -19,7 +19,7 @@ def test_readme_final_submission_pointer_is_current():
     readme = read_text(ROOT / "README.md")
 
     assert "proposal-gap-uplift-20260713_100844" in readme
-    assert "thesis-final-v22-rq2-stability-20260717" in readme
+    assert "thesis-final-v23-proxy-cohort-diagnostics-20260717" in readme
     assert "notebooks/governance_ready_fraud_decisioning_end_to_end_reproduction.ipynb" in readme
     assert "docs/thesis_final/final_submission_artifact_manifest.md" in readme
     assert "20,000-row constrained LLM robustness run" in readme
@@ -155,10 +155,10 @@ def test_governance_controls_runbook_is_present_and_non_production_claim():
 def test_final_submission_entrypoint_and_verification_manifest_exist():
     final_submission = read_text(ROOT / "FINAL_SUBMISSION.md")
     assert "Final MSc Thesis Submission Package" in final_submission
-    assert "thesis-final-v22-rq2-stability-20260717" in final_submission
+    assert "thesis-final-v23-proxy-cohort-diagnostics-20260717" in final_submission
     assert "Operations-summary acceptance" in final_submission
     assert "Audit-complete evidence rendering" in final_submission
-    assert "10 passed" in final_submission
+    assert "11 passed" in final_submission
 
     verification_md = read_text(DOCS / "excluded_artifact_verification_manifest.md")
     assert "Excluded Artefact Verification Manifest" in verification_md
@@ -219,4 +219,29 @@ def test_rq2_stability_quantitative_summary_exists_and_supports_interpretation()
     text = read_text(doc_md)
     assert "Randomised evidence-following gap" in text
     assert "automated proxy rather than human semantic validation" in text
+
+
+def test_proxy_cohort_diagnostics_exist_and_are_bounded():
+    proxy_json = ART / "proxy_cohort_diagnostics" / "proxy_cohort_diagnostics_summary.json"
+    proxy_md = ART / "proxy_cohort_diagnostics" / "proxy_cohort_diagnostics_summary.md"
+    proxy_csv = ART / "proxy_cohort_diagnostics" / "proxy_cohort_diagnostics_by_group.csv"
+    doc_md = DOCS / "proxy_cohort_diagnostics.md"
+
+    assert proxy_json.exists()
+    assert proxy_md.exists()
+    assert proxy_csv.exists()
+    assert doc_md.exists()
+
+    result = read_json(proxy_json)
+    assert result["status"] == "run"
+    assert result["rows"] == 20000
+    assert "DeviceType" in result["fields_evaluated"]
+    assert "ProductCD" in result["fields_evaluated"]
+    assert result["min_group_n"] == 100
+    assert result["high_score_threshold_top5pct"] > 0
+
+    text = read_text(doc_md)
+    assert "not a fairness audit" in text
+    assert "not fairness-performance evidence" in text
+    assert "protected-class labels" in text
 
