@@ -19,7 +19,7 @@ def test_readme_final_submission_pointer_is_current():
     readme = read_text(ROOT / "README.md")
 
     assert "proposal-gap-uplift-20260713_100844" in readme
-    assert "thesis-final-v17-engineering-hygiene-20260716" in readme
+    assert "thesis-final-v20-submission-pack-20260717" in readme
     assert "notebooks/governance_ready_fraud_decisioning_end_to_end_reproduction.ipynb" in readme
     assert "docs/thesis_final/final_submission_artifact_manifest.md" in readme
     assert "20,000-row constrained LLM robustness run" in readme
@@ -150,3 +150,27 @@ def test_governance_controls_runbook_is_present_and_non_production_claim():
 
     for phrase in required:
         assert phrase in runbook
+
+
+def test_final_submission_entrypoint_and_verification_manifest_exist():
+    final_submission = read_text(ROOT / "FINAL_SUBMISSION.md")
+    assert "Final MSc Thesis Submission Package" in final_submission
+    assert "thesis-final-v20-submission-pack-20260717" in final_submission
+    assert "Operations-summary acceptance" in final_submission
+    assert "Audit-complete evidence rendering" in final_submission
+    assert "8 passed" in final_submission
+
+    verification_md = read_text(DOCS / "excluded_artifact_verification_manifest.md")
+    assert "Excluded Artefact Verification Manifest" in verification_md
+    assert "SHA-256" in verification_md
+    assert "test_predictions.csv" in verification_md
+    assert "narratives_ops_triage_llm_20000_resume_safe.jsonl" in verification_md
+
+    verification_json = read_json(DOCS / "excluded_artifact_verification_manifest.json")
+    assert "artifacts" in verification_json
+    assert len(verification_json["artifacts"]) >= 10
+
+    paths = {item["path"] for item in verification_json["artifacts"]}
+    assert "artifacts/baselines/lgbm_numeric_v1_subsample/test_predictions.csv" in paths
+    assert "artifacts/baselines/lgbm_numeric_v1_subsample/validator_policy_sensitivity/validator_policy_sensitivity_summary.json" in paths
+

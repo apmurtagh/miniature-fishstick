@@ -94,3 +94,13 @@ These notes strengthen the final thesis interpretation without expanding unsuppo
 | `artifacts/baselines/lgbm_numeric_v1_subsample/validator_policy_sensitivity/validator_policy_sensitivity_summary.json` | Machine-readable policy sensitivity result |
 
 This analysis quantifies the central governance trade-off: scalable operations-summary acceptance versus stricter audit-complete evidence rendering.
+
+## Final Submission Pack
+
+| Artefact | Purpose |
+|---|---|
+| `FINAL_SUBMISSION.md` | One-page final submission entry point for examiners, reviewers and future productisation |
+| `docs/thesis_final/excluded_artifact_verification_manifest.md` | Human-readable checksum, size and row-count manifest for excluded/generated artefacts |
+| `docs/thesis_final/excluded_artifact_verification_manifest.json` | Machine-readable checksum, size and row-count manifest |
+
+This final submission pack improves discoverability and traceability while preserving Git hygiene for heavy generated artefacts.

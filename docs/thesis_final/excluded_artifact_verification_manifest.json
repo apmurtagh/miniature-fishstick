@@ -1,0 +1,108 @@
+{
+  "artifacts": [
+    {
+      "path": "artifacts/baselines/lgbm_numeric_v1_subsample/metrics.json",
+      "exists": true,
+      "size_bytes": 893,
+      "sha256": "3797832c12b77bc5b62ba8f4fd8f023ca009569ce5c5445d3585640fb69623c6",
+      "row_count_if_text_table": null,
+      "note": "Available artefact or lightweight summary."
+    },
+    {
+      "path": "artifacts/baselines/lgbm_numeric_v1_subsample/test_predictions.csv",
+      "exists": true,
+      "size_bytes": 617048,
+      "sha256": "25ca5eaa89e407c613227fe4f3e54986231cde560d8d666e9277a9c935b0c498",
+      "row_count_if_text_table": 20000,
+      "note": "Available artefact or lightweight summary."
+    },
+    {
+      "path": "artifacts/baselines/lgbm_numeric_v1_subsample/model.txt",
+      "exists": true,
+      "size_bytes": 965497,
+      "sha256": "7537c119fc0b02dd4ffc28173ccc77495907a5c7f6f47815f06b9998cb0955e1",
+      "row_count_if_text_table": null,
+      "note": "Generated/heavy artefact; intentionally excluded from Git unless explicitly lightweight."
+    },
+    {
+      "path": "artifacts/baselines/lgbm_numeric_v1_subsample/X_test.parquet",
+      "exists": true,
+      "size_bytes": 719048,
+      "sha256": "908f4ee174b72a36feaabe7027998008ad9edeebdf8b9d8824b0bf0ca979612f",
+      "row_count_if_text_table": null,
+      "note": "Generated/heavy artefact; intentionally excluded from Git unless explicitly lightweight."
+    },
+    {
+      "path": "artifacts/baselines/lgbm_numeric_v1_subsample/model_ready_x_test_manifest.json",
+      "exists": true,
+      "size_bytes": 775,
+      "sha256": "b620d5a8981c76fa3caf494d480521109422c349e860062ca1d037f159a9f98c",
+      "row_count_if_text_table": null,
+      "note": "Available artefact or lightweight summary."
+    },
+    {
+      "path": "artifacts/baselines/lgbm_numeric_v1_subsample/narratives_ops_triage_template.jsonl",
+      "exists": true,
+      "size_bytes": 9117111,
+      "sha256": "e6e1cdb477bf0f4f8335bf9c5ec67a3079f0c20cf24964d3801dfafb67ba143a",
+      "row_count_if_text_table": 20000,
+      "note": "Generated/heavy artefact; intentionally excluded from Git unless explicitly lightweight."
+    },
+    {
+      "path": "artifacts/baselines/lgbm_numeric_v1_subsample/narratives_ops_triage_llm_5753rows_backup.jsonl",
+      "exists": true,
+      "size_bytes": 3963802,
+      "sha256": "15f4f4c8f7893410dfb669e2cc18cc8b46fbfea15148c0e0a0236c040f57a0fd",
+      "row_count_if_text_table": 5753,
+      "note": "Generated/heavy artefact; intentionally excluded from Git unless explicitly lightweight."
+    },
+    {
+      "path": "artifacts/baselines/lgbm_numeric_v1_subsample/llm_20000_robustness/narratives_ops_triage_llm_20000_resume_safe.jsonl",
+      "exists": true,
+      "size_bytes": 13702160,
+      "sha256": "948d3cb641b34b4ba694b284ca56bb6c06347090a1d5d88bc4da621a9e09c596",
+      "row_count_if_text_table": 20000,
+      "note": "Generated/heavy artefact; intentionally excluded from Git unless explicitly lightweight."
+    },
+    {
+      "path": "artifacts/baselines/lgbm_numeric_v1_subsample/llm_20000_robustness/llm_20000_attempt_audit.jsonl",
+      "exists": true,
+      "size_bytes": 9854089,
+      "sha256": "e1c355f77c482b3c52f94a35586bb225f390f374101e50185cd634ca607e1acb",
+      "row_count_if_text_table": 20000,
+      "note": "Generated/heavy artefact; intentionally excluded from Git unless explicitly lightweight."
+    },
+    {
+      "path": "artifacts/baselines/lgbm_numeric_v1_subsample/llm_20000_robustness/llm_20000_robustness_summary.json",
+      "exists": true,
+      "size_bytes": 324,
+      "sha256": "1fca5ee1a032e0235b5a92da6388a6fdf1dea10f779be93ecb6d71d550554ac2",
+      "row_count_if_text_table": null,
+      "note": "Available artefact or lightweight summary."
+    },
+    {
+      "path": "artifacts/baselines/lgbm_numeric_v1_subsample/feature_masking_rescore/feature_masking_rescore_summary.json",
+      "exists": true,
+      "size_bytes": 1762,
+      "sha256": "d9cb716832a66b425fd0c4249b2af31a58ae2f509531b4fd87b461e69429a82b",
+      "row_count_if_text_table": null,
+      "note": "Available artefact or lightweight summary."
+    },
+    {
+      "path": "artifacts/baselines/lgbm_numeric_v1_subsample/semantic_validator_proxy/semantic_validator_proxy_summary.json",
+      "exists": true,
+      "size_bytes": 484,
+      "sha256": "291266d1f8994ea1c8d1d47ddf598bdb481009b8a5f90b15abf154b35e5b3aab",
+      "row_count_if_text_table": null,
+      "note": "Available artefact or lightweight summary."
+    },
+    {
+      "path": "artifacts/baselines/lgbm_numeric_v1_subsample/validator_policy_sensitivity/validator_policy_sensitivity_summary.json",
+      "exists": true,
+      "size_bytes": 1686,
+      "sha256": "f8b560b5f88999fee50a9323114061b2e21f31ecf9f77e54c6a96f424ab4933b",
+      "row_count_if_text_table": null,
+      "note": "Available artefact or lightweight summary."
+    }
+  ]
+}
