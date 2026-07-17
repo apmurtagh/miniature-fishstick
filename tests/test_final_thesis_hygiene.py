@@ -19,7 +19,7 @@ def test_readme_final_submission_pointer_is_current():
     readme = read_text(ROOT / "README.md")
 
     assert "proposal-gap-uplift-20260713_100844" in readme
-    assert "thesis-final-v20-submission-pack-20260717" in readme
+    assert "thesis-final-v21-policy-figure-ci-20260717" in readme
     assert "notebooks/governance_ready_fraud_decisioning_end_to_end_reproduction.ipynb" in readme
     assert "docs/thesis_final/final_submission_artifact_manifest.md" in readme
     assert "20,000-row constrained LLM robustness run" in readme
@@ -155,10 +155,10 @@ def test_governance_controls_runbook_is_present_and_non_production_claim():
 def test_final_submission_entrypoint_and_verification_manifest_exist():
     final_submission = read_text(ROOT / "FINAL_SUBMISSION.md")
     assert "Final MSc Thesis Submission Package" in final_submission
-    assert "thesis-final-v20-submission-pack-20260717" in final_submission
+    assert "thesis-final-v21-policy-figure-ci-20260717" in final_submission
     assert "Operations-summary acceptance" in final_submission
     assert "Audit-complete evidence rendering" in final_submission
-    assert "8 passed" in final_submission
+    assert "9 passed" in final_submission
 
     verification_md = read_text(DOCS / "excluded_artifact_verification_manifest.md")
     assert "Excluded Artefact Verification Manifest" in verification_md
@@ -173,4 +173,26 @@ def test_final_submission_entrypoint_and_verification_manifest_exist():
     paths = {item["path"] for item in verification_json["artifacts"]}
     assert "artifacts/baselines/lgbm_numeric_v1_subsample/test_predictions.csv" in paths
     assert "artifacts/baselines/lgbm_numeric_v1_subsample/validator_policy_sensitivity/validator_policy_sensitivity_summary.json" in paths
+
+
+def test_validator_policy_figure_and_ci_outputs_exist():
+    ci_json = ART / "validator_policy_sensitivity" / "validator_policy_sensitivity_with_ci.json"
+    ci_md = ART / "validator_policy_sensitivity" / "validator_policy_sensitivity_with_ci.md"
+    fig = ART / "validator_policy_sensitivity" / "validator_policy_sensitivity_figure.svg"
+    doc_md = DOCS / "validator_policy_sensitivity_figure.md"
+
+    assert ci_json.exists()
+    assert ci_md.exists()
+    assert fig.exists()
+    assert doc_md.exists()
+
+    result = read_json(ci_json)
+    assert result["status"] == "run"
+    assert result["ci_method"] == "Wilson score interval, 95%"
+    assert len(result["policies"]) == 3
+
+    by_policy = {p["policy"]: p for p in result["policies"]}
+    assert by_policy["operations_summary"]["accepted_rows"] == 20000
+    assert by_policy["audit_complete_all_driver"]["accepted_rows"] == 7994
+    assert by_policy["direction_proxy_confirmed_review"]["accepted_rows"] == 6565
 

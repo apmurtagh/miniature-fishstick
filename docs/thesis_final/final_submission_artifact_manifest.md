@@ -104,3 +104,14 @@ This analysis quantifies the central governance trade-off: scalable operations-s
 | `docs/thesis_final/excluded_artifact_verification_manifest.json` | Machine-readable checksum, size and row-count manifest |
 
 This final submission pack improves discoverability and traceability while preserving Git hygiene for heavy generated artefacts.
+
+## Validator Policy Sensitivity Figure and Confidence Intervals
+
+| Artefact | Purpose |
+|---|---|
+| `docs/thesis_final/validator_policy_sensitivity_figure.md` | Thesis-facing policy sensitivity figure and CI note |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/validator_policy_sensitivity/validator_policy_sensitivity_figure.svg` | Dependency-free headline policy sensitivity SVG figure |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/validator_policy_sensitivity/validator_policy_sensitivity_with_ci.md` | Artefact-side policy sensitivity confidence interval summary |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/validator_policy_sensitivity/validator_policy_sensitivity_with_ci.json` | Machine-readable policy sensitivity confidence interval result |
+
+This figure and CI summary make the central operations-summary versus audit-complete governance trade-off visually and statistically explicit.

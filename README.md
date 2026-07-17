@@ -380,7 +380,7 @@ This is the execution pattern used throughout repository validation and testing.
 Final dissertation/reproducibility state:
 
 - Branch: `proposal-gap-uplift-20260713_100844`
-- Final tag: `thesis-final-v20-submission-pack-20260717`
+- Final tag: `thesis-final-v21-policy-figure-ci-20260717`
 - Final commit: resolved by final tag
 - Pull request: `#13 Final thesis reproducibility and governance artefacts`
 - Notebook: `notebooks/governance_ready_fraud_decisioning_end_to_end_reproduction.ipynb`
