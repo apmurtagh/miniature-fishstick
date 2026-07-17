@@ -83,3 +83,14 @@ These artefacts close the remaining proposal-to-thesis interpretation gaps witho
 | `docs/thesis_final/baseline_and_calibration_scope.md` | Clarifies that the LightGBM baseline is a sufficient testbed, not a state-of-the-art or production model claim |
 
 These notes strengthen the final thesis interpretation without expanding unsupported empirical claims.
+
+## Validator Policy Sensitivity Analysis
+
+| Artefact | Purpose |
+|---|---|
+| `scripts/validator_policy_sensitivity.py` | Quantifies operations-summary, audit-complete and direction-proxy-confirmed validation policies |
+| `docs/thesis_final/validator_policy_sensitivity.md` | Thesis-facing validator policy sensitivity summary |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/validator_policy_sensitivity/validator_policy_sensitivity_summary.md` | Artefact-side policy sensitivity summary |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/validator_policy_sensitivity/validator_policy_sensitivity_summary.json` | Machine-readable policy sensitivity result |
+
+This analysis quantifies the central governance trade-off: scalable operations-summary acceptance versus stricter audit-complete evidence rendering.
