@@ -73,3 +73,13 @@ These artefacts strengthen non-human governance evidence without claiming human 
 | `docs/thesis_final/feature_masking_sample_rationale.md` | Explains why the completed feature-masking re-score used a 1,000-row sample |
 
 These artefacts close the remaining proposal-to-thesis interpretation gaps without adding unsupported claims.
+
+## Final Metric and Interpretation Notes
+
+| Artefact | Purpose |
+|---|---|
+| `docs/thesis_final/metric_definitions_and_interpretation.md` | Defines driver precision, driver coverage/recall, top-k overlap, direction proxy, action consistency and disclosure compliance |
+| `docs/thesis_final/thin_file_masking_interpretation.md` | Interprets the completed 1,000-row feature-masking re-score and explains median-replacement score suppression |
+| `docs/thesis_final/baseline_and_calibration_scope.md` | Clarifies that the LightGBM baseline is a sufficient testbed, not a state-of-the-art or production model claim |
+
+These notes strengthen the final thesis interpretation without expanding unsupported empirical claims.
