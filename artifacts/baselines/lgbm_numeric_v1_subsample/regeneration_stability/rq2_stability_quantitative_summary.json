@@ -1,0 +1,65 @@
+{
+  "status": "run",
+  "total_regeneration_outputs": 800,
+  "variants": [
+    {
+      "variant": "original",
+      "rows": 200,
+      "variant_driver_overlap": 0.695,
+      "original_driver_overlap": 0.695,
+      "all_variant_drivers_rate": 0.43,
+      "at_least_one_variant_driver_rate": 1.0,
+      "risk_present_rate": 1.0,
+      "action_present_rate": 1.0,
+      "fallback_rate": 0.0
+    },
+    {
+      "variant": "driver_order_shuffled",
+      "rows": 200,
+      "variant_driver_overlap": 0.6970000000000001,
+      "original_driver_overlap": 0.6970000000000001,
+      "all_variant_drivers_rate": 0.41,
+      "at_least_one_variant_driver_rate": 1.0,
+      "risk_present_rate": 1.0,
+      "action_present_rate": 1.0,
+      "fallback_rate": 0.0
+    },
+    {
+      "variant": "magnitude_perturbed",
+      "rows": 200,
+      "variant_driver_overlap": 0.708,
+      "original_driver_overlap": 0.708,
+      "all_variant_drivers_rate": 0.425,
+      "at_least_one_variant_driver_rate": 1.0,
+      "risk_present_rate": 1.0,
+      "action_present_rate": 1.0,
+      "fallback_rate": 0.0
+    },
+    {
+      "variant": "randomised_drivers",
+      "rows": 200,
+      "variant_driver_overlap": 0.763,
+      "original_driver_overlap": 0.23900000000000002,
+      "all_variant_drivers_rate": 0.495,
+      "at_least_one_variant_driver_rate": 1.0,
+      "risk_present_rate": 1.0,
+      "action_present_rate": 1.0,
+      "fallback_rate": 0.0
+    }
+  ],
+  "stable_variants": [
+    "original",
+    "driver_order_shuffled",
+    "magnitude_perturbed"
+  ],
+  "stable_avg_variant_driver_overlap": 0.7000000000000001,
+  "stable_avg_original_driver_overlap": 0.7000000000000001,
+  "randomised_variant_driver_overlap": 0.763,
+  "randomised_original_driver_overlap": 0.23900000000000002,
+  "randomised_evidence_following_gap": 0.524,
+  "risk_present_all_variants": true,
+  "action_present_all_variants": true,
+  "fallback_zero_all_variants": true,
+  "interpretation": "Stable perturbations preserve decision framing and similar driver overlap. The randomised-driver variant follows the supplied randomised EO drivers more than the original drivers, which supports evidence sensitivity rather than generic narrative repetition.",
+  "caveat": "This is automated regeneration-based stability evidence. It does not replace human semantic review."
+}

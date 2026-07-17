@@ -19,7 +19,7 @@ def test_readme_final_submission_pointer_is_current():
     readme = read_text(ROOT / "README.md")
 
     assert "proposal-gap-uplift-20260713_100844" in readme
-    assert "thesis-final-v21-policy-figure-ci-20260717" in readme
+    assert "thesis-final-v22-rq2-stability-20260717" in readme
     assert "notebooks/governance_ready_fraud_decisioning_end_to_end_reproduction.ipynb" in readme
     assert "docs/thesis_final/final_submission_artifact_manifest.md" in readme
     assert "20,000-row constrained LLM robustness run" in readme
@@ -155,10 +155,10 @@ def test_governance_controls_runbook_is_present_and_non_production_claim():
 def test_final_submission_entrypoint_and_verification_manifest_exist():
     final_submission = read_text(ROOT / "FINAL_SUBMISSION.md")
     assert "Final MSc Thesis Submission Package" in final_submission
-    assert "thesis-final-v21-policy-figure-ci-20260717" in final_submission
+    assert "thesis-final-v22-rq2-stability-20260717" in final_submission
     assert "Operations-summary acceptance" in final_submission
     assert "Audit-complete evidence rendering" in final_submission
-    assert "9 passed" in final_submission
+    assert "10 passed" in final_submission
 
     verification_md = read_text(DOCS / "excluded_artifact_verification_manifest.md")
     assert "Excluded Artefact Verification Manifest" in verification_md
@@ -195,4 +195,28 @@ def test_validator_policy_figure_and_ci_outputs_exist():
     assert by_policy["operations_summary"]["accepted_rows"] == 20000
     assert by_policy["audit_complete_all_driver"]["accepted_rows"] == 7994
     assert by_policy["direction_proxy_confirmed_review"]["accepted_rows"] == 6565
+
+
+def test_rq2_stability_quantitative_summary_exists_and_supports_interpretation():
+    rq2_json = ART / "regeneration_stability" / "rq2_stability_quantitative_summary.json"
+    rq2_md = ART / "regeneration_stability" / "rq2_stability_quantitative_summary.md"
+    doc_md = DOCS / "rq2_stability_quantitative_summary.md"
+
+    assert rq2_json.exists()
+    assert rq2_md.exists()
+    assert doc_md.exists()
+
+    result = read_json(rq2_json)
+    assert result["status"] == "run"
+    assert result["total_regeneration_outputs"] == 800
+    assert result["risk_present_all_variants"] is True
+    assert result["action_present_all_variants"] is True
+    assert result["fallback_zero_all_variants"] is True
+    assert result["randomised_variant_driver_overlap"] == 0.763
+    assert result["randomised_original_driver_overlap"] == 0.23900000000000002
+    assert result["randomised_evidence_following_gap"] > 0.5
+
+    text = read_text(doc_md)
+    assert "Randomised evidence-following gap" in text
+    assert "automated proxy rather than human semantic validation" in text
 

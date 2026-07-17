@@ -9,8 +9,8 @@ This repository supports the final MSc thesis submission for:
 | Item | Value |
 |---|---|
 | Final branch | `proposal-gap-uplift-20260713_100844` |
-| Final tag | `thesis-final-v21-policy-figure-ci-20260717` |
-| Prior evidence tag | `thesis-final-v21-policy-figure-ci-20260717` |
+| Final tag | `thesis-final-v22-rq2-stability-20260717` |
+| Prior evidence tag | `thesis-final-v22-rq2-stability-20260717` |
 | Pull request | `#13 Final thesis reproducibility and governance artefacts` |
 | Notebook | `notebooks/governance_ready_fraud_decisioning_end_to_end_reproduction.ipynb` |
 | Artefact manifest | `docs/thesis_final/final_submission_artifact_manifest.md` |
@@ -40,7 +40,7 @@ The central empirical finding is the distinction between:
 | Fallbacks | 0 fallback rows under operations-summary policy |
 | Validator policy sensitivity | 20,000 operations-summary accepted; 7,994 audit-complete all-driver accepted; 6,565 direction-proxy-confirmed; SVG figure and Wilson 95% CIs added |
 | Feature masking | Exact model-ready `X_test` reconstruction plus 1,000-row masking re-score |
-| Stability | 800 regeneration outputs across perturbation variants |
+| Stability | 800 regeneration outputs across perturbation variants; quantitative RQ2 stability summary added |
 | Drift | Offline TransactionDT drift diagnostics |
 | Optional portability | Cyber, crypto and graph/GNN extension at protocol level only |
 
@@ -69,7 +69,7 @@ PYTHONPATH=src pytest -q tests/test_final_thesis_hygiene.py
 Expected result:
 
 ```text
-9 passed
+10 passed
 ```
 
 ## Productisation Path

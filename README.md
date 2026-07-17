@@ -380,7 +380,7 @@ This is the execution pattern used throughout repository validation and testing.
 Final dissertation/reproducibility state:
 
 - Branch: `proposal-gap-uplift-20260713_100844`
-- Final tag: `thesis-final-v21-policy-figure-ci-20260717`
+- Final tag: `thesis-final-v22-rq2-stability-20260717`
 - Final commit: resolved by final tag
 - Pull request: `#13 Final thesis reproducibility and governance artefacts`
 - Notebook: `notebooks/governance_ready_fraud_decisioning_end_to_end_reproduction.ipynb`
@@ -397,6 +397,7 @@ Final evidence base:
 - Completed 1,000-row inference-time feature-masking re-score using exact reconstructed model-ready `X_test`
 - Offline production-style drift diagnostics
 - Regeneration-based stability checks
+- Quantitative RQ2 stability summary
 - Protocol-level cyber, crypto and entity-graph/GNN portability extension
 
 Large generated artefacts are intentionally excluded from Git and documented in the final submission artefact manifest.

@@ -115,3 +115,14 @@ This final submission pack improves discoverability and traceability while prese
 | `artifacts/baselines/lgbm_numeric_v1_subsample/validator_policy_sensitivity/validator_policy_sensitivity_with_ci.json` | Machine-readable policy sensitivity confidence interval result |
 
 This figure and CI summary make the central operations-summary versus audit-complete governance trade-off visually and statistically explicit.
+
+## RQ2 Stability Quantitative Summary
+
+| Artefact | Purpose |
+|---|---|
+| `scripts/rq2_stability_quantitative_summary.py` | Generates quantitative RQ2 stability summary from regeneration-stability artefacts |
+| `docs/thesis_final/rq2_stability_quantitative_summary.md` | Thesis-facing RQ2 stability summary |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/regeneration_stability/rq2_stability_quantitative_summary.md` | Artefact-side RQ2 stability summary |
+| `artifacts/baselines/lgbm_numeric_v1_subsample/regeneration_stability/rq2_stability_quantitative_summary.json` | Machine-readable RQ2 stability result |
+
+This summary converts the 800-output regeneration experiment into quantitative evidence for RQ2, including the randomised-driver evidence-following gap.
