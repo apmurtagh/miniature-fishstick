@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "source_file": "artifacts/baselines/lgbm_numeric_v1_subsample/h2_unconstrained_ablation/h2_unconstrained_vs_constrained_summary_100.json",
+  "n_pairs": 100,
+  "coverage": {
+    "constrained_mean": 0.69,
+    "unconstrained_mean": 0.43200000000000005,
+    "paired_mean_difference_constrained_minus_unconstrained": 0.258,
+    "paired_bootstrap_95_ci": [
+      0.18,
+      0.336
+    ],
+    "n_boot": 10000,
+    "seed": 20260722
+  },
+  "zero_driver_mcnemar": {
+    "constrained_false_unconstrained_true": 27,
+    "constrained_true_unconstrained_false": 0,
+    "discordant_pairs": 27,
+    "exact_two_sided_p": 1.4901161193847656e-08
+  },
+  "review_language_mcnemar": {
+    "constrained_false_unconstrained_true": 64,
+    "constrained_true_unconstrained_false": 1,
+    "discordant_pairs": 65,
+    "exact_two_sided_p": 1.1633489310769463e-16
+  },
+  "caveat": "Exploratory same-EO paired automated uncertainty check; not human semantic validation or population-level proof."
+}
