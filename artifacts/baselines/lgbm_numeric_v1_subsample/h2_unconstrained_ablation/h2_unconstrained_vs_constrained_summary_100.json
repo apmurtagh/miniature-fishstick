@@ -1,0 +1,4217 @@
+{
+  "status": "pilot_comparison",
+  "rows_requested": 100,
+  "rows_with_constrained_match": 100,
+  "condition_summaries": {
+    "constrained": {
+      "rows": 100,
+      "risk_present_rate": 1.0,
+      "action_present_rate": 1.0,
+      "any_driver_mentioned_rate": 1.0,
+      "mean_driver_coverage": 0.69,
+      "zero_driver_rows": 0,
+      "disclosure_required_rows": 92,
+      "disclosure_present_when_required_rate": 1.0,
+      "review_language_flag_rate": 0.01,
+      "mean_text_chars": 319.05
+    },
+    "unconstrained": {
+      "rows": 100,
+      "risk_present_rate": 1.0,
+      "action_present_rate": 1.0,
+      "any_driver_mentioned_rate": 0.73,
+      "mean_driver_coverage": 0.43200000000000005,
+      "zero_driver_rows": 27,
+      "disclosure_required_rows": 92,
+      "disclosure_present_when_required_rate": 1.0,
+      "review_language_flag_rate": 0.64,
+      "mean_text_chars": 446.23
+    }
+  },
+  "row_metrics": [
+    {
+      "event_id": "3488961",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C5",
+          "C13"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 425
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "TransactionAmt",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 275
+      },
+      "unconstrained_text": "The transaction with event ID 3488961 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence for this assessment. Key evidence drivers include a transaction amount of $209.95 and notable changes in categories C5 and C13. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.006). Low risk transaction flagged with limited evidence due to thin file status. Top risk-increasing drivers: TransactionAmt. Top risk-decreasing drivers: C5. limited evidence: thin file flag true and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3488968",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C5",
+          "card5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "concern",
+          "concerns"
+        ],
+        "text_chars": 478
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C5",
+          "C9"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 309
+      },
+      "unconstrained_text": "The transaction with event ID 3488968 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence for this assessment. The most relevant evidence drivers include a significant negative magnitude for C5 and card5, suggesting potential concerns, but the overall risk remains low. Caution is advised due to the thin evidence supporting this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.001). The fraud risk is low with minimal evidence due to a thin file, supported by drivers C5 and C9 indicating mixed risk signals. Top risk-increasing drivers: C9. Top risk-decreasing drivers: C5. Limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3488985",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "C14",
+          "C1",
+          "C9",
+          "card2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 445
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C14",
+          "C5",
+          "C1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 274
+      },
+      "unconstrained_text": "The transaction with event ID 3488985 falls within the LOW risk band, with a recommended action to allow it. The evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence for this assessment. Key evidence drivers include a significant positive value from C1 and C9, alongside notable contributions from C14 and card2. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.005). Low fraud risk with weak evidence due to thin file, driven mainly by C14 and C5 factors. Top risk-decreasing drivers: C14, C5. Decision based on limited evidence as thin_file_flag is true and evidence_strength is LOW. Recommended action: allow."
+    },
+    {
+      "event_id": "3489002",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 1,
+        "mentioned_drivers": [
+          "D1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.2,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$",
+          "legitimacy"
+        ],
+        "text_chars": 456
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "D2",
+          "TransactionAmt",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 348
+      },
+      "unconstrained_text": "The transaction with event ID 3489002 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include a significant transaction amount of $160.40 and a notable value of $387.00 associated with D1, but caution is advised due to the overall weak evidence.",
+      "constrained_text": "Risk band: LOW (score 0.002). Low fraud risk with limited evidence due to thin file and low evidence strength; key factors include low D2 and C5, and moderate transaction amount. Top risk-increasing drivers: TransactionAmt. Top risk-decreasing drivers: D2, C5. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489003",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 425
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "card5",
+          "C5",
+          "D10",
+          "C13",
+          "TransactionDT"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 289
+      },
+      "unconstrained_text": "The transaction with event ID 3489003 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence available for this transaction. Key evidence drivers include a card value of 102.0 and a transaction timestamp of 13154755, but caution is advised due to the insufficient data coverage score of 0.34.",
+      "constrained_text": "Risk band: LOW (score 0.016). The transaction is assessed as low risk based on key drivers but limited evidence due to a thin file. Top risk-increasing drivers: card5, C5, D10, C13, TransactionDT. Limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489005",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 425
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "D1",
+          "D2",
+          "D3",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 413
+      },
+      "unconstrained_text": "The transaction with event ID 3489005 falls within the LOW risk band, with a recommended action to allow. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence for a robust assessment. Key evidence drivers include a significant transaction amount of $171 and opposing directional magnitudes related to other data points, which may warrant caution in decision-making.",
+      "constrained_text": "Risk band: LOW (score 0.038). The fraud risk is low based on the analysis, with primary drivers D1 and D3 increasing risk and D2 and D15 decreasing risk. The applicant has a thin file and evidence strength is low, limiting confidence in the decision. Top risk-increasing drivers: D1, D3. Top risk-decreasing drivers: D2, D15. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489011",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C8",
+          "D6"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "concern",
+          "concerns",
+          "further investigation"
+        ],
+        "text_chars": 433
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C8",
+          "D6"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 215
+      },
+      "unconstrained_text": "The transaction with event ID 3489011 falls within the LOW risk band, and the recommended action is to allow the transaction. The evidence strength is medium, supported by key drivers such as a positive C8 direction with a magnitude of 0.4656 and a negative D6 direction with a magnitude of 0.4105. Given the overall risk assessment and data coverage score of 0.85, there are no significant concerns warranting further investigation.",
+      "constrained_text": "Risk band: LOW (score 0.005). Low risk score with positive and negative contributing drivers supporting an allow decision. Top risk-increasing drivers: C8. Top risk-decreasing drivers: D6. Recommended action: allow."
+    },
+    {
+      "event_id": "3489016",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 395
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C5",
+          "D2",
+          "D5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 248
+      },
+      "unconstrained_text": "The transaction with event ID 3489016 falls within the LOW risk band, with a recommended action to allow the transaction. Key evidence drivers include a negative transaction amount and positive values in several dimensions, indicating mixed signals. However, the evidence strength is LOW, and the thin file flag is true, suggesting caution in the decision-making process due to limited evidence.",
+      "constrained_text": "Risk band: LOW (score 0.005). Low fraud risk with minimal supporting evidence due to limited data availability. Top risk-increasing drivers: D2, D5. Top risk-decreasing drivers: C5. limited evidence due to thin file flag. Recommended action: allow."
+    },
+    {
+      "event_id": "3489027",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C5",
+          "card2",
+          "card1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 403
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C5",
+          "card2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 280
+      },
+      "unconstrained_text": "The transaction with event ID 3489027 falls within the LOW risk band, with a recommended action to allow the transaction. Key evidence drivers include a significant value associated with card2 and notable magnitudes in C5 and card1. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating a caution due to limited evidence supporting the transaction's legitimacy.",
+      "constrained_text": "Risk band: LOW (score 0.003). Low risk score with contradictory driver impacts and limited evidence due to thin file status. Top risk-increasing drivers: card2. Top risk-decreasing drivers: C5. Limited evidence due to thin file or low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489028",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "card5",
+          "TransactionDT"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 430
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "card5",
+          "TransactionDT",
+          "C5",
+          "D15",
+          "D3"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 257
+      },
+      "unconstrained_text": "The transaction with event ID 3489028 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include a significant card5 magnitude and a notable TransactionDT value, but the overall data coverage score is only 0.34, warranting caution in proceeding.",
+      "constrained_text": "Risk band: LOW (score 0.007). Low risk transaction with limited evidence due to thin file status. Top risk-increasing drivers: TransactionDT, C5, D15. Top risk-decreasing drivers: card5, D3. limited evidence due to thin file flag. Recommended action: allow."
+    },
+    {
+      "event_id": "3489032",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$",
+          "legitimacy"
+        ],
+        "text_chars": 444
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "TransactionAmt",
+          "C5",
+          "TransactionDT",
+          "addr1",
+          "C13"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 358
+      },
+      "unconstrained_text": "The transaction with event ID 3489032 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include a transaction amount of $554.00 and various categorical values that suggest minimal risk. Caution is advised due to the thin evidence supporting this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.067). The fraud risk is low based on transaction amount, C5, transaction datetime, address, and C13. Limited evidence is noted due to thin file and low evidence strength. Top risk-increasing drivers: TransactionAmt, C5, TransactionDT, addr1, C13. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489035",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C5",
+          "card5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 435
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C5",
+          "TransactionAmt",
+          "card5",
+          "TransactionDT",
+          "dist1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 479
+      },
+      "unconstrained_text": "The transaction with event ID 3489035 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support a robust assessment. Key evidence drivers include a Transaction Amount of $130.95 and notable values for card5 and C5 metrics. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.006). The transaction is assessed as low risk with leading factors including lower scores from C5 and card5 and higher values in TransactionAmt, TransactionDT, and dist1. Due to limited evidence from the thin file and low evidence strength, caution is advised. Top risk-increasing drivers: TransactionAmt, TransactionDT, dist1. Top risk-decreasing drivers: C5, card5. Limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489037",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C14",
+          "C1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 405
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C14",
+          "C1",
+          "C9"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 276
+      },
+      "unconstrained_text": "The transaction with event ID 3489037 falls within the LOW risk band, with a score of 0.008. The recommended action is to allow the transaction, although the evidence strength is LOW and the thin_file_flag is true, indicating limited evidence. Key evidence drivers include significant values in C14 and C1, which suggest a mixed risk profile. Caution is advised due to the low data coverage score of 0.34.",
+      "constrained_text": "Risk band: LOW (score 0.008). Low risk score with mixed driver influences supports allowing the transaction. Top risk-increasing drivers: C1, C9. Top risk-decreasing drivers: C14. Limited evidence available due to thin file or low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489046",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "further scrutiny"
+        ],
+        "text_chars": 484
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "TransactionDT",
+          "card5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 349
+      },
+      "unconstrained_text": "The transaction with event ID 3489046 falls within the LOW risk band, with a score of 0.015. The recommended action is to allow the transaction, although caution is warranted due to the evidence strength being classified as LOW and the thin_file_flag being true. Key evidence drivers include a significant transaction value of 13,158,088 and notable variations in card and data attributes. Given the limited evidence, further scrutiny may be advisable despite the low risk assessment.",
+      "constrained_text": "Risk band: LOW (score 0.015). The fraud risk is low based on key drivers including TransactionDT and card5, but the evidence is limited due to a thin file and low evidence strength. Top risk-increasing drivers: TransactionDT. Top risk-decreasing drivers: card5. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489048",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "C1",
+          "C14",
+          "C13",
+          "C4"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 417
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C1",
+          "C14"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 237
+      },
+      "unconstrained_text": "The transaction with event ID 3489048 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is medium, supported by several relevant drivers, including a significant positive magnitude from C1 and C4, alongside notable negative contributions from C14 and C13. Overall, the data coverage score of 0.85 further reinforces the decision to proceed with the transaction.",
+      "constrained_text": "Risk band: LOW (score 0.187). Fraud risk is low based on multiple drivers indicating moderate risk without signs of evidence weakness or drift. Top risk-increasing drivers: C1. Top risk-decreasing drivers: C14. Recommended action: allow."
+    },
+    {
+      "event_id": "3489049",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "D15",
+          "card5",
+          "TransactionAmt"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 432
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C5",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 258
+      },
+      "unconstrained_text": "The transaction with event ID 3489049 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. Key evidence drivers include a significant negative magnitude for D15 and TransactionAmt, alongside positive contributions from card5. Caution is advised due to the thin evidence base.",
+      "constrained_text": "Risk band: LOW (score 0.002). Transaction assessed with low fraud risk; limited evidence due to thin file and low evidence strength. Top risk-decreasing drivers: C5, D15. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489052",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C14",
+          "TransactionDT",
+          "C13"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 486
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C14",
+          "TransactionDT",
+          "card5",
+          "C13",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 296
+      },
+      "unconstrained_text": "The transaction with event ID 3489052 falls within the LOW risk band, with a score of 0.0565, indicating a low likelihood of fraud. The recommended action is to allow the transaction, supported by evidence strength categorized as MED. Key evidence drivers include a significant positive direction from C14 and C13, both with values of 0.0, and a notable increase in TransactionDT. Overall, the data coverage score of 0.85 further reinforces the decision to proceed with the transaction.",
+      "constrained_text": "Risk band: LOW (score 0.056). Low risk fraud score driven by increased values in C14, TransactionDT, C13, and C5 with a decreased value in card5, supporting an allow decision. Top risk-increasing drivers: C14, TransactionDT, C13, C5. Top risk-decreasing drivers: card5. Recommended action: allow."
+    },
+    {
+      "event_id": "3489059",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C5",
+          "C2",
+          "C14",
+          "D5",
+          "C1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 473
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C5",
+          "C2",
+          "C14",
+          "D5",
+          "C1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 360
+      },
+      "unconstrained_text": "The transaction with event ID 3489059 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support this decision. The top evidence drivers include significant negative influences from C5 and C14, alongside positive contributions from C2, D5, and C1. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.008). The fraud risk is low with key drivers indicating mixed signals. The thin file flag and low evidence strength suggest limited evidence for the decision. Top risk-increasing drivers: C2, D5, C1. Top risk-decreasing drivers: C5, C14. limited evidence - thin file flag is true and evidence strength is LOW. Recommended action: allow."
+    },
+    {
+      "event_id": "3489061",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 1,
+        "mentioned_drivers": [
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.2,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 426
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C14",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 240
+      },
+      "unconstrained_text": "The transaction with event ID 3489061 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. Key evidence drivers include a transaction amount of $255.97 and a notable change in the C5 variable. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.016). Transaction exhibits low risk with minimal evidence due to thin file status. Top risk-increasing drivers: C14. Top risk-decreasing drivers: C5. limited evidence due to thin file flag. Recommended action: allow."
+    },
+    {
+      "event_id": "3489063",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C1",
+          "C14",
+          "D2",
+          "C9",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 408
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C1",
+          "C14",
+          "D2",
+          "C9",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 270
+      },
+      "unconstrained_text": "The transaction with event ID 3489063 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is low, and the thin_file_flag is true, indicating limited evidence to support this decision. The top evidence drivers include a positive magnitude from C1 and C9, but negative magnitudes from C14, D2, and C5 may warrant caution in the overall assessment.",
+      "constrained_text": "Risk band: LOW (score 0.011). Low risk score with mixed driver directions; limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: C1, C9. Top risk-decreasing drivers: C14, D2, C5. limited-evidence disclosure. Recommended action: allow."
+    },
+    {
+      "event_id": "3489086",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 461
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C14",
+          "C1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 366
+      },
+      "unconstrained_text": "The transaction with event ID 3489086 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. Key evidence drivers include a significant transaction amount of $209.95 and various directional magnitudes across other factors, but the overall data coverage score is only 0.34, warranting caution in proceeding.",
+      "constrained_text": "Risk band: LOW (score 0.003). The transaction is assessed as low risk with a low fraud score, influenced primarily by drivers C14 and C1. However, evidence strength is low and the account shows a thin file flag. Top risk-increasing drivers: C1. Top risk-decreasing drivers: C14. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489092",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "D2",
+          "D1",
+          "C5",
+          "card5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 491
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "D2",
+          "D1",
+          "C5",
+          "card5",
+          "TransactionDT"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 272
+      },
+      "unconstrained_text": "The transaction with event ID 3489092 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is categorized as LOW, and the thin_file_flag is true, indicating limited evidence available for this transaction. Key evidence drivers include significant magnitudes in D2 and D1, both showing values of 393.0, alongside notable contributions from C5 and card5. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.002). Low risk detected with supporting drivers, however flagged due to limited evidence. Top risk-increasing drivers: D1, TransactionDT. Top risk-decreasing drivers: D2, C5, card5. limited evidence due to thin file flag. Recommended action: allow."
+    },
+    {
+      "event_id": "3489095",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "card2",
+          "card5",
+          "card1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy",
+          "concern",
+          "concerns"
+        ],
+        "text_chars": 501
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "card2",
+          "card5",
+          "C5",
+          "addr1",
+          "card1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 378
+      },
+      "unconstrained_text": "The transaction with event ID 3489095 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include a significant positive value associated with card2 and card5, but a notable negative value linked to card1 raises concerns. Caution is advised due to the thin evidence supporting this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.011). The fraud risk is low based on positive and negative indicators from multiple card and address drivers, but limited evidence due to a thin file and low evidence strength. Top risk-increasing drivers: card2, card5, addr1. Top risk-decreasing drivers: C5, card1. Limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489099",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C14",
+          "C1",
+          "C9",
+          "C5",
+          "C13"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 466
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C14",
+          "C1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 297
+      },
+      "unconstrained_text": "The transaction with event ID 3489099 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence supporting this assessment. The top drivers include significant negative influences from C14, C5, and C13, alongside positive contributions from C1 and C9. Caution is advised due to the thin evidence supporting the transaction's legitimacy.",
+      "constrained_text": "Risk band: LOW (score 0.003). The fraud risk is low based on key drivers indicating mixed signals but evidence is limited due to data sparsity. Top risk-increasing drivers: C1. Top risk-decreasing drivers: C14. limited evidence due to thin file or low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489103",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 470
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "D2",
+          "C5",
+          "TransactionAmt",
+          "D1",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 411
+      },
+      "unconstrained_text": "The transaction with event ID 3489103 falls within the LOW risk band, and the recommended action is to allow the transaction. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support this decision. Key evidence drivers include a transaction amount of $159.95 and various directional magnitudes related to other data points, which suggest a mixed risk profile. Caution is advised due to the limited evidence available.",
+      "constrained_text": "Risk band: LOW (score 0.003). The fraud risk is low with key influences from negative impact drivers D2, C5, and D15, partially offset by positive effects from TransactionAmt and D1. Evidence strength is low due to thin file status. Top risk-increasing drivers: TransactionAmt, D1. Top risk-decreasing drivers: D2, C5, D15. Limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489105",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "C5",
+          "D2",
+          "C6",
+          "D1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "anomalies"
+        ],
+        "text_chars": 495
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C5",
+          "D2",
+          "C6",
+          "D1",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 369
+      },
+      "unconstrained_text": "The transaction with event ID 3489105 falls within the LOW risk band, with a recommended action to allow. The evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence available for this assessment. Key evidence drivers include significant negative values for C5 and D2, suggesting potential anomalies, while positive values for C6 and D1 provide some counterbalance. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.002). The fraud risk score is low with mixed directional indicators. The file is flagged as thin and evidence strength is low, limiting the conclusiveness of the risk assessment. Top risk-increasing drivers: C6, D1. Top risk-decreasing drivers: C5, D2, D15. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489109",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 451
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "D1",
+          "D2",
+          "C5",
+          "addr1",
+          "D3"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 354
+      },
+      "unconstrained_text": "The transaction with event ID 3489109 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include significant positive and negative magnitudes related to the transaction amount and address, which warrant caution despite the low-risk assessment.",
+      "constrained_text": "Risk band: LOW (score 0.003). Low risk score driven primarily by D1 and addr1 with compensating negative influences from D2, C5, and D3. Limited evidence due to thin file and low evidence strength supports allow decision. Top risk-increasing drivers: D1, addr1. Limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489111",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "C5",
+          "card2",
+          "TransactionAmt",
+          "C13"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 460
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "C5",
+          "card2",
+          "TransactionAmt",
+          "TransactionDT"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 417
+      },
+      "unconstrained_text": "The transaction with event ID 3489111 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include a significant negative value for card2 and TransactionAmt, alongside positive indicators from C5 and C13. Caution is advised due to the thin evidence supporting this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.003). The transaction is assessed as low risk with key factors including C5 and TransactionDT increasing risk, and card2 and TransactionAmt decreasing risk. Due to limited evidence, caution is advised despite the recommendation to allow. Top risk-increasing drivers: C5. Top risk-decreasing drivers: card2. limited evidence due to thin file or low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489115",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C5",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 404
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C5",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 313
+      },
+      "unconstrained_text": "The transaction with event ID 3489115 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence for this assessment. Key evidence drivers include a significant card value of 9500 and notable metrics from C5 and D15, but caution is warranted due to the overall weak evidence.",
+      "constrained_text": "Risk band: LOW (score 0.004). The decision to allow is supported by strong negative drivers and low risk score, but limited evidence is present due to thin file and low evidence strength. Top risk-decreasing drivers: C5, D15. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489116",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 439
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "TransactionAmt",
+          "TransactionDT"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 265
+      },
+      "unconstrained_text": "The transaction with event ID 3489116 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support this assessment. Key evidence drivers include a transaction amount of $500 and various categorical values, but the overall data coverage score is only 0.34, suggesting caution in the decision-making process.",
+      "constrained_text": "Risk band: LOW (score 0.056). Low risk score with positive contributions from transaction amount and timing; limited evidence due to thin file. Top risk-increasing drivers: TransactionAmt, TransactionDT. limited evidence due to thin file. Recommended action: allow."
+    },
+    {
+      "event_id": "3489127",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 403
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "card5",
+          "addr1",
+          "TransactionDT",
+          "card1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 387
+      },
+      "unconstrained_text": "The transaction with event ID 3489127 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include significant values related to card and address metrics, but caution is advised due to the overall weak evidence.",
+      "constrained_text": "Risk band: LOW (score 0.004). Low risk score with primary negative drivers from card5 and card1 and positive drivers addr1 and TransactionDT. Evidence is limited due to thin file and low evidence strength. Top risk-increasing drivers: addr1, TransactionDT. Top risk-decreasing drivers: card5, card1. Limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489132",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 1,
+        "mentioned_drivers": [
+          "C13"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.2,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 466
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "TransactionAmt",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 328
+      },
+      "unconstrained_text": "The transaction with event ID 3489132 falls within the LOW risk band, with a score of 0.0519, indicating a low likelihood of fraud. The recommended action is to allow the transaction, although caution is warranted due to the low evidence strength and the thin file flag being true. Key evidence drivers include a transaction amount of $280, a value of 1.0 for C13, and a data coverage score of 0.34, which suggest limited supporting information for this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.052). The fraud risk is low based on positive signals from TransactionAmt and other drivers, but evaluation is limited due to thin file and low evidence strength. Top risk-increasing drivers: TransactionAmt, C5. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489133",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D15",
+          "TransactionAmt"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 439
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "D15",
+          "TransactionAmt",
+          "D2",
+          "C5",
+          "C2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 406
+      },
+      "unconstrained_text": "The transaction with event ID 3489133 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. Key evidence drivers include a significant TransactionAmt of $226.00 and a D15 value of 355.0, although the overall data coverage score is only 0.34, warranting caution in the decision-making process.",
+      "constrained_text": "Risk band: LOW (score 0.011). Low risk fraud indication driven primarily by low D15 and positive influence from TransactionAmt, D2, C5, and C2. Thin file condition and low evidence strength warrant cautious interpretation. Top risk-increasing drivers: TransactionAmt, D2, C5, C2. Top risk-decreasing drivers: D15. Limited evidence strength due to low evidence and thin file flag. Recommended action: allow."
+    },
+    {
+      "event_id": "3489136",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "D3",
+          "C5",
+          "addr1",
+          "C6",
+          "card2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 492
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D3",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 288
+      },
+      "unconstrained_text": "The transaction with event ID 3489136 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. The most relevant evidence drivers include significant negative values for D3 and addr1, alongside positive values for C5, C6, and card2. Caution is advised due to the limited evidence available for this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.005). Low risk score with primary influence from drivers D3 and C5; thin file and low evidence strength noted. Top risk-increasing drivers: C5. Top risk-decreasing drivers: D3. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489138",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C9",
+          "C1",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 455
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C14",
+          "C9",
+          "C1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 337
+      },
+      "unconstrained_text": "The transaction with event ID 3489138 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence for this assessment. Key evidence drivers include a significant positive influence from C1 and C9, alongside a notable negative impact from C5. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.002). The transaction is low risk with supporting drivers indicating mixed impacts; however, evidence is limited due to a thin file and low evidence strength. Top risk-increasing drivers: C9. Top risk-decreasing drivers: C14. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489146",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C1",
+          "C9",
+          "C13"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 426
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C14",
+          "C1",
+          "C9",
+          "C5",
+          "C13"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 373
+      },
+      "unconstrained_text": "The transaction with event ID 3489146 falls within the LOW risk band, with a recommended action to allow. The evidence strength is categorized as LOW, and the thin_file_flag is true, indicating limited evidence. Key drivers influencing this assessment include a significant negative value from C13 and positive contributions from C1 and C9. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.005). The fraud risk score is low with primary influence from drivers C14, C1, C9, C5, and C13. Limited evidence is available due to a thin file and low evidence strength. Top risk-increasing drivers: C1, C9. Top risk-decreasing drivers: C14, C5, C13. Limited evidence: thin file flag is true and evidence strength is low. Recommended action: allow."
+    },
+    {
+      "event_id": "3489147",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 464
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "card5",
+          "C5",
+          "TransactionAmt",
+          "D1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 379
+      },
+      "unconstrained_text": "The transaction with event ID 3489147 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. Key evidence drivers include a transaction amount of $159.95 and various directional magnitudes related to card and data attributes. Caution is advised due to the thin evidence supporting this decision.",
+      "constrained_text": "Risk band: LOW (score 0.003). Low risk score with limited evidence due to thin file; key factors include card5 and C5 negatively impacting risk, and TransactionAmt and D1 positively impacting risk. Top risk-increasing drivers: TransactionAmt, D1. Top risk-decreasing drivers: card5, C5. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489148",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 407
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "TransactionAmt",
+          "card5",
+          "D5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 261
+      },
+      "unconstrained_text": "The transaction with event ID 3489148 falls within the LOW risk band, with a score of 0.0225. The recommended action is to allow the transaction; however, caution is advised due to the low evidence strength and the thin file flag being true. Key evidence drivers include a transaction amount of $280 and card-related metrics, but the overall data coverage score is only 0.34, indicating limited information.",
+      "constrained_text": "Risk band: LOW (score 0.023). Low risk fraud assessment with limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: TransactionAmt, card5. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489149",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 446
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "D2",
+          "TransactionAmt",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 357
+      },
+      "unconstrained_text": "The transaction with event ID 3489149 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is LOW, and the thin file flag is true, indicating limited evidence to support the decision. Key evidence drivers include a significant transaction amount of $206 and various directional metrics that suggest mixed risk indicators. Caution is advised due to the low data coverage score of 0.34.",
+      "constrained_text": "Risk band: LOW (score 0.002). Fraud risk is low based on multiple drivers including D2, TransactionAmt, and D15, despite limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: TransactionAmt. Top risk-decreasing drivers: D2, D15. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489152",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "card5",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$",
+          "legitimacy"
+        ],
+        "text_chars": 473
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D3",
+          "TransactionAmt"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 314
+      },
+      "unconstrained_text": "The transaction with event ID 3489152 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. The most relevant evidence drivers include a positive transaction amount of $171.00 and notable negative magnitudes in card5 and C5 values. Caution is advised due to the limited evidence available.",
+      "constrained_text": "Risk band: LOW (score 0.007). The fraud risk is low based on multiple drivers including D3 and TransactionAmt, but limited evidence due to a thin file and low evidence strength. Top risk-increasing drivers: D3, TransactionAmt. Limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489154",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C1",
+          "C6",
+          "C14"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 427
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C1",
+          "C6"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 297
+      },
+      "unconstrained_text": "The transaction with event ID 3489154 falls within the LOW risk band, with a recommended action to allow. The evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence. Key drivers include a positive magnitude from C1 and C6, while C14 shows a negative direction, suggesting mixed signals in the transaction data. Caution is advised due to the thin evidence supporting this assessment.",
+      "constrained_text": "Risk band: LOW (score 0.067). The decision is to allow the transaction due to low risk score and evidence strength, with key drivers C1 and C6 influencing the outcome. Top risk-increasing drivers: C1, C6. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489159",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "card5",
+          "C6"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 426
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "card5",
+          "C6"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 295
+      },
+      "unconstrained_text": "The transaction with event ID 3489159 falls within the LOW risk band, with a recommended action to allow it. The evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence available for this transaction. Key evidence drivers include a card5 magnitude of 0.825 and a C6 magnitude of 0.659, but caution is advised due to the overall weak evidence supporting the transaction's legitimacy.",
+      "constrained_text": "Risk band: LOW (score 0.106). The fraud risk is low based on top drivers card5 and C6 among others, with limited evidence due to a thin file and low evidence strength. Top risk-increasing drivers: card5, C6. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489180",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "D1",
+          "card5",
+          "addr1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 435
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C5",
+          "C14",
+          "D1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 304
+      },
+      "unconstrained_text": "The transaction with event ID 3489180 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include a significant positive value for card5 and negative values for addr1 and D1, which may warrant caution despite the low risk score.",
+      "constrained_text": "Risk band: LOW (score 0.001). The fraud risk is low with key drivers indicating negative risk direction, but limited evidence due to thin file and low evidence strength. Top risk-decreasing drivers: C5, C14, D1. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489188",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 437
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C14",
+          "TransactionAmt",
+          "C5",
+          "D4",
+          "D1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 417
+      },
+      "unconstrained_text": "The transaction with event ID 3489188 falls within the LOW risk band, and the recommended action is to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. Key evidence drivers include a significant transaction amount of $335.00 and notable values in various categories, but caution is advised due to the overall weak evidence.",
+      "constrained_text": "Risk band: LOW (score 0.002). The fraud score is low with key influences from C14, TransactionAmt, C5, D4, and D1. Due to limited evidence from thin file and low evidence strength, caution is advised despite the allow recommendation. Top risk-increasing drivers: TransactionAmt, C5. Top risk-decreasing drivers: C14, D4, D1. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489193",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "card5",
+          "C5",
+          "D5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$",
+          "legitimacy"
+        ],
+        "text_chars": 448
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "TransactionAmt",
+          "card5",
+          "C5",
+          "C13",
+          "D5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 316
+      },
+      "unconstrained_text": "The transaction with event ID 3489193 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include a transaction amount of $335.00 and notable values for card5 and C5, though the overall data coverage score is only 0.34, warranting caution due to the thin evidence.",
+      "constrained_text": "Risk band: LOW (score 0.064). Low risk with positive contribution from transaction amount and card features; limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: TransactionAmt, card5, C5, C13, D5. limited evidence: thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489197",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D8",
+          "card5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimate"
+        ],
+        "text_chars": 362
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "D8",
+          "card5",
+          "D6",
+          "C8",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 272
+      },
+      "unconstrained_text": "The transaction with event ID 3489197 falls within the LOW risk band, with a recommended action to allow. The evidence strength is medium, supported by key drivers such as a significant positive direction in D8 and a notable negative direction in card5. Given the overall risk assessment and data coverage score of 0.85, the transaction appears to be legitimate.",
+      "constrained_text": "Risk band: LOW (score 0.020). Low risk score driven primarily by positive contributions from drivers D8, C8, and C5, balanced by negative impacts from card5 and D6. Top risk-increasing drivers: D8, C8, C5. Top risk-decreasing drivers: card5, D6. Recommended action: allow."
+    },
+    {
+      "event_id": "3489202",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C5",
+          "D2",
+          "card2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 481
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C5",
+          "D2",
+          "card2",
+          "D5",
+          "D3"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 277
+      },
+      "unconstrained_text": "The transaction with event ID 3489202 falls within the LOW risk band, with a recommended action to allow it. The evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence available for this transaction. Key evidence drivers include significant values in C5, D2, and card2, which suggest a potential for normal activity despite the low data coverage score of 0.34. Caution is advised due to the limited evidence supporting this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.008). Low risk score with mixed driver directions supports allowing the transaction. Top risk-increasing drivers: D2, card2, D5, D3. Top risk-decreasing drivers: C5. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489204",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C14",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "concern",
+          "concerns"
+        ],
+        "text_chars": 434
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C14",
+          "D3",
+          "TransactionDT"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 261
+      },
+      "unconstrained_text": "The transaction with event ID 3489204 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is medium, supported by several relevant drivers, including a notable positive direction in the C14 and C5 categories, as well as significant transaction timing data. Given the overall assessment, there are no immediate concerns, and the transaction appears to align with expected patterns.",
+      "constrained_text": "Risk band: LOW (score 0.084). The fraud risk is low based on multiple positive and negative drivers with medium evidence strength and no drift detected. Top risk-increasing drivers: C14, TransactionDT. Top risk-decreasing drivers: D3. Recommended action: allow."
+    },
+    {
+      "event_id": "3489206",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "card5",
+          "TransactionDT"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy",
+          "concern"
+        ],
+        "text_chars": 481
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "card5",
+          "TransactionDT",
+          "C11",
+          "C13",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 309
+      },
+      "unconstrained_text": "The transaction with event ID 3489206 falls within the LOW risk band, and the recommended action is to allow the transaction. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include a card5 magnitude of 0.4148 and a TransactionDT magnitude of 0.4036, which suggest some level of concern but are not definitive. Caution is advised due to the limited evidence available.",
+      "constrained_text": "Risk band: LOW (score 0.012). Low risk score with limited evidence due to thin file status, driven primarily by card5, TransactionDT, C11, C13, and C5 factors. Top risk-increasing drivers: TransactionDT, C11, C13, C5. Top risk-decreasing drivers: card5. limited-evidence disclosure. Recommended action: allow."
+    },
+    {
+      "event_id": "3489211",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D8",
+          "card2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 417
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D8",
+          "card2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 242
+      },
+      "unconstrained_text": "The transaction with event ID 3489211 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is medium, supported by key drivers such as a significant positive direction in D8 and card2, indicating normal transaction behavior. The data coverage score of 0.85 further reinforces the reliability of the evidence. No caution is necessary as the thin_file_flag is false.",
+      "constrained_text": "Risk band: LOW (score 0.133). The fraud risk is low with positive contributions from drivers D8 and card2 among others. Evidence strength is medium and no data drift detected. Top risk-increasing drivers: D8, card2. Recommended action: allow."
+    },
+    {
+      "event_id": "3489212",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C9",
+          "card5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy",
+          "further scrutiny"
+        ],
+        "text_chars": 438
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C9",
+          "card5",
+          "C2",
+          "C5",
+          "D10"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 315
+      },
+      "unconstrained_text": "The transaction with event ID 3489212 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is categorized as LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include a significant positive value in C9 and a notable negative value in card5, which may warrant further scrutiny despite the low risk assessment.",
+      "constrained_text": "Risk band: LOW (score 0.010). Low fraud risk driven by factors C9, card5, C2, C5, and D10. Limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: C9, C2, C5. Top risk-decreasing drivers: card5, D10. Limited evidence: thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489214",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "D2",
+          "D3",
+          "card5",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 452
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D2",
+          "D3"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 267
+      },
+      "unconstrained_text": "The transaction with event ID 3489214 falls within the LOW risk band, with a recommended action to allow it. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence for a robust assessment. The top evidence drivers include significant positive magnitudes in D2, D3, and C5, alongside a notable negative magnitude in card5. Caution is advised due to the thin evidence supporting this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.048). Low risk score with positive contribution from multiple drivers and limited evidence due to thin file flag. Top risk-increasing drivers: D2, D3. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489220",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$",
+          "legitimacy"
+        ],
+        "text_chars": 429
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "TransactionAmt",
+          "C5",
+          "D1",
+          "D2",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 318
+      },
+      "unconstrained_text": "The transaction with event ID 3489220 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include a transaction amount of $271.95 and significant fluctuations in related data points, which may warrant caution despite the low risk score.",
+      "constrained_text": "Risk band: LOW (score 0.020). Low risk score driven by TransactionAmt, C5, D1, D2, and D15; thin file and low evidence strength noted. Top risk-increasing drivers: TransactionAmt, D1. Top risk-decreasing drivers: C5, D2, D15. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489224",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 433
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "card5",
+          "TransactionDT"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 284
+      },
+      "unconstrained_text": "The transaction with event ID 3489224 falls within the LOW risk band, and the recommended action is to allow the transaction. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include a card value of 166.0 and a transaction timestamp of 13175013, but caution is advised due to the insufficient data coverage score of 0.34.",
+      "constrained_text": "Risk band: LOW (score 0.011). Low risk transaction with limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: TransactionDT. Top risk-decreasing drivers: card5. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489230",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D2",
+          "card5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 415
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "D2",
+          "card5",
+          "TransactionDT",
+          "D15",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 413
+      },
+      "unconstrained_text": "The transaction with event ID 3489230 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include significant magnitudes related to D2 and card5, which suggest some inconsistencies. Caution is advised due to the thin evidence base.",
+      "constrained_text": "Risk band: LOW (score 0.003). The transaction is assessed as low risk with a low fraud score and supporting drivers indicating normal behavior. However, the report flags limited evidence due to a thin file and low evidence strength. Top risk-increasing drivers: TransactionDT, C5. Top risk-decreasing drivers: D2, card5, D15. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489237",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$",
+          "legitimacy"
+        ],
+        "text_chars": 467
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C5",
+          "TransactionAmt"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 294
+      },
+      "unconstrained_text": "The transaction with event ID 3489237 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include a significant transaction amount of $35.95 and notable card activity values. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.004). Low risk score driven by multiple transaction and card features with limited evidence due to thin file and low strength. Top risk-decreasing drivers: C5, TransactionAmt. limited evidence due to thin file status and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489239",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "C1",
+          "C14",
+          "C9",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 421
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C1",
+          "C14"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 308
+      },
+      "unconstrained_text": "The transaction with event ID 3489239 falls within the LOW risk band, with a recommended action to allow it. The evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include a positive contribution from C1 and C9, while C14 and C5 show negative impacts. Caution is advised due to the thin evidence supporting this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.028). Low risk score driven by multiple factors including C1 and C14, with limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: C1. Top risk-decreasing drivers: C14. Limited evidence: thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489243",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$",
+          "legitimacy"
+        ],
+        "text_chars": 470
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "TransactionAmt",
+          "TransactionDT"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 284
+      },
+      "unconstrained_text": "The transaction with event ID 3489243 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence supporting the transaction's legitimacy. Key evidence drivers include a transaction amount of $226.00 and notable negative values associated with card details and other factors. Caution is advised due to the limited evidence available.",
+      "constrained_text": "Risk band: LOW (score 0.003). Low risk score driven primarily by transaction amount and timing, with low confidence due to limited data. Top risk-increasing drivers: TransactionAmt, TransactionDT. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489251",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D15",
+          "card1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 456
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C5",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 228
+      },
+      "unconstrained_text": "The transaction with event ID 3489251 falls within the LOW risk band, and the recommended action is to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include significant values for card1 and D15, but caution is advised due to the overall weak evidence coverage, reflected by a data coverage score of 0.34.",
+      "constrained_text": "Risk band: LOW (score 0.002). Low risk transaction with minimal evidence due to thin file status. Top risk-decreasing drivers: C5, D15. Limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489253",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C14",
+          "card5",
+          "C6"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 457
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C14",
+          "TransactionDT"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 306
+      },
+      "unconstrained_text": "The transaction with event ID 3489253 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. Key evidence drivers include a significant positive direction in C14 and C6, alongside a notable negative direction in card5. Caution is advised due to the thin evidence supporting this decision.",
+      "constrained_text": "Risk band: LOW (score 0.054). Low risk fraud score driven primarily by variables C14 and TransactionDT, with limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: C14, TransactionDT. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489260",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D2",
+          "D1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 424
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "D2",
+          "D1",
+          "card1",
+          "C5",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 359
+      },
+      "unconstrained_text": "The transaction with event ID 3489260 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. The top evidence drivers include significant values in D2 and D1, both showing positive and negative directions, which may warrant caution despite the low risk assessment.",
+      "constrained_text": "Risk band: LOW (score 0.008). Low risk score driven primarily by negative impact from D2 and D15, with offsetting positive influences from D1, card1, and C5. Action recommended is to allow. Top risk-increasing drivers: D1, card1, C5. Top risk-decreasing drivers: D2, D15. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489261",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D1",
+          "D2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 522
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "D1",
+          "D2",
+          "C5",
+          "D15",
+          "addr1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 315
+      },
+      "unconstrained_text": "The transaction with event ID 3489261 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. The top evidence drivers include significant opposing directions in transaction values, particularly with D1 and D2 both showing a magnitude close to 0.7. Caution is advised due to the low data coverage score of 0.34, which may affect the reliability of the assessment.",
+      "constrained_text": "Risk band: LOW (score 0.003). Low risk score with key drivers indicating lower risk; limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: D1. Top risk-decreasing drivers: D2, C5, D15, addr1. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489270",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "C14",
+          "C5",
+          "C9",
+          "C6"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 499
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C14",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 252
+      },
+      "unconstrained_text": "The transaction with event ID 3489270 falls into the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence available for this assessment. The top evidence drivers include a significant negative impact from C14 and C5, while C9 and C6 show positive contributions, suggesting mixed signals in the data. Caution is advised due to the limited evidence supporting this decision.",
+      "constrained_text": "Risk band: LOW (score 0.002). Low risk with mixed driver signals, limited evidence due to thin file and low evidence strength. Top risk-decreasing drivers: C14, C5. Limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489272",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 418
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C14",
+          "TransactionAmt"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 299
+      },
+      "unconstrained_text": "The transaction with event ID 3489272 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. Key evidence drivers include a transaction amount of $500 and a notable change in card usage. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.053). Low risk score driven by features C14 and TransactionAmt among others; limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: C14, TransactionAmt. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489274",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C14",
+          "C1",
+          "D2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 412
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C14",
+          "C1",
+          "C9"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 318
+      },
+      "unconstrained_text": "The transaction with event ID 3489274 falls within the LOW risk band, and the recommended action is to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. The top evidence drivers include significant negative values in C14 and D2, which may warrant caution despite the overall low-risk classification.",
+      "constrained_text": "Risk band: LOW (score 0.002). Low risk score with primary drivers indicating low fraud likelihood. Limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: C1, C9. Top risk-decreasing drivers: C14. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489281",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "TransactionAmt",
+          "C1",
+          "D1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 426
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C5",
+          "TransactionAmt",
+          "C1",
+          "D2",
+          "D1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 327
+      },
+      "unconstrained_text": "The transaction with event ID 3489281 falls within the LOW risk band, and the recommended action is to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. Key evidence drivers include a significant TransactionAmt of $258.50 and notable values in C1 and D1, but caution is warranted due to the overall weak evidence.",
+      "constrained_text": "Risk band: LOW (score 0.001). Fraud risk is low based on multiple drivers, but limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: TransactionAmt, C1, D1. Top risk-decreasing drivers: C5, D2. Limited evidence: thin file flag is true and evidence strength is LOW. Recommended action: allow."
+    },
+    {
+      "event_id": "3489284",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 447
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "TransactionAmt",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 277
+      },
+      "unconstrained_text": "The transaction with event ID 3489284 falls within the LOW risk band, with a recommended action to allow it. The evidence strength is low, and the thin file flag is true, indicating limited evidence for this transaction. Key evidence drivers include a transaction amount of $311.95, alongside notable negative indicators related to card usage and other metrics. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.004). Transaction exhibits low risk with minimal evidence due to thin file status. Top risk-increasing drivers: TransactionAmt. Top risk-decreasing drivers: C5. Limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489291",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "card1",
+          "card2",
+          "D3"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 438
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "card1",
+          "card2",
+          "D3"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 277
+      },
+      "unconstrained_text": "The transaction with event ID 3489291 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is low, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. The top evidence drivers include significant negative values for card1 and D3, along with a positive value for card2, which may warrant caution despite the low risk assessment.",
+      "constrained_text": "Risk band: LOW (score 0.006). The transaction is low risk with limited evidence due to a thin file, driven by card1, card2, and D3 factors. Top risk-increasing drivers: card2. Top risk-decreasing drivers: card1, D3. limited evidence due to thin file. Recommended action: allow."
+    },
+    {
+      "event_id": "3489294",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "C14",
+          "D15",
+          "C9",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 509
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C14",
+          "D15",
+          "C9",
+          "C5",
+          "TransactionAmt"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 285
+      },
+      "unconstrained_text": "The transaction with event ID 3489294 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. Key evidence drivers include a significant negative magnitude in C14 and D15, alongside positive contributions from C9 and C5, with a transaction amount of $222. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.010). Transaction assessed with low risk using key drivers but limited evidence due to thin file flag. Top risk-increasing drivers: C9, C5, TransactionAmt. Top risk-decreasing drivers: C14, D15. limited evidence due to thin file flag. Recommended action: allow."
+    },
+    {
+      "event_id": "3489299",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "C14",
+          "C5",
+          "C1",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 454
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C14",
+          "C5",
+          "C1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 282
+      },
+      "unconstrained_text": "The transaction with event ID 3489299 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include significant negative contributions from C14, C5, and D15, alongside a positive contribution from C1. Caution is advised due to the thin evidence supporting this assessment.",
+      "constrained_text": "Risk band: LOW (score 0.001). Low risk score driven primarily by C14 and C5 indicating low fraud likelihood. Thin file and low evidence strength noted. Top risk-decreasing drivers: C14, C5. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489301",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "C5",
+          "TransactionDT",
+          "TransactionAmt",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 466
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C5",
+          "TransactionDT",
+          "C13",
+          "TransactionAmt",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 470
+      },
+      "unconstrained_text": "The transaction with event ID 3489301 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. Key evidence drivers include a significant positive direction in C5 and TransactionDT, while TransactionAmt and D15 show negative directions. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.007). The transaction is low risk with positive contributions from drivers C5, TransactionDT, and C13, and negative contributions from TransactionAmt and D15. Despite limited evidence strength and a thin file flag, the recommended action is to allow. Top risk-increasing drivers: C5, TransactionDT, C13. Top risk-decreasing drivers: TransactionAmt, D15. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489306",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C5",
+          "card2",
+          "D2",
+          "card5",
+          "D1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 461
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C5",
+          "card2",
+          "D2",
+          "card5",
+          "D1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 447
+      },
+      "unconstrained_text": "The transaction with event ID 3489306 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include significant negative magnitudes from C5, card2, card5, and D1, alongside a positive contribution from D2. Caution is advised due to the thin evidence surrounding this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.001). The fraud risk is low based on the score and risk band, primarily driven by negative indicators C5, card2, card5, and D1, with a positive driver D2. However, the evidence strength is low and the file is thin, limiting confidence in the decision. Top risk-increasing drivers: D2. Top risk-decreasing drivers: C5, card2, card5, D1. Limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489308",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C14",
+          "C9",
+          "C1",
+          "D3",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 460
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C14",
+          "C9",
+          "C1",
+          "D3",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 369
+      },
+      "unconstrained_text": "The transaction with event ID 3489308 falls within the LOW risk band, with a recommended action to allow it. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. The top evidence drivers include a negative influence from C14 and C5, alongside positive contributions from C9, C1, and D3. Caution is advised due to the thin evidence supporting this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.011). The fraud risk is low based on key factors including C14, C9, C1, D3, and C5. However, due to limited evidence from thin file and low evidence strength, caution is advised. Top risk-increasing drivers: C9, C1, D3. Top risk-decreasing drivers: C14, C5. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489309",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "card5",
+          "C5",
+          "card1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "anomalies"
+        ],
+        "text_chars": 468
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "D15",
+          "card5",
+          "C5",
+          "TransactionDT",
+          "card1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 376
+      },
+      "unconstrained_text": "The transaction with event ID 3489309 falls within the LOW risk band, with a recommended action to allow. The evidence strength is low, and the thin file flag is true, indicating limited evidence for this transaction. Key evidence drivers include significant negative values for card1 and card5, suggesting potential anomalies, while the transaction date and C5 show minimal impact. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.001). Low risk score driven by multiple factors including D15, card5, C5, TransactionDT, and card1. Thin file and low evidence strength warrant cautious interpretation. Top risk-increasing drivers: C5, TransactionDT. Top risk-decreasing drivers: D15, card5, card1. Limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489314",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 529
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D2",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 305
+      },
+      "unconstrained_text": "The transaction with event ID 3489314 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support this decision. Key evidence drivers include a transaction amount of $169.95 and various directional magnitudes related to other data points, which may not provide sufficient context for a confident assessment. Caution is advised due to the thin evidence surrounding this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.003). The fraud risk score is low with key drivers indicating low risk; however, limited evidence is available due to a thin file and low evidence strength. Top risk-decreasing drivers: D2, C5. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489315",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "D2",
+          "C5",
+          "D1",
+          "C9"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 499
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "D2",
+          "C5",
+          "D1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 376
+      },
+      "unconstrained_text": "The transaction with event ID 3489315 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support this decision. The top evidence drivers include significant negative magnitudes from D2 and C5, alongside positive contributions from D1 and C9, which suggest a mixed risk profile. Caution is advised due to the thin evidence supporting this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.002). The fraud risk is low, with key factors D2 and C5 reducing risk and D1 increasing it. Due to thin file status and low evidence strength, there is limited evidence to support this decision. Top risk-increasing drivers: D1. Top risk-decreasing drivers: D2, C5. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489321",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C1",
+          "D3"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 430
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C1",
+          "C14",
+          "D3",
+          "C5",
+          "C6"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 361
+      },
+      "unconstrained_text": "The transaction with event ID 3489321 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. The top evidence drivers include a positive direction and significant magnitude for C1 and D3, but the overall data coverage score is only 0.34, suggesting caution is warranted.",
+      "constrained_text": "Risk band: LOW (score 0.046). The fraud decision is low risk with key drivers C1, C14, D3, C5, and C6 influencing the score. Limited evidence is noted due to thin file and low evidence strength. Top risk-increasing drivers: C1, D3, C5, C6. Top risk-decreasing drivers: C14. Limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489326",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "D8",
+          "card2",
+          "D6"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "concern",
+          "concerns"
+        ],
+        "text_chars": 398
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "D8",
+          "card2",
+          "D6"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 207
+      },
+      "unconstrained_text": "The transaction with event ID 3489326 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is medium, supported by key drivers such as a significant card2 value and notable metrics from D8 and D6. Given the overall risk assessment and data coverage score of 0.85, there are no immediate concerns, and the transaction can proceed without caution.",
+      "constrained_text": "Risk band: LOW (score 0.009). The fraud score is low with balanced driver impacts, indicating minimal risk. Top risk-increasing drivers: card2. Top risk-decreasing drivers: D8, D6. Recommended action: allow."
+    },
+    {
+      "event_id": "3489329",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C5",
+          "C14",
+          "card1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 465
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C5",
+          "C14",
+          "card1",
+          "dist1",
+          "card5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 293
+      },
+      "unconstrained_text": "The transaction with event ID 3489329 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support this decision. Key evidence drivers include a significant value for card1 and notable metrics for C5 and C14, although the overall data coverage score is only 0.34, suggesting caution in proceeding with the transaction.",
+      "constrained_text": "Risk band: LOW (score 0.001). Low risk score with mixed driver directions; thin file and low evidence strength noted. Top risk-increasing drivers: dist1, card5. Top risk-decreasing drivers: C5, C14, card1. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489333",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "D2",
+          "D1",
+          "C5",
+          "D3"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 466
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D2",
+          "D1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 329
+      },
+      "unconstrained_text": "The transaction with event ID 3489333 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. The most relevant evidence drivers include a significant negative direction from D2 and D3, alongside positive contributions from D1 and C5. Caution is advised due to the thin evidence supporting this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.002). The fraud risk is low based on multiple driver indicators, but the decision is made with limited evidence due to a thin file and low evidence strength. Top risk-increasing drivers: D1. Top risk-decreasing drivers: D2. limited-evidence: thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489336",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$",
+          "legitimacy"
+        ],
+        "text_chars": 430
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "TransactionAmt",
+          "D2",
+          "D1",
+          "card5",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 366
+      },
+      "unconstrained_text": "The transaction with event ID 3489336 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include a transaction amount of $335.00 and notable fluctuations in related data points, which may warrant caution despite the low risk assessment.",
+      "constrained_text": "Risk band: LOW (score 0.021). Low risk score driven primarily by transaction amount and recent activity indicators. Thin file and low evidence strength advise caution in interpretation. Top risk-increasing drivers: TransactionAmt, D1, C5. Top risk-decreasing drivers: D2, card5. Limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489339",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C9",
+          "D15",
+          "card2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 445
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D3",
+          "C9"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 306
+      },
+      "unconstrained_text": "The transaction with event ID 3489339 falls within the LOW risk band, with a recommended action to allow the transaction. The evidence strength is categorized as LOW, and the thin_file_flag is true, indicating limited evidence. Key drivers influencing this assessment include a significant negative value from D15 and positive contributions from C9 and card2. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.017). The fraud risk is low with positive indicators from drivers D3 and C9. However, limited evidence is noted due to a thin file and low evidence strength. Top risk-increasing drivers: D3, C9. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489341",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "D2",
+          "C5",
+          "D3",
+          "card2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 482
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D2",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 327
+      },
+      "unconstrained_text": "The transaction with event ID 3489341 falls within the LOW risk band, and the recommended action is to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence available for this assessment. The top evidence drivers include significant positive contributions from D2, D3, and card2, alongside a notable negative influence from C5. Caution is advised due to the limited evidence supporting this decision.",
+      "constrained_text": "Risk band: LOW (score 0.016). Low risk score with limited evidence due to thin file and low evidence strength; key drivers indicate positive and negative influences on risk. Top risk-increasing drivers: D2. Top risk-decreasing drivers: C5. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489343",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 371
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "D8",
+          "TransactionDT",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": false,
+        "disclosure_present": null,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "concern",
+          "concerns"
+        ],
+        "text_chars": 248
+      },
+      "unconstrained_text": "The transaction with event ID 3489343 falls within the LOW risk band, and the recommended action is to allow the transaction. The evidence strength is medium, supported by key drivers such as a significant transaction timestamp and card details, indicating typical behavior. Notably, the data coverage score is 0.85, further reinforcing the reliability of the assessment.",
+      "constrained_text": "Risk band: LOW (score 0.002). Low risk fraud decision based on multiple drivers with no evidence of data drift or limited evidence concerns. Top risk-increasing drivers: TransactionDT, C5. Top risk-decreasing drivers: D8. Recommended action: allow."
+    },
+    {
+      "event_id": "3489344",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$",
+          "legitimacy"
+        ],
+        "text_chars": 460
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C14",
+          "TransactionDT"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 381
+      },
+      "unconstrained_text": "The transaction with event ID 3489344 falls within the LOW risk band, with a score of 0.1176, leading to a recommended action of allowing the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include the transaction amount of $226 and the transaction date, but caution is advised due to the overall weak evidence coverage.",
+      "constrained_text": "Risk band: LOW (score 0.118). The transaction is assessed with low risk based on key drivers including C14 and TransactionDT. However, evidence strength is low and the applicant is flagged as thin file, indicating limited data reliability. Top risk-increasing drivers: C14, TransactionDT. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489354",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "card5",
+          "TransactionAmt"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 422
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D3",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 303
+      },
+      "unconstrained_text": "The transaction with event ID 3489354 falls within the LOW risk band, and the recommended action is to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support this decision. Key evidence drivers include significant negative magnitudes for card5 and TransactionAmt, which may warrant caution despite the overall low risk assessment.",
+      "constrained_text": "Risk band: LOW (score 0.002). Low risk score with key drivers indicating low fraud likelihood; decision to allow with caution due to limited evidence. Top risk-increasing drivers: D3. Top risk-decreasing drivers: C5. limited evidence due to thin file or low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489364",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 403
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "TransactionAmt",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 237
+      },
+      "unconstrained_text": "The transaction with event ID 3489364 falls within the LOW risk band, with a recommended action to allow the transaction. Key evidence drivers include a transaction amount of $374.95 and various metrics indicating minimal risk. However, the evidence strength is classified as LOW, and the thin_file_flag is true, suggesting caution in proceeding with this transaction due to limited supporting evidence.",
+      "constrained_text": "Risk band: LOW (score 0.006). Low risk transaction with minimal evidence due to thin file status. Top risk-increasing drivers: TransactionAmt. Top risk-decreasing drivers: C5. limited evidence due to thin file. Recommended action: allow."
+    },
+    {
+      "event_id": "3489366",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 443
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "D3",
+          "C5",
+          "card5",
+          "D2",
+          "TransactionAmt"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 391
+      },
+      "unconstrained_text": "The transaction with event ID 3489366 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. Key evidence drivers include a significant negative magnitude associated with the transaction amount and card details, which may warrant caution despite the low risk classification.",
+      "constrained_text": "Risk band: LOW (score 0.002). The transaction is assessed as low risk based on multiple drivers with a low fraud score. The thin file status and low evidence strength limit the confidence in this decision. Top risk-increasing drivers: D3, D2. Top risk-decreasing drivers: C5, card5, TransactionAmt. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489369",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C1",
+          "C9",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 501
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C1",
+          "C9",
+          "D15",
+          "C5",
+          "C2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 402
+      },
+      "unconstrained_text": "The transaction with event ID 3489369 falls within the LOW risk band, with a recommended action to allow. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. The top evidence drivers include a significant positive magnitude from C1 and C9, alongside a notable negative impact from D15, which should be considered in the overall assessment. Caution is advised due to the thin evidence surrounding this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.019). Low risk score driven by positive contributions from C1, C9, C5, and C2, and negative contribution from D15. Decision to allow despite limited evidence due to thin file flag and low evidence strength. Top risk-increasing drivers: C1, C9, C5, C2. Top risk-decreasing drivers: D15. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489371",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "C5",
+          "D2",
+          "card5",
+          "TransactionDT"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 440
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C5",
+          "D2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 303
+      },
+      "unconstrained_text": "The transaction with event ID 3489371 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support this decision. Key evidence drivers include significant negative values for C5 and card5, alongside positive values for D2 and TransactionDT, which may warrant caution in the overall assessment.",
+      "constrained_text": "Risk band: LOW (score 0.002). Low-risk transaction with limited evidence due to thin file status; key drivers indicate minimal fraud indicators. Top risk-increasing drivers: D2. Top risk-decreasing drivers: C5. limited-evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489375",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C5",
+          "addr1",
+          "card2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 461
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C5",
+          "addr1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 402
+      },
+      "unconstrained_text": "The transaction with event ID 3489375 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include significant values related to C5, addr1, and card2, but the overall data coverage score of 0.34 suggests caution in proceeding without further verification.",
+      "constrained_text": "Risk band: LOW (score 0.006). The transaction is assessed as low risk with strong indications from drivers C5 and addr1, recommending allow action. However, the assessment is based on limited evidence due to thin file flag and low evidence strength. Top risk-increasing drivers: addr1. Top risk-decreasing drivers: C5. limited evidence due to thin file flag and low strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489376",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C5",
+          "C14",
+          "D2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 368
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C5",
+          "C14",
+          "D2",
+          "C9",
+          "D3"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 315
+      },
+      "unconstrained_text": "The transaction with event ID 3489376 falls within the LOW risk band and is recommended for allowance. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support this assessment. The top evidence drivers include significant negative magnitudes in C5, C14, and D2, which may warrant caution despite the low risk score.",
+      "constrained_text": "Risk band: LOW (score 0.001). Low risk score with negative influence from key drivers and a minor positive contributor. Limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: C9. Top risk-decreasing drivers: C5, C14, D2, D3. limited evidence disclosure. Recommended action: allow."
+    },
+    {
+      "event_id": "3489379",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C14",
+          "D4"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 396
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "D3",
+          "C14",
+          "D5",
+          "C6",
+          "D4"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 307
+      },
+      "unconstrained_text": "The transaction with event ID 3489379 falls within the LOW risk band, with a recommended action to allow it. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include significant negative values in C14 and D4, which may warrant caution despite the overall low risk score.",
+      "constrained_text": "Risk band: LOW (score 0.022). Low risk score with positive and negative contributing factors; limited evidence due to thin file status. Top risk-increasing drivers: D3, D5, C6. Top risk-decreasing drivers: C14, D4. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489384",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 0,
+        "mentioned_drivers": [],
+        "any_driver_mentioned": false,
+        "driver_coverage": 0.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "$"
+        ],
+        "text_chars": 433
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "TransactionAmt",
+          "card5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 372
+      },
+      "unconstrained_text": "The transaction with event ID 3489384 falls within the LOW risk band, with a score of 0.067. The recommended action is to allow the transaction, although the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence. Key drivers include a transaction amount of $226.00 and notable variations in card and category data. Caution is advised due to the thin evidence supporting this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.067). The transaction presents low fraud risk with positive influence from transaction amount and other features. Limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: TransactionAmt. Top risk-decreasing drivers: card5. Limited evidence: thin file present and evidence strength is LOW. Recommended action: allow."
+    },
+    {
+      "event_id": "3489394",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C14",
+          "C1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 488
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C14",
+          "C1",
+          "C9",
+          "C5",
+          "C13"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 310
+      },
+      "unconstrained_text": "The transaction with event ID 3489394 falls within the LOW risk band, and the recommended action is to allow it. However, the evidence strength is LOW, and the thin_file_flag is true, indicating limited evidence to support this assessment. The top evidence drivers include significant magnitudes in various categories, with C14 showing a notable negative direction at 2.13 and C1 a positive direction at 1.58. Caution is advised due to the limited evidence available for this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.006). Low risk score driven by negative impact from C14, C5, and C13, with positive contributions from C1 and C9. Top risk-increasing drivers: C1, C9. Top risk-decreasing drivers: C14, C5, C13. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489397",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "C14",
+          "D4"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": true,
+        "review_language_terms": [
+          "legitimacy"
+        ],
+        "text_chars": 407
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "D3",
+          "C14",
+          "D5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 265
+      },
+      "unconstrained_text": "The transaction with event ID 3489397 falls within the LOW risk band, with a recommended action to allow it. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the transaction's legitimacy. Key evidence drivers include significant negative values in categories C14 and D4, which may warrant caution despite the overall low risk score.",
+      "constrained_text": "Risk band: LOW (score 0.022). Low risk score with minimal evidence; decision recommends allowing the event. Top risk-increasing drivers: D3, D5. Top risk-decreasing drivers: C14. limited evidence due to thin file or low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489398",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "D3",
+          "D1",
+          "D15"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 468
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "D3",
+          "D1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 280
+      },
+      "unconstrained_text": "The transaction with event ID 3489398 falls within the LOW risk band, with a score of 0.0398. The recommended action is to allow the transaction, although the evidence strength is LOW and the thin_file_flag is true, indicating limited evidence. Key drivers include a significant positive magnitude from D3 and D1, while D15 shows a negative direction, suggesting mixed signals in the data. Caution is advised due to the limited evidence available for this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.040). Low risk score with positive indications from drivers D3 and D1; limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: D3, D1. Limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489400",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 4,
+        "mentioned_drivers": [
+          "C9",
+          "D2",
+          "addr1",
+          "card1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.8,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 481
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C5",
+          "C9",
+          "D2",
+          "addr1",
+          "card1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 309
+      },
+      "unconstrained_text": "The transaction with event ID 3489400 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence available for this assessment. Key evidence drivers include a significant negative impact from addr1 and card1, alongside positive contributions from C9 and D2. Caution is advised due to the low evidence strength associated with this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.003). Low risk score driven by negative and positive indicators with limited evidence due to thin file flag. Top risk-increasing drivers: C9, D2. Top risk-decreasing drivers: C5, addr1, card1. limited evidence due to thin file flag and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489401",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 2,
+        "mentioned_drivers": [
+          "card1",
+          "D2"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.4,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 459
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "card1",
+          "D2",
+          "C5"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 284
+      },
+      "unconstrained_text": "The transaction with event ID 3489401 falls within the LOW risk band, with a recommended action to allow the transaction. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence available for this assessment. The top evidence drivers include a significant positive card1 value of 9500 and a positive D2 value of 59.0, but caution is advised due to the overall thin evidence supporting this transaction.",
+      "constrained_text": "Risk band: LOW (score 0.032). Low risk score with multiple positive drivers; flagged as thin file with low evidence strength, recommending allow action. Top risk-increasing drivers: card1, D2, C5. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    },
+    {
+      "event_id": "3489409",
+      "unconstrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 3,
+        "mentioned_drivers": [
+          "C5",
+          "D15",
+          "D3"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 0.6,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 454
+      },
+      "constrained": {
+        "risk_present": true,
+        "action_present": true,
+        "driver_count": 5,
+        "mentioned_driver_count": 5,
+        "mentioned_drivers": [
+          "C5",
+          "D15",
+          "D3",
+          "card5",
+          "addr1"
+        ],
+        "any_driver_mentioned": true,
+        "driver_coverage": 1.0,
+        "disclosure_required": true,
+        "disclosure_present": true,
+        "review_language_flag": false,
+        "review_language_terms": [],
+        "text_chars": 363
+      },
+      "unconstrained_text": "The transaction with event ID 3489409 falls within the LOW risk band, with a recommended action to allow it. However, the evidence strength is classified as LOW, and the thin_file_flag is true, indicating limited evidence to support the assessment. The most relevant evidence drivers include significant values in C5, D15, and D3, which suggest some unusual patterns, but the overall data coverage score of 0.34 reinforces the caution in this evaluation.",
+      "constrained_text": "Risk band: LOW (score 0.004). Low risk score driven by negative impact from C5, D15, D3 and positive impact from card5 and addr1. Limited evidence due to thin file and low evidence strength. Top risk-increasing drivers: card5, addr1. Top risk-decreasing drivers: C5, D15, D3. limited evidence due to thin file and low evidence strength. Recommended action: allow."
+    }
+  ],
+  "caveat": "This is a same-row 100-row automated H2 comparison. It is not a human semantic validation. Review-language flags are simple lexical flags and should be interpreted conservatively."
+}

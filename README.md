@@ -374,3 +374,34 @@ PYTHONPATH=src python scripts/<script>.py
 ```
 
 This is the execution pattern used throughout repository validation and testing.
+
+## Final thesis reproducibility state
+
+Final dissertation/reproducibility state:
+
+- Branch: `proposal-gap-uplift-20260713_100844`
+- Final tag: `thesis-final-v24-h2-ablation-pilot-20260717`
+- Final commit: resolved by final tag
+- Pull request: `#13 Final thesis reproducibility and governance artefacts`
+- Notebook: `notebooks/governance_ready_fraud_decisioning_end_to_end_reproduction.ipynb`
+- Manifest: `docs/thesis_final/final_submission_artifact_manifest.md`
+
+Final evidence base:
+
+- 20,000-row deterministic template narrative path
+- 20,000-row constrained LLM robustness run
+- 20,000 matched application-level LLM audit records
+- 7,994 accepted-clean LLM outputs
+- 12,006 driver-omission flagged LLM outputs
+- 0 fallback rows in the 20,000-row LLM robustness run
+- Completed 1,000-row inference-time feature-masking re-score using exact reconstructed model-ready `X_test`
+- Offline production-style drift diagnostics
+- Regeneration-based stability checks
+- Quantitative RQ2 stability summary
+- Proxy cohort diagnostics, not fairness proof
+- Bounded H2 unconstrained ablation pilot
+- Protocol-level cyber, crypto and entity-graph/GNN portability extension
+
+Large generated artefacts are intentionally excluded from Git and documented in the final submission artefact manifest.
+
+Final submission entry point: `FINAL_SUBMISSION.md`

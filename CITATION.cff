@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this repository for academic reference, please cite it as below."
+title: "Governance-Ready Fraud Decisioning for Transaction Monitoring"
+authors:
+  - family-names: "Murtagh"
+    given-names: "Andrew"
+version: "v27"
+date-released: "2026-07-21"
+url: "https://github.com/apmurtagh/miniature-fishstick"
+type: software
+preferred-citation:
+  type: thesis
+  title: "Governance-Ready Fraud Decisioning for Transaction Monitoring: Evidence-Grounded Narrative Explanations with Tiered Guardrails"
+  authors:
+    - family-names: "Murtagh"
+      given-names: "Andrew"
+  year: 2026

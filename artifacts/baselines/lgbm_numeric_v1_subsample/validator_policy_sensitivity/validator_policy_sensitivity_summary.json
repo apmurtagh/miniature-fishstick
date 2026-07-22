@@ -1,0 +1,38 @@
+{
+  "status": "run",
+  "rows": 20000,
+  "fallback_rows": 0,
+  "clean_rows": 7994,
+  "flagged_driver_omission_rows": 12006,
+  "direction_proxy_applicable_rows": 20000,
+  "direction_proxy_confirmed_rows": 6565,
+  "direction_proxy_review_rows": 13435,
+  "direction_proxy_rate": 0.32825,
+  "policies": [
+    {
+      "policy": "operations_summary",
+      "description": "Risk/action/disclosure and at least one driver preserved; soft driver-omission flags allowed.",
+      "accepted_rows": 20000,
+      "review_or_fallback_rows": 0,
+      "accepted_rate": 1.0,
+      "interpretation": "Suitable for concise operational summaries. Not equivalent to audit-complete rendering."
+    },
+    {
+      "policy": "audit_complete_all_driver",
+      "description": "Full top-k driver coverage required; driver-omission flags treated as requiring retry/fallback/incomplete label.",
+      "accepted_rows": 7994,
+      "review_or_fallback_rows": 12006,
+      "accepted_rate": 0.3997,
+      "interpretation": "Represents stricter audit-complete evidence rendering under current validator taxonomy."
+    },
+    {
+      "policy": "direction_proxy_confirmed_review",
+      "description": "Conservative rule-based direction proxy must pass where applicable.",
+      "accepted_rows": 6565,
+      "review_or_fallback_rows": 13435,
+      "accepted_rate": 0.32825,
+      "interpretation": "Review-flag policy only. This is not a definitive semantic-faithfulness measure."
+    }
+  ],
+  "caveat": "This analysis quantifies policy sensitivity using existing final summary artefacts. The direction-proxy-confirmed policy is deliberately conservative and should be read as a review flag, not a semantic truth label."
+}

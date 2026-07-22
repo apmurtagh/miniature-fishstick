@@ -1,0 +1,41 @@
+{
+  "status": "run",
+  "rows": 20000,
+  "ci_method": "Wilson score interval, 95%",
+  "policies": [
+    {
+      "policy": "operations_summary",
+      "accepted_rows": 20000,
+      "review_or_fallback_rows": 0,
+      "accepted_rate": 1.0,
+      "accepted_rate_wilson_95ci_low": 0.9998079568876411,
+      "accepted_rate_wilson_95ci_high": 1.0,
+      "interpretation": "Suitable for concise operational summaries. Not equivalent to audit-complete rendering."
+    },
+    {
+      "policy": "audit_complete_all_driver",
+      "accepted_rows": 7994,
+      "review_or_fallback_rows": 12006,
+      "accepted_rate": 0.3997,
+      "accepted_rate_wilson_95ci_low": 0.3929310973624302,
+      "accepted_rate_wilson_95ci_high": 0.40650742648590915,
+      "interpretation": "Represents stricter audit-complete evidence rendering under current validator taxonomy."
+    },
+    {
+      "policy": "direction_proxy_confirmed_review",
+      "accepted_rows": 6565,
+      "review_or_fallback_rows": 13435,
+      "accepted_rate": 0.32825,
+      "accepted_rate_wilson_95ci_low": 0.3217755287359649,
+      "accepted_rate_wilson_95ci_high": 0.3347904380731305,
+      "interpretation": "Review-flag policy only. This is not a definitive semantic-faithfulness measure."
+    }
+  ],
+  "caveat": "Intervals quantify automated policy proportions only. They do not convert proxy validation into human semantic validation.",
+  "outputs": {
+    "json": "artifacts/baselines/lgbm_numeric_v1_subsample/validator_policy_sensitivity/validator_policy_sensitivity_with_ci.json",
+    "md": "artifacts/baselines/lgbm_numeric_v1_subsample/validator_policy_sensitivity/validator_policy_sensitivity_with_ci.md",
+    "docs_md": "docs/thesis_final/validator_policy_sensitivity_figure.md",
+    "figure": "artifacts/baselines/lgbm_numeric_v1_subsample/validator_policy_sensitivity/validator_policy_sensitivity_figure.svg"
+  }
+}
