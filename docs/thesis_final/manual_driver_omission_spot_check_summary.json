@@ -1,0 +1,16 @@
+{
+  "status": "sample_generated",
+  "sample_source": "20k robustness audit",
+  "source_file": "/workspaces/miniature-fishstick/artifacts/baselines/lgbm_numeric_v1_subsample/llm_20000_robustness/llm_20000_attempt_audit.jsonl",
+  "candidate_omission_rows_found": 12006,
+  "sample_target": 50,
+  "sample_generated": 50,
+  "seed": 20260723,
+  "outputs": {
+    "csv": "/workspaces/miniature-fishstick/docs/thesis_final/manual_driver_omission_spot_check_sample_50.csv",
+    "markdown": "/workspaces/miniature-fishstick/docs/thesis_final/manual_driver_omission_spot_check_sample_50.md",
+    "coding_guide": "/workspaces/miniature-fishstick/docs/thesis_final/manual_driver_omission_spot_check_coding_guide.md",
+    "diagnostics": "/workspaces/miniature-fishstick/docs/thesis_final/manual_driver_omission_spot_check_diagnostics.json"
+  },
+  "claim_boundary": "Manual error-analysis spot-check only; not a human-subjects study or independent utility/readability validation."
+}
