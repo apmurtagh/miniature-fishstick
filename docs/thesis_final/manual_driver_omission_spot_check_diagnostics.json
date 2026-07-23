@@ -1,0 +1,23 @@
+{
+  "mode": "20k_attempt",
+  "eo_rows": 20000,
+  "narrative_rows": 20000,
+  "audit_rows": 20000,
+  "candidate_rows_found": 12006,
+  "examples": [],
+  "audit_first_row_keys": [
+    "attempt_number",
+    "elapsed_seconds",
+    "error_tail",
+    "event_id",
+    "max_client_retries",
+    "provider_hidden_retries_observable",
+    "provider_request_id",
+    "retry_decision",
+    "returncode",
+    "row_index",
+    "sdk_retry_policy",
+    "status",
+    "validation"
+  ]
+}
