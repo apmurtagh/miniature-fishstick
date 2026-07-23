@@ -20,7 +20,7 @@ This document explicitly distinguishes implemented deliverables from directly te
 | Hypothesis | Final disposition | Evidence / caveat |
 |---|---|---|
 | H1 Readability / clarity | Not directly tested | No human readability or preference study comparing constrained LLM and template narratives was conducted. The thesis claims LLM scalability and decision-frame preservation, not demonstrated human readability superiority. |
-| H2 Constraint value | Not directly tested via unconstrained ablation | The proposed unconstrained 50-100 EO ablation was not reported as a final empirical result. Constraint value is supported indirectly through the validator taxonomy and bounded generation design, but the marginal effect of removing constraints remains future work. |
+| H2 Constraint value | Supported under bounded automated ablation | A 100-row same-EO constrained versus unconstrained H2 ablation was completed. Constrained outputs achieved higher driver coverage, fewer zero-driver rows and fewer review-language flags; the result remains automated and proxy-based, not human semantic validation. |
 | H3 Drift messaging / over-trust | Not causally tested | Drift metrics and disclosure logic were implemented, but the thesis does not demonstrate that drift messaging reduces human over-trust. |
 | H4 Thin-file | Partially supported / materially strengthened | Disclosure behaviour and controlled feature-masking evidence support thin-file robustness under proxy conditions. Production-style enrichment outage simulation remains future work. |
 
