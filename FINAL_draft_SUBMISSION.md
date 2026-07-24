@@ -7,7 +7,7 @@ This file is the final draft submission entry point for the MSc Data Science dis
 **Governance-Ready Fraud Decisioning for Transaction Monitoring: Evidence-Grounded Narrative Explanations with Tiered Guardrails**
 
 Author: Andrew Murtagh  
-Final draft date: 23 July 2026  
+Final draft date: 24 July 2026  
 Repository: `apmurtagh/miniature-fishstick`
 
 ## 1. Repository State
@@ -16,11 +16,12 @@ Repository: `apmurtagh/miniature-fishstick`
 
 The complete final draft evidential package is integrated on `main` at:
 
-- Final main integration commit: `cc2cc0b`
+- Final v30 release/reference state: `cf638f9`
 - Relevant merged pull requests:
   - PR #13: final reproducibility and governance artefacts
   - PR #14: H2 paired uncertainty addendum
   - PR #15: manual driver-omission spot-check
+  - PR #16: final draft submission entry-point update
 
 ### Empirical source state
 
@@ -29,15 +30,16 @@ The authoritative empirical source checkpoint remains:
 - Empirical source commit: `27a69ce`
 - Empirical source tag: `thesis-final-v24-h2-ablation-pilot-20260717`
 
-The v24 tag is the frozen empirical checkpoint for the bounded H2 ablation source artefacts. Later main commits through `cc2cc0b` add documentation, notebook/reference alignment, release/IP-notice material, derived H2 paired uncertainty analysis and manual driver-omission error analysis using existing artefacts only. These later commits do not introduce additional LLM generation and do not alter the reported empirical metrics.
+The v24 tag is the frozen empirical checkpoint for the bounded H2 ablation source artefacts. Later main commits through `cf638f9` add documentation, notebook/reference alignment, release/IP-notice material, derived H2 paired uncertainty analysis and manual driver-omission error analysis using existing artefacts only. These later commits do not introduce additional LLM generation and do not alter the reported empirical metrics.
+
+Note: `cf638f9` is the v30 thesis/release reference state. Later administrative hygiene commits, if any, do not alter the frozen empirical source state or reported empirical metrics.
 
 ## Policy Sensitivity Summary
 
-- Operations-summary acceptance: 
-- Audit-complete evidence rendering: validator-defined audit-complete acceptance: 
-- Driver-omission flagged rows: 
-- Direction-proxy confirmed rows: 
-
+- Operations-summary acceptance: `20,000 / 20,000`, accepted rate `1.0000`, Wilson 95% CI `0.9998 to 1.0000`.
+- Audit-complete evidence rendering: validator-defined audit-complete acceptance `7,994 / 20,000`, accepted rate `0.3997`, Wilson 95% CI `0.3929 to 0.4065`.
+- Driver-omission flagged rows: `12,006 / 20,000` (`60.03%`).
+- Direction-proxy confirmed rows: `6,565 / 20,000`, accepted rate `0.3282`, Wilson 95% CI `0.3218 to 0.3348`.
 ## 2. Headline Empirical Results
 
 - Baseline ROC-AUC: `0.8687`
@@ -85,12 +87,15 @@ Core submission and reproducibility artefacts include:
 - `docs/thesis_final/excluded_artifact_verification_manifest.json`
 - `notebooks/governance_ready_fraud_decisioning_end_to_end_reproduction.ipynb`
 - `tests/test_final_thesis_hygiene.py`
+- `artifacts/baselines/lgbm_numeric_v1_subsample/h2_unconstrained_ablation/h2_unconstrained_vs_constrained_summary_100.md`
+- `artifacts/baselines/lgbm_numeric_v1_subsample/h2_unconstrained_ablation/h2_unconstrained_vs_constrained_summary_100.json`
 - `artifacts/baselines/lgbm_numeric_v1_subsample/h2_unconstrained_ablation/h2_paired_uncertainty_addendum.md`
 - `artifacts/baselines/lgbm_numeric_v1_subsample/h2_unconstrained_ablation/h2_paired_uncertainty_addendum.json`
 - `docs/thesis_final/manual_driver_omission_spot_check_appendix_c.md`
 - `docs/thesis_final/manual_driver_omission_spot_check_completed_summary.md`
 - `docs/thesis_final/manual_driver_omission_spot_check_completed_summary.json`
 - `docs/thesis_final/manual_driver_omission_spot_check_sample_50_final.csv`
+- `docs/thesis_final/manual_driver_omission_spot_check_integrity_audit.json`
 
 ## 5. Verification Command
 
