@@ -1,6 +1,6 @@
 # miniature-fishstick
 
-MSc Data Science thesis repository.
+MSc Data Science dissertation and reproducibility repository.
 
 ## Contents
 
@@ -25,7 +25,7 @@ The repository implements a reproducible pipeline that:
 4. produces both deterministic template narratives and constrained LLM narratives
 5. evaluates narrative faithfulness, disclosure behaviour and driver coverage
 
-The objective is to compare template and LLM-generated explanations while maintaining traceability to structured evidence and supporting reproducible governance workflows.
+The objective is to evaluate evidence-grounded narrative generation under governed template and constrained-LLM conditions while maintaining traceability to structured evidence and supporting reproducible governance workflows.
 
 ---
 
@@ -404,4 +404,24 @@ Final evidence base:
 
 Large generated artefacts are intentionally excluded from Git and documented in the final submission artefact manifest.
 
-Final submission entry point: `FINAL_draft_SUBMISSION.md`
+Final submission entry point: `FINAL_SUBMISSION.md`
+
+---
+
+## Repository Citation
+
+Murtagh, A. (2026)
+
+*miniature-fishstick: Governance-Ready Fraud Decisioning for Transaction Monitoring.*
+
+GitHub repository.
+
+Empirical checkpoint:
+`thesis-final-v24-h2-ablation-pilot-20260717`
+(commit `27a69ce`).
+
+Submission reference state:
+commit `cf638f9`.
+
+Available at:
+https://github.com/apmurtagh/miniature-fishstick

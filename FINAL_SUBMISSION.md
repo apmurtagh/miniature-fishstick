@@ -1,27 +1,27 @@
-# Final Draft Submission Entry Point
+# Final Submission Entry Point
 
 Final MSc Thesis Submission Package
 
-This file is the final draft submission entry point for the MSc Data Science dissertation:
+This file is the final submission entry point for the MSc Data Science dissertation:
 
 **Governance-Ready Fraud Decisioning for Transaction Monitoring: Evidence-Grounded Narrative Explanations with Tiered Guardrails**
 
 Author: Andrew Murtagh  
-Final draft date: 24 July 2026  
+Final submission date: 24 July 2026  
 Repository: `apmurtagh/miniature-fishstick`
 
 ## 1. Repository State
 
 ### Complete evidential package
 
-The complete final draft evidential package is integrated on `main` at:
+The complete final submission package is integrated on `main` at:
 
 - Final v30 release/reference state: `cf638f9`
 - Relevant merged pull requests:
   - PR #13: final reproducibility and governance artefacts
   - PR #14: H2 paired uncertainty addendum
   - PR #15: manual driver-omission spot-check
-  - PR #16: final draft submission entry-point update
+  - PR #16: final submission entry-point update
 
 ### Empirical source state
 
@@ -30,7 +30,7 @@ The authoritative empirical source checkpoint remains:
 - Empirical source commit: `27a69ce`
 - Empirical source tag: `thesis-final-v24-h2-ablation-pilot-20260717`
 
-The v24 tag is the frozen empirical checkpoint for the bounded H2 ablation source artefacts. Later main commits through `cf638f9` add documentation, notebook/reference alignment, release/IP-notice material, derived H2 paired uncertainty analysis and manual driver-omission error analysis using existing artefacts only. These later commits do not introduce additional LLM generation and do not alter the reported empirical metrics.
+The v24 tag is the frozen empirical checkpoint for the bounded H2 ablation source artefacts. Later commits through `cf638f9` add documentation, notebook/reference alignment, release/IP-notice material, derived H2 paired uncertainty analysis and manual driver-omission error analysis using existing artefacts only. These later commits do not introduce additional LLM generation and do not alter the reported empirical metrics.
 
 Note: `cf638f9` is the v30 thesis/release reference state. Later administrative hygiene commits, if any, do not alter the frozen empirical source state or reported empirical metrics.
 
@@ -40,6 +40,7 @@ Note: `cf638f9` is the v30 thesis/release reference state. Later administrative 
 - Audit-complete evidence rendering: validator-defined audit-complete acceptance `7,994 / 20,000`, accepted rate `0.3997`, Wilson 95% CI `0.3929 to 0.4065`.
 - Driver-omission flagged rows: `12,006 / 20,000` (`60.03%`).
 - Direction-proxy confirmed rows: `6,565 / 20,000`, accepted rate `0.3282`, Wilson 95% CI `0.3218 to 0.3348`.
+
 ## 2. Headline Empirical Results
 
 - Baseline ROC-AUC: `0.8687`
@@ -81,7 +82,7 @@ The manual driver-omission spot-check is a manual error-analysis of existing art
 
 Core submission and reproducibility artefacts include:
 
-- `FINAL_draft_SUBMISSION.md`
+- `FINAL_SUBMISSION.md`
 - `docs/thesis_final/final_submission_artifact_manifest.md`
 - `docs/thesis_final/excluded_artifact_verification_manifest.md`
 - `docs/thesis_final/excluded_artifact_verification_manifest.json`
@@ -119,7 +120,7 @@ To inspect the frozen empirical source checkpoint:
 git checkout thesis-final-v24-h2-ablation-pilot-20260717
 ```
 
-Return to the final integrated draft state with:
+Return to the final integrated state with:
 
 ```bash
 git checkout main
@@ -131,7 +132,7 @@ git pull --ff-only origin main
 Recommended reading path:
 
 1. Final dissertation PDF/DOCX.
-2. This final draft submission entry point.
+2. This final submission entry point.
 3. Final submission artefact manifest.
 4. Excluded artefact verification manifest.
 5. End-to-end reproduction notebook.

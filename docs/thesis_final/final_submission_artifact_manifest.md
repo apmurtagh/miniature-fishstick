@@ -99,7 +99,7 @@ This analysis quantifies the central governance trade-off: scalable operations-s
 
 | Artefact | Purpose |
 |---|---|
-| `FINAL_draft_SUBMISSION.md` | One-page final submission entry point for examiners, reviewers and future productisation |
+| `FINAL_SUBMISSION.md` | One-page final submission entry point for examiners, reviewers and future productisation |
 | `docs/thesis_final/excluded_artifact_verification_manifest.md` | Human-readable checksum, size and row-count manifest for excluded/generated artefacts |
 | `docs/thesis_final/excluded_artifact_verification_manifest.json` | Machine-readable checksum, size and row-count manifest |
 

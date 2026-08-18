@@ -153,7 +153,7 @@ def test_governance_controls_runbook_is_present_and_non_production_claim():
 
 
 def test_final_submission_entrypoint_and_verification_manifest_exist():
-    final_submission = read_text(ROOT / "FINAL_draft_SUBMISSION.md")
+    final_submission = read_text(ROOT / "FINAL_SUBMISSION.md")
     assert "Final MSc Thesis Submission Package" in final_submission
     assert "thesis-final-v24-h2-ablation-pilot-20260717" in final_submission
     assert "Operations-summary acceptance" in final_submission
